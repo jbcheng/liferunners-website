@@ -151,7 +151,12 @@ ${renderHead(page, locale)}
         <img src="${basePath}/assets/img/logo-placeholder.svg" alt="Life Runners logo" />
         <strong>${escapeHtml(siteMeta.locales.en.code === locale.code ? 'Life Runners Fellowship' : '生命跑者团契')}</strong>
       </div>
-      <nav aria-label="Primary navigation">
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav aria-label="Primary navigation" class="main-nav">
         ${nav}
       </nav>
       <div class="language-switcher" aria-label="Language">
@@ -159,6 +164,17 @@ ${renderHead(page, locale)}
       </div>
     </div>
   </header>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.mobile-menu-toggle');
+      var nav = document.querySelector('.main-nav');
+      toggle.addEventListener('click', function() {
+        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !isOpen);
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
   <main id="main">
     ${breadcrumbs}
     ${hero}
