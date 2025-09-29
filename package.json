@@ -1,0 +1,12 @@
+{
+  "name": "liferunners-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static bilingual website for Life Runners Fellowship with generated HTML pages.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "type": "module"
+}

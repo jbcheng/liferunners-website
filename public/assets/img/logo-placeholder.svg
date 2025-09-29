@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title>Life Runners placeholder logo</title>
+  <desc>Circle with cross and running track motif</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b6b50" />
+      <stop offset="100%" stop-color="#4caf93" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#grad)" />
+  <path d="M60 20v80" stroke="#f7b733" stroke-width="8" stroke-linecap="round" />
+  <path d="M28 60h64" stroke="#f7b733" stroke-width="8" stroke-linecap="round" />
+  <path d="M20 84c12-16 26-24 40-24s28 8 40 24" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+</svg>

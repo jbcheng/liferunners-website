@@ -1,158 +1,103 @@
 # Life Runners Fellowship Website
 
-A bilingual (English / 简体中文) website for **Life Runners Fellowship**, a California-based 501(c) non-profit. The site shares the organization’s vision and provides resources such as ministry info, Bible study materials, upcoming events, and ways to support/donate.
+A statically generated, bilingual (English / 简体中文) website for **Life Runners Fellowship**, a California-based 501(c) non-profit. The site communicates vision, ministries, resources, and events while staying fast to host and easy to update from structured content files.
 
 > Motto: *Exercise your body 操练身体 · Practice godliness 操练敬虔 · Live out love 活出爱*
 
----
+## ✨ Highlights
 
-## ✨ Goals
+- Fully localised navigation, pages, and media callouts in English and Simplified Chinese
+- Static build with zero third-party runtime dependencies (plain Node.js)
+- China-accessible media fallbacks and notices wherever YouTube/Spotify links appear
+- Structured content authored in `src/data/pages.mjs` with shared components for hero, sections, and cards
+- Automated sitemap, robots.txt, and canonical/hreflang tags for SEO
+- Simple Node-based dev server with optional auto-rebuild watching
 
-- Communicate vision, faith statement, ministries, and activities
-- Serve audiences in both the **United States and mainland China**
-- Make frequently updated content (Bible materials, events, blog) **easy for non-technical editors to maintain**
-- Support video, audio, and PDF media with **regional fallbacks** when platforms are blocked
+## 🧰 Prerequisites
 
-## 🌐 Domains & Email
+- [Node.js](https://nodejs.org/) **18 LTS or newer** (uses native ES modules and `fs.cp`)
+- npm (bundled with Node)
 
-- Existing: `chinesechristianhome.com`
-- Proposed: `life-runners.org` (if available) or `life-runners.org`-like variants
-- Mailboxes (examples):
-  - `donation@life-runners.org`
-  - `admin@life-runners.org`
+No additional npm packages are required.
 
-> Final domain and mail routing (MX) will be confirmed during deployment.
-
-## 🧭 Information Architecture (Top-level)
-
-- About Us / 关于我们
-  - Confession of Faith / 信仰告白
-  - Our Logo / 标志
-  - Leadership Team / 领袖团队
-  - Event Calendar / 活动日历
-- Ministry / 事工介绍
-  - Exercise your body / 操练身体
-  - Practice godliness / 操练敬虔
-  - Live out love / 活出爱
-- Resources / 查经资料
-  - Old Testament / 旧约（按卷）
-  - New Testament / 新约（按卷）
-  - Q&A / 信仰问题解答（按日期）
-- Events / 活动预告·记录
-  - Upcoming / 即将举行
-  - Past (writings, photos, videos) / 往期（文字、图片、视频）
-- Support & Donation / 支持与奉献
-  - Contact / 联系方式
-  - Donation Info / 奉献须知
-
-## 🧩 Features
-
-- **Bilingual UI with user-selectable language (EN / 简体中文)**
-- **Responsive** design for desktop and mobile
-- **Media support**: YouTube videos, on-site MP3/M4A or Spotify audio, on-site PDFs
-- **External link strategy**: open in new tab; provide **China-accessible fallbacks**
-- **Update-friendly** dynamic sections (non-technical editors):
-  - Bible study materials (up to twice daily)
-  - Upcoming events (weekly)
-  - Blog (as needed)
-- **Performance**: Target initial render within 10 seconds even under 25 concurrent users
-- **Security**: Prevent unauthorized changes; protect admin/editor access
-
-## 🛠 Suggested Tech Stack
-
-- **Frontend**: Next.js (App Router), React, TypeScript, Tailwind CSS
-- **i18n**: `next-intl` or `@lingui/react`
-- **Content**: Headless CMS (Sanity, Contentful, or Strapi). For low-cost hosting, consider Markdown/MDX with Git-based CMS (Netlify CMS)
-- **Media**: YouTube + on-site audio (MP3/M4A); Spotify links optional; PDFs hosted on site
-- **Deployment**: Vercel/Netlify (primary), plus **China-accessible mirror** (e.g., Vercel China/Edge, or a static export on a mainland-friendly CDN)
-- **Analytics**: Plausible/Umami (privacy-friendly) or GA4
-- **Calendar**: Static event pages + optional iCal feed generation
-
-> You can swap components if your coding agent prefers another stack, as long as requirements remain satisfied.
-
-## 📦 Getting Started (Dev)
+## 🚀 Local Development
 
 ```bash
-# 1) Clone and install
-git clone <your-repo-url> life-runners-site
-cd life-runners-site
-npm i
+# 1) Install dependencies (none beyond lockfile, but keeps scripts available)
+npm install
 
-# 2) Run
+# 2) Start the dev server with rebuild-on-change and local static hosting
 npm run dev
 
-# 3) Build
+# The dev server builds into `dist/` and serves http://localhost:4321.
+# When recursive file watching is unsupported on your platform,
+# the script logs a warning—simply re-run `npm run build` manually after edits.
+```
+
+### Manual build & preview
+
+```bash
+# Generate static HTML, CSS, media, sitemap, and robots.txt into dist/
 npm run build
-npm run start
+
+# Serve the prebuilt site (no rebuild on change)
+npm run serve
+# Visit http://localhost:4321
 ```
 
-### Environment Variables (examples)
+The build script copies everything from `public/` and renders pages defined in `src/data/pages.mjs` for both `/en/*` and `/zh/*` routes. The repository ships with placeholder media directories so editors can drop PDFs, audio files, and gallery assets without touching layout code.
 
-Create `.env.local`:
+## 🗂 Content Editing Workflow
+
+1. Edit `src/data/pages.mjs` to update copy, links, section layouts, or add new pages.
+2. (Optional) Add supporting files under `public/media/…` — ensure filenames match the URLs referenced in content.
+3. Run `npm run build` to regenerate `dist/` and verify locally with `npm run serve` or `npm run dev`.
+4. Commit the generated source files (the `dist/` folder is produced at build time and is not committed).
+
+Because the content is structured in reusable section objects, non-technical editors can update text by following the inline comments and section titles. Future teams can migrate the data layer into a headless CMS without rewriting layouts.
+
+## 🌐 Deployment Options
+
+The static output in `dist/` can be hosted on any CDN or static hosting provider. Recommended free-tier options:
+
+- **GitHub Pages** — push the contents of `dist/` to a `gh-pages` branch and configure the custom domain `life-runners.org`.
+- **Netlify** — connect the repository, set the build command to `npm run build`, and publish the generated `dist/` folder. Netlify offers free HTTPS certificates and easy domain mapping.
+- **Cloudflare Pages** or **Vercel** — similar configuration, great global CDN coverage.
+
+For China-accessible mirrors, export the `dist/` folder and upload to a mainland-friendly CDN (e.g., aliyun OSS + CDN) so `/media/*` assets remain reachable.
+
+### DNS & Email Notes
+
+- Point the apex/root and `www` records of `life-runners.org` to your chosen host.
+- Configure MX records for mailboxes such as `donation@life-runners.org` and `admin@life-runners.org` once the domain is live.
+
+## 🧪 Testing Checklist
+
+- `npm run build` must succeed before deployment.
+- Validate the generated HTML with your preferred accessibility/SEO tooling.
+- Ensure external media links include China fallback assets before publishing.
+
+## 📁 Repository Structure
 
 ```
-SITE_NAME="Life Runners Fellowship"
-DEFAULT_LOCALE="en"
-SUPPORTED_LOCALES="en,zh-CN"
-CMS_PROJECT_ID="..."
-CMS_DATASET="production"
-YOUTUBE_CHANNEL_URL="https://www.youtube.com/..."
-CHINA_FALLBACK_AUDIO_BASE="/media/audio/"
+├── public/                 # Static assets copied verbatim
+│   ├── assets/             # Global CSS + images
+│   └── media/              # Placeholder folders for audio, PDFs, transcripts, galleries
+├── scripts/                # Build, dev, and serve scripts (Node.js)
+├── src/data/pages.mjs      # All localized navigation + page content definitions
+├── docs/                   # Requirement specs from stakeholders
+└── dist/                   # Generated output (ignored until build)
 ```
-
-## 🧱 Content Model (high level)
-
-- `page` (About, Ministries, Support)
-- `post` (Blog / Articles)
-- `event` (upcoming/past; date/time, location, summary, links, gallery)
-- `study` (Bible study material; testament/book/chapter, attachments)
-- `faq` (信仰问题解答)
-- `mediaAsset` (audio/pdf metadata)
-
-See `docs/sites_spec.md` for detailed fields and validation rules.
-
-## 🌏 China Accessibility Plan
-
-- All external links open in **new tab**
-- Provide **alternative access** when platforms are blocked:
-  - If YouTube is unavailable, provide **audio** (MP3/M4A) or **transcript + PDF**
-  - Prefer on-site hosting for essential media files
-- Consider a static-export mirror on a CN-friendly CDN
-
-## 🧪 Acceptance Criteria (Summary)
-
-- All pages & sections listed above are present in EN/中文
-- Bible study, events, blog are editable without code deployments
-- Media types supported as specified; external links with fallbacks
-- Works on Chrome, Safari, Edge, iOS & Android default browsers
-- Meets performance and security expectations
-
-## 🤝 Roles
-
-- **Technical Team**: implementation & ops
-- **Content Team**: copy, translations, updates
-- **Review Team**: editorial QA
-- **Executive Producer**: final approvals
 
 ## 📄 License
 
-Copyright © Life Runners Fellowship. Content usage may be restricted; consult project owners.
+Copyright © Life Runners Fellowship. All rights reserved. Content usage may be restricted; consult project owners.
 
 ---
 
 ### Contributing
 
-1. Create a feature branch
-2. Commit with clear messages
-3. Open a PR; include screenshots and i18n notes
-4. Tag reviewers (tech + content)
-
----
-
-### Roadmap (Proposed)
-
-- Week 1–2: Scaffold + i18n + IA
-- Week 3–4: Core pages + CMS wiring
-- Week 5–6: Events + Study models + Media pipeline
-- Week 7–8: SEO, sitemap, analytics, hardening
-- Launch window: 2025-12 (target)
+1. Create a feature branch.
+2. Update content in `src/data/pages.mjs` or static assets in `public/`.
+3. Run `npm run build` and review the output locally.
+4. Commit with clear messages and open a PR (include bilingual notes and screenshots when relevant).
