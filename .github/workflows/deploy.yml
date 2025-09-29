@@ -31,6 +31,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          BASE_PATH: /liferunners-website
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

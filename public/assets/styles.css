@@ -100,7 +100,7 @@ main {
 }
 
 .hero {
-  background-image: linear-gradient(120deg, rgba(27, 107, 80, 0.45), rgba(19, 75, 56, 0.50)), url('/assets/img/lucas-canino-MFCzJQoFXzc-unsplash.jpg');
+  background-image: linear-gradient(120deg, rgba(27, 107, 80, 0.45), rgba(19, 75, 56, 0.50)), url('../img/lucas-canino-MFCzJQoFXzc-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

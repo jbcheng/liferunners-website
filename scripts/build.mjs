@@ -9,6 +9,7 @@ const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
 const publicDir = path.join(rootDir, 'public');
 const baseUrl = 'https://life-runners.org';
+const basePath = process.env.BASE_PATH || '';
 
 function escapeHtml(str = '') {
   return str
@@ -30,7 +31,8 @@ function renderNavItem(item, currentUrl) {
   const isCurrent = currentUrl === item.href;
   const hasChildren = Array.isArray(item.children) && item.children.length > 0;
   const label = escapeHtml(item.label);
-  const link = `<a href="${item.href}"${isCurrent ? ' aria-current="page"' : ''}>${label}</a>`;
+  const href = basePath + item.href;
+  const link = `<a href="${href}"${isCurrent ? ' aria-current="page"' : ''}>${label}</a>`;
   if (!hasChildren) {
     return `<li class="nav-item">${link}</li>`;
   }
@@ -43,7 +45,7 @@ function renderLanguageSwitcher(page) {
   return locales
     .map((locale) => {
       const isActive = page.lang === locale.code;
-      const targetHref = locale.code === page.lang ? page.url : page.altLang || locale.pathPrefix;
+      const targetHref = basePath + (locale.code === page.lang ? page.url : page.altLang || locale.pathPrefix);
       return `<a href="${targetHref}"${isActive ? ' aria-current="true"' : ''}>${escapeHtml(locale.label)}</a>`;
     })
     .join('<span aria-hidden="true">|</span>');
@@ -54,7 +56,7 @@ function renderBreadcrumbs(page) {
     return '';
   }
   const items = page.breadcrumbs
-    .map((crumb) => `<a href="${crumb.href}">${escapeHtml(crumb.label)}</a>`)
+    .map((crumb) => `<a href="${basePath + crumb.href}">${escapeHtml(crumb.label)}</a>`)
     .join(' / ');
   return `<nav aria-label="Breadcrumb" class="breadcrumbs">${items} / <span>${escapeHtml(page.title)}</span></nav>`;
 }
@@ -117,7 +119,7 @@ function renderHead(page, locale) {
     <link rel="canonical" href="${canonical}" />
     <link rel="alternate" hreflang="${siteMeta.locales.en.code === locale.code ? 'en' : 'zh-CN'}" href="${canonical}" />
     <link rel="alternate" hreflang="${siteMeta.locales.en.code === locale.code ? 'zh-CN' : 'en'}" href="${altHref}" />
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="${basePath}/assets/styles.css" />
   `;
 }
 
@@ -132,7 +134,7 @@ function renderPageHtml(page) {
   const breadcrumbs = renderBreadcrumbs(page);
   const sections = renderSections(page);
   const hero = page.hero
-    ? `<section class="hero">${page.hero.eyebrow ? `<p class="badge">${escapeHtml(page.hero.eyebrow)}</p>` : ''}<h1>${escapeHtml(page.hero.title)}</h1><p>${escapeHtml(page.hero.subtitle || '')}</p>${page.hero.cta ? `<a class="button" href="${page.hero.cta.href}">${escapeHtml(page.hero.cta.label)}</a>` : ''}</section>`
+    ? `<section class="hero">${page.hero.eyebrow ? `<p class="badge">${escapeHtml(page.hero.eyebrow)}</p>` : ''}<h1>${escapeHtml(page.hero.title)}</h1><p>${escapeHtml(page.hero.subtitle || '')}</p>${page.hero.cta ? `<a class="button" href="${basePath + page.hero.cta.href}">${escapeHtml(page.hero.cta.label)}</a>` : ''}</section>`
     : '';
 
   return `<!DOCTYPE html>
@@ -145,7 +147,7 @@ ${renderHead(page, locale)}
   <header>
     <div class="nav-container">
       <div class="branding">
-        <img src="/assets/img/logo-placeholder.svg" alt="Life Runners logo" />
+        <img src="${basePath}/assets/img/logo-placeholder.svg" alt="Life Runners logo" />
         <strong>${escapeHtml(siteMeta.locales.en.code === locale.code ? 'Life Runners Fellowship' : '生命跑者团契')}</strong>
       </div>
       <nav aria-label="Primary navigation">
@@ -185,7 +187,7 @@ export async function buildSite() {
 
   // Root redirect to default locale
   const defaultLocale = siteMeta.locales[siteMeta.defaultLocale];
-  const rootIndex = `<!DOCTYPE html><html lang="${siteMeta.defaultLocale}"><head><meta charset="utf-8" /><meta http-equiv="refresh" content="0; url=${defaultLocale.pathPrefix}/" /><link rel="canonical" href="${baseUrl}${defaultLocale.pathPrefix}/" /></head><body></body></html>`;
+  const rootIndex = `<!DOCTYPE html><html lang="${siteMeta.defaultLocale}"><head><meta charset="utf-8" /><meta http-equiv="refresh" content="0; url=${basePath}${defaultLocale.pathPrefix}/" /><link rel="canonical" href="${baseUrl}${defaultLocale.pathPrefix}/" /></head><body></body></html>`;
   await fs.writeFile(path.join(distDir, 'index.html'), rootIndex, 'utf8');
 
   // Generate sitemap
