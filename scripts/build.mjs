@@ -141,6 +141,7 @@ function renderPageHtml(page) {
 <html lang="${langAttr}">
 <head>
 ${renderHead(page, locale)}
+<style>.hero { background-image: linear-gradient(120deg, rgba(27, 107, 80, 0.45), rgba(19, 75, 56, 0.50)), url('${basePath}/assets/img/lucas-canino-MFCzJQoFXzc-unsplash.jpg') !important; }</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
