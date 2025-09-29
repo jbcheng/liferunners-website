@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
 const publicDir = path.join(rootDir, 'public');
-const baseUrl = 'https://life-runners.org';
+const baseUrl = process.env.BASE_URL || 'https://life-runners.org';
 const basePath = process.env.BASE_PATH || '';
 
 function escapeHtml(str = '') {
@@ -108,8 +108,8 @@ function renderFooter(locale) {
 }
 
 function renderHead(page, locale) {
-  const canonical = `${baseUrl}${page.url}`;
-  const altHref = page.altLang ? `${baseUrl}${page.altLang}` : canonical;
+  const canonical = `${baseUrl}${basePath}${page.url}`;
+  const altHref = page.altLang ? `${baseUrl}${basePath}${page.altLang}` : canonical;
   const siteName = locale.code === 'en' ? 'Life Runners Fellowship' : '生命跑者团契';
   const pageTitle = page.title === siteName ? siteName : `${page.title} · ${siteName}`;
   const description = page.description || (locale.code === 'en'
@@ -131,6 +131,9 @@ function renderHead(page, locale) {
     <meta property="og:title" content="${escapeHtml(pageTitle)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:image" content="${ogImage}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${escapeHtml(locale.code === 'en' ? 'Life Runners Fellowship - Running with purpose' : '生命跑者团契 - 带着永恒目标奔跑')}" />
     <meta property="og:site_name" content="${escapeHtml(siteName)}" />
     <meta property="og:locale" content="${locale.code === 'en' ? 'en_US' : 'zh_CN'}" />
 
@@ -140,6 +143,7 @@ function renderHead(page, locale) {
     <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${ogImage}" />
+    <meta name="twitter:image:alt" content="${escapeHtml(locale.code === 'en' ? 'Life Runners Fellowship - Running with purpose' : '生命跑者团契 - 带着永恒目标奔跑')}" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="${basePath}/assets/img/logo-placeholder.svg" />

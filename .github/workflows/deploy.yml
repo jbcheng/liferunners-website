@@ -32,6 +32,7 @@ jobs:
       - name: Build site
         run: npm run build
         env:
+          BASE_URL: https://thinkinginmath.github.io
           BASE_PATH: /liferunners-website
 
       - name: Upload artifact
