@@ -110,12 +110,40 @@ function renderFooter(locale) {
 function renderHead(page, locale) {
   const canonical = `${baseUrl}${page.url}`;
   const altHref = page.altLang ? `${baseUrl}${page.altLang}` : canonical;
+  const siteName = locale.code === 'en' ? 'Life Runners Fellowship' : '生命跑者团契';
+  const pageTitle = page.title === siteName ? siteName : `${page.title} · ${siteName}`;
+  const description = page.description || (locale.code === 'en'
+    ? 'Bilingual discipleship community combining faith, athletics, and missions serving the US and China.'
+    : '双语门训社群，结合信仰、运动与差传，服事美国与中国的肢体。');
+  const ogImage = `${baseUrl}${basePath}/assets/img/lucas-canino-MFCzJQoFXzc-unsplash.jpg`;
+  const ogType = page.url === '/en/' || page.url === '/zh/' ? 'website' : 'article';
+
   return `
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>${(() => { const siteName = locale.code === 'en' ? 'Life Runners Fellowship' : '生命跑者团契'; return escapeHtml(page.title === siteName ? siteName : `${page.title} · ${siteName}`); })()}</title>
-    <meta name="description" content="${escapeHtml(page.description || '')}" />
+    <title>${escapeHtml(pageTitle)}</title>
+    <meta name="description" content="${escapeHtml(description)}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="${ogType}" />
+    <meta property="og:url" content="${canonical}" />
+    <meta property="og:title" content="${escapeHtml(pageTitle)}" />
+    <meta property="og:description" content="${escapeHtml(description)}" />
+    <meta property="og:image" content="${ogImage}" />
+    <meta property="og:site_name" content="${escapeHtml(siteName)}" />
+    <meta property="og:locale" content="${locale.code === 'en' ? 'en_US' : 'zh_CN'}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="${canonical}" />
+    <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
+    <meta name="twitter:description" content="${escapeHtml(description)}" />
+    <meta name="twitter:image" content="${ogImage}" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="${basePath}/assets/img/logo-placeholder.svg" />
+
     <link rel="canonical" href="${canonical}" />
     <link rel="alternate" hreflang="${siteMeta.locales.en.code === locale.code ? 'en' : 'zh-CN'}" href="${canonical}" />
     <link rel="alternate" hreflang="${siteMeta.locales.en.code === locale.code ? 'zh-CN' : 'en'}" href="${altHref}" />
