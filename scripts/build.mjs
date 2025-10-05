@@ -146,7 +146,7 @@ function renderHead(page, locale) {
     <meta name="twitter:image:alt" content="${escapeHtml(locale.code === 'en' ? 'Life Runners Fellowship - Running with purpose' : '生命跑者团契 - 带着永恒目标奔跑')}" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="${basePath}/assets/img/logo-placeholder.svg" />
+    <link rel="icon" type="image/jpeg" href="${basePath}/assets/img/logo.jpg" />
 
     <link rel="canonical" href="${canonical}" />
     <link rel="alternate" hreflang="${siteMeta.locales.en.code === locale.code ? 'en' : 'zh-CN'}" href="${canonical}" />
@@ -180,7 +180,7 @@ ${renderHead(page, locale)}
   <header>
     <div class="nav-container">
       <div class="branding">
-        <img src="${basePath}/assets/img/logo-placeholder.svg" alt="Life Runners logo" />
+        <img src="${basePath}/assets/img/logo.jpg" alt="Life Runners logo" />
         <strong>${escapeHtml(siteMeta.locales.en.code === locale.code ? 'Life Runners Fellowship' : '生命跑者团契')}</strong>
       </div>
       <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
