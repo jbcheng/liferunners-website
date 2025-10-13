@@ -57,8 +57,8 @@ export const siteMeta = {
           title: 'Contact',
           items: [
             { label: 'Email', value: 'donation@life-runners.org', href: 'mailto:donation@life-runners.org' },
-            { label: 'Phone', value: '+1 (415) 555-1476' },
-            { label: 'WeChat', value: 'LifeRunnersFellowship' }
+            { label: 'Phone', value: 'TBD' },
+            { label: 'WeChat', value: '生命跑者 Life Runners' }
           ]
         },
         address: 'Serving the Bay Area, USA & online discipleship communities in mainland China.',
@@ -126,13 +126,13 @@ export const siteMeta = {
           title: '联系我们',
           items: [
             { label: '邮箱', value: 'donation@life-runners.org', href: 'mailto:donation@life-runners.org' },
-            { label: '电话', value: '+1 (415) 555-1476' },
-            { label: '微信', value: 'LifeRunnersFellowship' }
+            { label: '电话', value: 'TBD' },
+            { label: '微信', value: '生命跑者 Life Runners' }
           ]
         },
         address: '服务美国湾区，并连结中国大陆线上门训小组。',
         social: [
-          { label: 'YouTube 视频（翻墙）', href: 'https://www.youtube.com/@LifeRunners' },
+          { label: 'YouTube 视频（翻墙）', href: 'https://www.youtube.com/@BibleRunners' },
           { label: '音频镜像（国内可访问）', href: '/media/audio/' },
           { label: '电子通讯', href: 'https://life-runners.org/newsletter' }
         ],
@@ -275,7 +275,7 @@ export const pages = [
             <div class="card">
               <h3>YouTube Teaching</h3>
               <p>Livestream devotionals, testimony films, and Mandarin/English sermons.</p>
-              <a class="button" href="https://www.youtube.com/@LifeRunners" target="_blank" rel="noopener">Watch on YouTube</a>
+              <a class="button" href="https://www.youtube.com/@BibleRunners" target="_blank" rel="noopener">Watch on YouTube</a>
               ${sharedMediaNotice.en}
             </div>
             <div class="card">
@@ -367,7 +367,7 @@ export const pages = [
             <div class="card">
               <h3>YouTube 教学</h3>
               <p>中英文灵修直播、见证短片与讲道。</p>
-              <a class="button" href="https://www.youtube.com/@LifeRunners" target="_blank" rel="noopener">前往 YouTube</a>
+              <a class="button" href="https://www.youtube.com/@BibleRunners" target="_blank" rel="noopener">前往 YouTube</a>
               ${sharedMediaNotice.zh}
             </div>
             <div class="card">
@@ -2048,7 +2048,7 @@ export const pages = [
             </article>
             <article class="card">
               <h3>Mailing Address</h3>
-              <p>P.O. Box 4571, San Mateo, CA 94402 USA</p>
+              <p>430 Monmouth Dr. Milpitas, CA 95035</p>
             </article>
           </div>
         `
@@ -2094,12 +2094,12 @@ export const pages = [
             </article>
             <article class="card">
               <h3>微信</h3>
-              <p>ID：LifeRunnersFellowship</p>
+              <p>ID：生命跑者 Life Runners</p>
               <p>每周三、周五晚间 7-9 点（北京时间）线上办公。</p>
             </article>
             <article class="card">
               <h3>邮寄地址</h3>
-              <p>P.O. Box 4571, San Mateo, CA 94402 USA</p>
+              <p>430 Monmouth Dr. Milpitas, CA 95035</p>
             </article>
           </div>
         `
@@ -2147,9 +2147,9 @@ export const pages = [
           <table class="table">
             <thead><tr><th>Method</th><th>Details</th></tr></thead>
             <tbody>
-              <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 121000358 · Account 1234567890 · Memo: Life Runners Fellowship</td></tr>
-              <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to P.O. Box 4571, San Mateo, CA 94402</td></tr>
-              <tr><td>Alipay (CNY)</td><td>Account: liferunners@payment.cn · Please email receipt for donation acknowledgment.</td></tr>
+              <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 121000358 · Account 325208794518 · Memo: Life Runners Fellowship</td></tr>
+              <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
+              <tr><td>Zelle (USD)</td><td>Account: liferunners@chinesechristianhome.com ·</td></tr>
             </tbody>
           </table>
         `
@@ -2193,9 +2193,9 @@ export const pages = [
           <table class="table">
             <thead><tr><th>方式</th><th>资讯</th></tr></thead>
             <tbody>
-              <tr><td>美国银行转账</td><td>Bank of America · Routing 121000358 · Account 1234567890 · 备注写 Life Runners Fellowship</td></tr>
-              <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至 P.O. Box 4571, San Mateo, CA 94402</td></tr>
-              <tr><td>支付宝</td><td>帐号：liferunners@payment.cn · 请将汇款凭证电邮以便开立奉献信。</td></tr>
+              <tr><td>美国银行转账</td><td>Bank of America · Routing 121000358 · Account 325208794518 · 备注写 Life Runners Fellowship</td></tr>
+              <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
+              <tr><td>Zelle(美刀)</td><td>帐号：liferunners@chinesechristianhome.com · </td></tr>
             </tbody>
           </table>
         `
