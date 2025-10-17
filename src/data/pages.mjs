@@ -63,7 +63,7 @@ export const siteMeta = {
         },
         address: 'Serving the Bay Area, USA & online discipleship communities in mainland China.',
         social: [
-          { label: 'YouTube', href: 'https://www.youtube.com/@LifeRunners', note: 'Includes China-accessible transcripts.' },
+          { label: 'YouTube', href: 'https://www.youtube.com/@BibleRunners', note: 'Includes China-accessible transcripts.' },
           { label: 'Spotify', href: 'https://open.spotify.com/show/life-runners-podcast' },
           { label: 'Newsletter', href: 'https://life-runners.org/newsletter' }
         ],
