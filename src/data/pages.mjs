@@ -721,36 +721,36 @@ export const pages = [
         content: `
           <div class="cards">
             <article class="card">
-              <h3>Pastor Jianzhong Zhu</h3>
-              <p>Chairperson. </p>
+              <h3>Pastor Jianzhong Zhu, Co-Founder and Chairman</h3>
+              <p>Senior Pastor, responsible for overall teaching and strategy.</p>
             </article>
             <article class="card">
-              <h3>Edward Wang</h3>
-              <p>Chief Financial Officer.</p>
+              <h3>Edward Wang, Chief Financial Officer</h3>
+              <p>Responsible for overall financial strategy.</p>
             </article>
             <article class="card">
-              <h3>Qilan Zeng</h3>
-              <p>Secretary.</p>
+              <h3>Qilan Zeng, Secretary</h3>
+              <p>Assists in day-to-day affairs and is responsible for the maintenance of overall organizational records.</p>
             </article>
+            <article class="card">
+              <h3>Shulin Cui, Board Member</h3>
+              <p>Finance Consultant ensuring compliance, audits, and transparent reporting.</p>
+            </article>
+            <article class="card">
+              <h3>Jia-bing Cheng, Board Member</h3>
+              <p>Technical Team Lead.</p>
+            </article>
+            <article class="card">
+              <h3>Mei Mei, Board Member</h3>
+              <p>Public Relation Specialist</p>
+            </article>            
           </div>
         `
       },
       {
-        title: 'Board Members',
+        title: 'Core Volunteers',
         content: `
           <div class="cards">
-            <article class="card">
-              <h3>Shulin Cui</h3>
-              <p>Finance Consultant ensuring compliance, audits, and transparent reporting.</p>
-            </article>
-            <article class="card">
-              <h3>Jia-bing Cheng</h3>
-              <p>Technical Team Lead</p>
-            </article>
-            <article class="card">
-              <h3>Mei Mei</h3>
-              <p>Public Relation Specialist</p>
-            </article>
             <article class="card">
               <h3>Coworkers</h3>
               <p>Over 10 volunteers steward online Bible study, prayer, hospitality, tech support, and mentoring.</p>
