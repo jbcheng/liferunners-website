@@ -721,39 +721,39 @@ export const pages = [
         content: `
           <div class="cards">
             <article class="card">
-              <h3>Pastor Anna Chen</h3>
-              <p>Co-founder & Chair. Former collegiate runner, pastor at Bay City Church, oversees teaching strategy.</p>
+              <h3>Pastor Jianzhong Zhu</h3>
+              <p>Chairperson. </p>
             </article>
             <article class="card">
-              <h3>Coach David Li</h3>
-              <p>USATF certified coach; leads training crews and discipleship cohorts for athletes in China via VPN-safe tools.</p>
+              <h3>Edward Wang</h3>
+              <p>Chief Financial Officer.</p>
             </article>
             <article class="card">
-              <h3>Grace Huang, CPA</h3>
-              <p>Treasurer. Nonprofit finance consultant ensuring compliance, audits, and transparent reporting.</p>
+              <h3>Qilan Zeng</h3>
+              <p>Secretary.</p>
             </article>
           </div>
         `
       },
       {
-        title: 'Key Staff & Coordinators',
+        title: 'Board Members',
         content: `
           <div class="cards">
             <article class="card">
-              <h3>Michael Wong</h3>
-              <p>Operations & Partnerships. Coordinates events, sponsor relations, and China-accessible media distribution.</p>
+              <h3>Shulin Cui</h3>
+              <p>Finance Consultant ensuring compliance, audits, and transparent reporting.</p>
             </article>
             <article class="card">
-              <h3>Jiaqi Sun</h3>
-              <p>Content Producer. Oversees translations, Bible study layouts, and audio transcript publishing.</p>
+              <h3>Jia-bing Cheng</h3>
+              <p>Technical Team Lead</p>
             </article>
             <article class="card">
-              <h3>Rachel Alvarez</h3>
-              <p>Family Track Lead. Designs family devotions, youth clinics, and safeguarding policies.</p>
+              <h3>Mei Mei</h3>
+              <p>Public Relation Specialist</p>
             </article>
             <article class="card">
-              <h3>Volunteers</h3>
-              <p>Over 60 volunteers steward prayer teams, hospitality, tech support, and mentoring.</p>
+              <h3>Coworkers</h3>
+              <p>Over 10 volunteers steward online Bible study, prayer, hospitality, tech support, and mentoring.</p>
             </article>
           </div>
         `
