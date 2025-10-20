@@ -782,16 +782,28 @@ export const pages = [
         content: `
           <div class="cards">
             <article class="card">
-              <h3>陈安娜牧师</h3>
-              <p>联合创办人及主席。曾为大学长跑选手，现任湾城教会牧师，负责教导策略。</p>
+              <h3>朱建忠牧师，联合创办人及主席</h3>
+              <p>组织牧师，负责整体教导与策略。</p>
             </article>
             <article class="card">
-              <h3>李伟教练</h3>
-              <p>美国田径总会认证教练，带领训练队与中国线上门训，使用跨墙工具确保安全。</p>
+              <h3>王華弘长老，财务长</h3>
+              <p>负责整体财务策略。</p>
             </article>
             <article class="card">
-              <h3>黄恩典会计师</h3>
-              <p>财务长。非营利财务顾问，负责合规、稽核与透明汇报。</p>
+              <h3>曾其兰，主任秘书</h3>
+              <p>协助主席处理日常事务，并负责整体组织记录的维护。</p>
+            </article>
+            <article class="card">
+              <h3>崔树林，董事会成员</h3>
+              <p>非营利财务顾问，负责法规、稽核与透明汇报。</p>
+            </article>
+            <article class="card">
+              <h3>程嘉彬，董事会成员</h3>
+              <p>技术团队负责人。</p>
+            </article>
+            <article class="card">
+              <h3>梅枚，董事会成员</h3>
+              <p>公共关系专员。</p>
             </article>
           </div>
         `
@@ -800,21 +812,10 @@ export const pages = [
         title: '核心同工',
         content: `
           <div class="cards">
+            
             <article class="card">
-              <h3>黄迈克</h3>
-              <p>营运与伙伴关系。统筹活动、赞助连结与中国可访问的媒体分发。</p>
-            </article>
-            <article class="card">
-              <h3>孙佳琪</h3>
-              <p>内容制作人。负责翻译、查经教材设计与音频逐字稿发布。</p>
-            </article>
-            <article class="card">
-              <h3>瑞秋·阿瓦瑞兹</h3>
-              <p>家庭事工负责人。规划家庭灵修、青少年训练营与防护政策。</p>
-            </article>
-            <article class="card">
-              <h3>志愿者团队</h3>
-              <p>超过 60 位志工承担祷告、接待、技术支持与导师关怀。</p>
+              <h3>同工团队</h3>
+              <p>超过 10 位志愿者分工承担圣经学习、祷告、关怀接待、技术支援，和属灵导师。</p>
             </article>
           </div>
         `
