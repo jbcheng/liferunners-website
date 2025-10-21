@@ -64,8 +64,8 @@ export const siteMeta = {
         address: 'Serving the Bay Area, USA & online discipleship communities in mainland China.',
         social: [
           { label: 'YouTube', href: 'https://www.youtube.com/@BibleRunners', note: 'Includes China-accessible transcripts.' },
-          { label: 'Spotify', href: 'https://open.spotify.com/show/life-runners-podcast' },
-          { label: 'Newsletter', href: 'https://life-runners.org/newsletter' }
+          { label: 'Audio recordings', href: '/media/audio/' },
+          { label: 'Newsletter', href: '/newsletter/' }
         ],
         legal: '© ' + new Date().getFullYear() + ' Life Runners Fellowship. All rights reserved.'
       }
@@ -134,7 +134,7 @@ export const siteMeta = {
         social: [
           { label: 'YouTube 视频（翻墙）', href: 'https://www.youtube.com/@BibleRunners' },
           { label: '音频镜像（国内可访问）', href: '/media/audio/' },
-          { label: '电子通讯', href: 'https://life-runners.org/newsletter' }
+          { label: '电子通讯', href: '/newsletter/' }
         ],
         legal: '© ' + new Date().getFullYear() + ' 生命跑者团契 版权所有。'
       }
@@ -280,7 +280,7 @@ export const pages = [
             </div>
             <div class="card">
               <h3>Audio Archive</h3>
-              <p>MP3 reflections and Spotify mirror with downloadable transcripts for listeners in restricted regions.</p>
+              <p>MP3 reflections or Spotify mirror with downloadable transcripts for listeners in restricted regions.</p>
               <a class="button" href="/media/audio/">Download audio & transcripts</a>
             </div>
             <div class="card">
