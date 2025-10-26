@@ -2039,8 +2039,7 @@ export const pages = [
           <div class="cards">
             <article class="card">
               <h3>Email</h3>
-              <p>donation@life-runners.org</p>
-              <p>admin@life-runners.org</p>
+              <p>love@life-runners.org</p>
             </article>
             <article class="card">
               <h3>WeChat</h3>
@@ -2052,17 +2051,6 @@ export const pages = [
               <p>430 Monmouth Dr. Milpitas, CA 95035</p>
             </article>
           </div>
-        `
-      },
-      {
-        id: 'volunteer',
-        title: 'Volunteer Interest',
-        content: `
-          <p>Complete the secure form below to join a volunteer rotation. We conduct background checks for roles involving minors.</p>
-          <ul>
-            <li><a href="https://lifrunners.org/forms/volunteer" target="_blank" rel="noopener">Volunteer form (English)</a></li>
-            <li><a href="https://lifrunners.org/forms/volunteer-cn" target="_blank" rel="noopener">服事报名表（中文）</a></li>
-          </ul>
         `
       }
     ]
@@ -2090,30 +2078,18 @@ export const pages = [
           <div class="cards">
             <article class="card">
               <h3>电子邮箱</h3>
-              <p>donation@life-runners.org</p>
-              <p>admin@life-runners.org</p>
+              <p>love@life-runners.org</p>
             </article>
             <article class="card">
               <h3>微信</h3>
               <p>ID：生命跑者 Life Runners</p>
-              <p>每周三、周五晚间 7-9 点（北京时间）线上办公。</p>
             </article>
             <article class="card">
               <h3>邮寄地址</h3>
+              <p>Life Runners Fellowship</p>
               <p>430 Monmouth Dr. Milpitas, CA 95035</p>
             </article>
           </div>
-        `
-      },
-      {
-        id: 'volunteer',
-        title: '服事报名',
-        content: `
-          <p>填写以下安全表单加入服事团队。涉及未成年人的岗位须通过背景查核。</p>
-          <ul>
-            <li><a href="https://lifrunners.org/forms/volunteer" target="_blank" rel="noopener">Volunteer form (English)</a></li>
-            <li><a href="https://lifrunners.org/forms/volunteer-cn" target="_blank" rel="noopener">中文报名表</a></li>
-          </ul>
         `
       }
     ]
@@ -2150,7 +2126,7 @@ export const pages = [
             <tbody>
               <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 121000358 · Account 325208794518 · Memo: Life Runners Fellowship</td></tr>
               <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
-              <tr><td>Zelle (USD)</td><td>Account: liferunners@chinesechristianhome.com</td></tr>
+              <tr><td>Zelle (USD)</td><td>Account: love@life-runners.org</td></tr>
             </tbody>
           </table>
         `
@@ -2196,7 +2172,7 @@ export const pages = [
             <tbody>
               <tr><td>美国银行转账</td><td>Bank of America · Routing 121000358 · Account 325208794518 · 备注写 Life Runners Fellowship</td></tr>
               <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
-              <tr><td>Zelle(美刀)</td><td>帐号：liferunners@chinesechristianhome.com</td></tr>
+              <tr><td>Zelle(美刀)</td><td>帐号：love@life-runners.org</td></tr>
             </tbody>
           </table>
         `
