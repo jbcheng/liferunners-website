@@ -2042,12 +2042,12 @@ export const pages = [
               <p>love@life-runners.org</p>
             </article>
             <article class="card">
-              <h3>WeChat</h3>
-              <p>ID: LifeRunnersFellowship</p>
-              <p>Weekly office hours Wed & Fri 7-9 PM Beijing time.</p>
+              <h3>WeChat Group</h3>
+              <p>生命跑者 Life Runners</p>
             </article>
             <article class="card">
               <h3>Mailing Address</h3>
+              <p>Life Runners Fellowship</p>
               <p>430 Monmouth Dr. Milpitas, CA 95035</p>
             </article>
           </div>
@@ -2082,7 +2082,7 @@ export const pages = [
             </article>
             <article class="card">
               <h3>微信</h3>
-              <p>ID：生命跑者 Life Runners</p>
+              <p>群组：生命跑者 Life Runners</p>
             </article>
             <article class="card">
               <h3>邮寄地址</h3>
