@@ -2114,8 +2114,7 @@ export const pages = [
       {
         title: 'Give Online',
         content: `
-          <p>Use our secure giving portal for one-time or recurring donations. Receipts are issued immediately and annual statements are mailed each January.</p>
-          <p><a class="button" href="https://lifrunners.org/give" target="_blank" rel="noopener">Give online</a></p>
+          <p>Use the following methods for one-time or recurring donations. Acknowledges are sent immediately and annual statements are mailed each January.</p>
         `
       },
       {
@@ -2160,8 +2159,7 @@ export const pages = [
       {
         title: '线上奉献',
         content: `
-          <p>透过安全的奉献平台，可设定一次性或定期奉献。系统会立即寄送收据，并在翌年一月寄出年度奉献证明。</p>
-          <p><a class="button" href="https://lifrunners.org/give" target="_blank" rel="noopener">前往奉献</a></p>
+          <p>请使用以下方式进行一次性或定期捐赠。系统会立即寄送收据，并在翌年一月寄出年度奉献证明。</p>
         `
       },
       {
