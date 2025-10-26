@@ -56,8 +56,7 @@ export const siteMeta = {
         contact: {
           title: 'Contact',
           items: [
-            { label: 'Email', value: 'donation@life-runners.org', href: 'mailto:donation@life-runners.org' },
-            { label: 'Phone', value: 'TBD' },
+            { label: 'Email', value: 'love@life-runners.org', href: 'mailto:love@life-runners.org' },
             { label: 'WeChat', value: '生命跑者 Life Runners' }
           ]
         },
@@ -125,8 +124,7 @@ export const siteMeta = {
         contact: {
           title: '联系我们',
           items: [
-            { label: '邮箱', value: 'donation@life-runners.org', href: 'mailto:donation@life-runners.org' },
-            { label: '电话', value: 'TBD' },
+            { label: '邮箱', value: 'love@life-runners.org', href: 'mailto:love@life-runners.org' },
             { label: '微信', value: '生命跑者 Life Runners' }
           ]
         },
