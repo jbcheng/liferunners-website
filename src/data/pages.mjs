@@ -1746,7 +1746,7 @@ export const pages = [
     hero: {
       eyebrow: 'Events',
       title: 'What’s ahead this season.',
-      subtitle: 'Register early to secure in-person spots and receive digital resource packs.'
+      subtitle: 'Events planned for the coming months.'
     },
     breadcrumbs: [
       { href: '/en/', label: 'Home' },
@@ -1757,24 +1757,15 @@ export const pages = [
         title: 'Event Timeline',
         content: `
           <div class="timeline">
-            <div class="timeline-item" id="advent-prayer-run">
-              <h3>Dec 15 · Advent Prayer Run</h3>
-              <p>Golden Gate Bridge | 6:00 AM PT / 10:00 PM Beijing</p>
-              <p>Sunrise run, bilingual worship, and communion. Livestream available.</p>
-              <p><a class="button" href="https://lifrunners.org/forms/advent-run" target="_blank" rel="noopener">Register</a></p>
-              ${sharedMediaNotice.en}
+            <div class="timeline-item" id="monthly-potluck-202511">
+              <h3>Nov 08 2025 · Monthly Potluck </h3>
+              <p>Life Runners' Home | 6:30-9:30 PM PT</p>
+              <p>Bring a dish to share, gather at Life Runners' home in Milpitas, CA.</p>
             </div>
-            <div class="timeline-item" id="coach-intensive">
-              <h3>Jan 10-11 · Coach Intensive</h3>
-              <p>Hybrid (San Mateo + Zoom)</p>
-              <p>Two-day training for crew leaders covering coaching, discipleship, and safeguarding.</p>
-              <p><a class="button" href="/media/resources/coach-intensive-agenda.pdf">Download agenda</a></p>
-            </div>
-            <div class="timeline-item" id="spring-cohort">
-              <h3>Feb 5 · Spring Bible Cohorts</h3>
-              <p>Online small groups in English and Mandarin.</p>
-              <p>Study Romans 8 with weekly audio devotionals and China-friendly downloads.</p>
-              <p><a class="button" href="https://lifrunners.org/cohorts" target="_blank" rel="noopener">Join cohort</a></p>
+            <div class="timeline-item" id="science-and-faith">
+              <h3>Nov 14 or later, exact date TBD · Science and Faith</h3>
+              <p>Online (Zoom) | Time TBD, around 6:00-7:00 PM PT / 10:00-11:00 AM Beijing</p>
+              <p>Weekly two-day online sessions for understanding the relationship between science and faith.</p>
             </div>
           </div>
         `
@@ -1786,12 +1777,12 @@ export const pages = [
     path: 'zh/events/upcoming/index.html',
     url: '/zh/events/upcoming/',
     title: '即将举行',
-    description: '参与近期的祷告跑、训练营与线上课程。',
+    description: '未来几个月的活动预告。',
     altLang: '/en/events/upcoming/',
     hero: {
       eyebrow: '活动',
       title: '本季重点活动。',
-      subtitle: '提前报名可领取电子资料包与线下名额。'
+      subtitle: '未来几个月的活动预告。'
     },
     breadcrumbs: [
       { href: '/zh/', label: '首页' },
@@ -1802,24 +1793,15 @@ export const pages = [
         title: '时间轴',
         content: `
           <div class="timeline">
-            <div class="timeline-item" id="advent-prayer-run">
-              <h3>12月15日 · 将临期祷告跑</h3>
-              <p>金门大桥｜美国太平洋时间 6:00 · 北京时间 22:00</p>
-              <p>日出祷告跑，中英文敬拜与圣餐，提供直播。</p>
-              <p><a class="button" href="https://lifrunners.org/forms/advent-run" target="_blank" rel="noopener">线上报名</a></p>
-              ${sharedMediaNotice.zh}
+            <div class="timeline-item" id="monthly-potluck-202511">
+              <h3>2025年 11月8日 · 月度聚餐 </h3>
+              <p>生命跑者之家 | 太平洋时间下午6:30-9:30</p>
+              <p>带一道菜来分享，在加州米尔皮塔斯的生命跑者之家聚会。</p>
             </div>
-            <div class="timeline-item" id="coach-intensive">
-              <h3>1月10-11日 · 教练训练营</h3>
-              <p>混合式（圣马刁 + Zoom）</p>
-              <p>两天密集训练，涵盖教练、门训与防护。</p>
-              <p><a class="button" href="/media/resources/coach-intensive-agenda.pdf">下载日程</a></p>
-            </div>
-            <div class="timeline-item" id="spring-cohort">
-              <h3>2月5日 · 春季查经同伴</h3>
-              <p>线上英文/普通话小组</p>
-              <p>研读罗马书第八章，并提供中国可访问的音频下载。</p>
-              <p><a class="button" href="https://lifrunners.org/cohorts" target="_blank" rel="noopener">报名参加</a></p>
+            <div class="timeline-item" id="science-and-faith">
+              <h3> 2025年 11月14日 或以后，具体日期待定 · 科学与信仰课程</h3>
+              <p> 线上（Zoom）| 时间待定，大约太平洋时间下午 6:00-7:00 / 北京时间上午 10:00-11:00。 </p>
+              <p> 每周一次双向交流的线上课程，探讨科学与信仰之间的关系。 </p>
             </div>
           </div>
         `
@@ -1847,31 +1829,27 @@ export const pages = [
         title: 'Highlights',
         content: `
           <div class="cards">
-            <article class="card" id="faith-athletics-podcast">
-              <h3>Faith & Athletics Podcast — Episode 12</h3>
-              <p>Coach Li and Pastor Anna share practical habits for integrating faith and training schedules.</p>
+            <article class="card" id="morning-run-lake-e">
+              <h3>Morning Run at Lake Elizabeth</h3>
+              <p>Life Runners from the U.S. SF Bay Area running at Lake Elizabeth on Thursday morning.</p>
               <ul>
-                <li><a href="https://www.youtube.com/watch?v=podcast" target="_blank" rel="noopener">Watch on YouTube</a></li>
-                <li><a href="/media/audio/faith-athletics-ep12.mp3">Audio fallback (MP3)</a></li>
-                <li><a href="/media/transcripts/faith-athletics-ep12.pdf">Transcript</a></li>
-              </ul>
-              ${sharedMediaNotice.en}
-            </article>
-            <article class="card" id="mercy-run-manila">
-              <h3>Mercy Run Manila</h3>
-              <p>Teams from the U.S. and Philippines ran simultaneously, raising relief for typhoon survivors.</p>
-              <ul>
-                <li><a href="/media/galleries/mercy-run-manila/index.html">Photo gallery</a></li>
-                <li><a href="/media/resources/mercy-run-report.pdf">Impact report</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/index.html" target="_blank">Photo gallery</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.mp4" target="_blank">Video download</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.pdf" target="_blank">PDF report </a></li>
               </ul>
             </article>
-            <article class="card" id="bridge-builders">
-              <h3>Bridge Builders Chinatown</h3>
-              <p>Monthly meal deliveries with partner churches; features volunteer testimonies.</p>
+            <article class="card" id="morning-hike-vargas">
+              <h3>Morning Hike Vargas Plateau</h3>
+              <p>Life Runners hiked East Bay Vargas Plateau on Thursday morning.</p>
               <ul>
-                <li><a href="https://vimeo.com/liferunners/bridgebuilders" target="_blank" rel="noopener">Vimeo recap</a></li>
-                <li><a href="/media/audio/bridge-builders-story.m4a">Audio story</a></li>
-                <li><a href="/media/transcripts/bridge-builders-story.pdf">Transcript</a></li>
+                <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">Photo gallery</a></li>
+              </ul>
+            </article>
+            <article class="card" id="monthly-potluck">
+              <h3>Monthly Potluck</h3>
+              <p>Monthly meal sharing at Life Runners' Home.</p>
+              <ul>
+                <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
               </ul>
               ${sharedMediaNotice.en}
             </article>
@@ -1901,31 +1879,27 @@ export const pages = [
         title: '亮点回顾',
         content: `
           <div class="cards">
-            <article class="card" id="faith-athletics-podcast">
-              <h3>信仰与运动 Podcast — 第12集</h3>
-              <p>李教练与安娜牧师分享如何在训练行程中实践信仰习惯。</p>
+            <article class="card" id="morning-run-lake-e">
+              <h3>伊丽莎白湖晨跑</h3>
+              <p>来自美国旧金山湾区的生命跑者们周四早上在伊丽莎白湖跑步.</p>
               <ul>
-                <li><a href="https://www.youtube.com/watch?v=podcast" target="_blank" rel="noopener">观看 YouTube</a></li>
-                <li><a href="/media/audio/faith-athletics-ep12.mp3">音频备份</a></li>
-                <li><a href="/media/transcripts/faith-athletics-ep12.pdf">逐字稿</a></li>
-              </ul>
-              ${sharedMediaNotice.zh}
-            </article>
-            <article class="card" id="mercy-run-manila">
-              <h3>马尼拉怜悯路跑</h3>
-              <p>美菲团队同步路跑，为台风灾后重建筹款。</p>
-              <ul>
-                <li><a href="/media/galleries/mercy-run-manila/index.html">照片集</a></li>
-                <li><a href="/media/resources/mercy-run-report.pdf">成果报告</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/index.html" target="_blank">照片库</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.mp4" target="_blank">视频下载</a></li>
+                <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.pdf" target="_blank">生命故事PDF</a></li>
               </ul>
             </article>
-            <article class="card" id="bridge-builders">
-              <h3>华埠桥梁建造者</h3>
-              <p>与当地教会合作，每月为长者送餐，并记录志工见证。</p>
+            <article class="card" id="morning-hike-vargas">
+              <h3>瓦尔加斯高原晨间徒步</h3>
+              <p>生命跑者成员周四上午徒步游览了东湾瓦尔加斯高原。</p>
               <ul>
-                <li><a href="https://vimeo.com/liferunners/bridgebuilders" target="_blank" rel="noopener">Vimeo 回顾</a></li>
-                <li><a href="/media/audio/bridge-builders-story.m4a">音频故事</a></li>
-                <li><a href="/media/transcripts/bridge-builders-story.pdf">逐字稿</a></li>
+                <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">照片库</a></li>
+              </ul>
+            </article>
+            <article class="card" id="monthly-potluck">
+              <h3>每月聚餐</h3>
+              <p>生命跑者每月一次的聚餐。</p>
+              <ul>
+                <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
               </ul>
               ${sharedMediaNotice.zh}
             </article>
