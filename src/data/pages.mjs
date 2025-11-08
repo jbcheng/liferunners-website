@@ -1851,7 +1851,6 @@ export const pages = [
               <ul>
                 <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
               </ul>
-              ${sharedMediaNotice.en}
             </article>
           </div>
         `
@@ -1901,7 +1900,6 @@ export const pages = [
               <ul>
                 <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
               </ul>
-              ${sharedMediaNotice.zh}
             </article>
           </div>
         `
