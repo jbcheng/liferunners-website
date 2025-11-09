@@ -1898,7 +1898,7 @@ export const pages = [
               <h3>每月聚餐</h3>
               <p>生命跑者每月一次的聚餐。</p>
               <ul>
-                <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
+                <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">照片库</a></li>
               </ul>
             </article>
           </div>
