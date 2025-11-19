@@ -723,8 +723,8 @@ export const pages = [
               <p>Senior Pastor, responsible for overall teaching and strategy.</p>
             </article>
             <article class="card">
-              <h3>Edward Wang, Chief Financial Officer</h3>
-              <p>Responsible for overall financial strategy.</p>
+              <h3>Yanling Zhang, Board Member</h3>
+              <p>Assist in finance and growth of the organization.</p>
             </article>
             <article class="card">
               <h3>Qilan Zeng, Secretary</h3>
@@ -740,7 +740,7 @@ export const pages = [
             </article>
             <article class="card">
               <h3>Mei Mei, Board Member</h3>
-              <p>Public Relation Specialist</p>
+              <p>Public Relation Specialist.</p>
             </article>            
           </div>
         `
@@ -784,8 +784,8 @@ export const pages = [
               <p>组织牧师，负责整体教导与策略。</p>
             </article>
             <article class="card">
-              <h3>王華弘长老，财务长</h3>
-              <p>负责整体财务策略。</p>
+              <h3>张艳玲，董事会成员</h3>
+              <p>协助组织的财务与成长。</p>
             </article>
             <article class="card">
               <h3>曾其兰，主任秘书</h3>
