@@ -723,10 +723,6 @@ export const pages = [
               <p>Senior Pastor, responsible for overall teaching and strategy.</p>
             </article>
             <article class="card">
-              <h3>Yanling Zhang, Board Member</h3>
-              <p>Assist in finance and growth of the organization.</p>
-            </article>
-            <article class="card">
               <h3>Qilan Zeng, Secretary</h3>
               <p>Assists in day-to-day affairs and is responsible for the maintenance of overall organizational records.</p>
             </article>
@@ -735,13 +731,17 @@ export const pages = [
               <p>Finance Consultant ensuring compliance, audits, and transparent reporting.</p>
             </article>
             <article class="card">
-              <h3>Jia-bing Cheng, Board Member</h3>
-              <p>Technical Team Lead.</p>
-            </article>
-            <article class="card">
               <h3>Mei Mei, Board Member</h3>
               <p>Public Relation Specialist.</p>
             </article>            
+            <article class="card">
+              <h3>Yanling Zhang, Board Member</h3>
+              <p>Assist in finance and growth of the organization.</p>
+            </article>
+            <article class="card">
+              <h3>Jia-bing Cheng, Board Member</h3>
+              <p>Technical Team Lead.</p>
+            </article>
           </div>
         `
       },
@@ -784,10 +784,6 @@ export const pages = [
               <p>组织牧师，负责整体教导与策略。</p>
             </article>
             <article class="card">
-              <h3>张艳玲，董事会成员</h3>
-              <p>协助组织的财务与成长。</p>
-            </article>
-            <article class="card">
               <h3>曾其兰，主任秘书</h3>
               <p>协助主席处理日常事务，并负责整体组织记录的维护。</p>
             </article>
@@ -796,12 +792,16 @@ export const pages = [
               <p>非营利财务顾问，负责法规、稽核与透明汇报。</p>
             </article>
             <article class="card">
-              <h3>程嘉彬，董事会成员</h3>
-              <p>技术团队负责人。</p>
-            </article>
-            <article class="card">
               <h3>梅枚，董事会成员</h3>
               <p>公共关系专员。</p>
+            </article>
+            <article class="card">
+              <h3>张艳玲，董事会成员</h3>
+              <p>协助组织的财务与成长。</p>
+            </article>
+            <article class="card">
+              <h3>程嘉彬，董事会成员</h3>
+              <p>技术团队负责人。</p>
             </article>
           </div>
         `
