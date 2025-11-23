@@ -2103,7 +2103,7 @@ export const pages = [
       {
         title: 'Accountability',
         content: `
-          <p>We are a registered 501(c)(3) organization. Annual financial reports and board meeting summaries are available upon request. Contact <a href="mailto:finance@life-runners.org">finance@life-runners.org</a> for documentation.</p>
+          <p>We are a registered 501(c)(3) organization. Annual financial reports and board meeting summaries are available upon request. Contact us for documentation.</p>
           <p class="notice">International donors may request additional compliance letters for mainland China or Hong Kong transfers.</p>
         `
       }
@@ -2148,7 +2148,7 @@ export const pages = [
       {
         title: '透明与监督',
         content: `
-          <p>我们为美国 501(c)(3) 组织。年度财务报告与董事会摘要可索取，欢迎电邮 <a href="mailto:finance@life-runners.org">finance@life-runners.org</a>。</p>
+          <p>我们为美国 501(c)(3) 组织。年度财务报告与董事会摘要可索取，欢迎联络我们。</p>
           <p class="notice">海外奉献者可申请中国大陆或香港所需的合规文件。</p>
         `
       }
