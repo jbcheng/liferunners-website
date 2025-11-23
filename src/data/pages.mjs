@@ -1758,14 +1758,17 @@ export const pages = [
         content: `
           <div class="timeline">
             <div class="timeline-item" id="monthly-potluck-202511">
-              <h3>Nov 08 2025 · Monthly Potluck </h3>
-              <p>Life Runners' Home | 6:30-9:30 PM PT</p>
+              <h3>Dec 13 2025 · Monthly Potluck </h3>
+              <p>Life Runners' Home | Saturday 6:30-9:30 PM Pacific Time</p>
               <p>Bring a dish to share, gather at Life Runners' home in Milpitas, CA.</p>
             </div>
             <div class="timeline-item" id="science-and-faith">
-              <h3>Nov 14 or later, exact date TBD · Science and Faith</h3>
-              <p>Online (Zoom) | Time TBD, around 6:00-7:00 PM PT / 10:00-11:00 AM Beijing</p>
-              <p>Weekly two-day online sessions for understanding the relationship between science and faith.</p>
+              <h3>Started on Nov 14, ongoing weekly · Science and Faith ·
+		<a href="/media/audio/sci/sci.html" target="_blank">Recordings</a>
+              </h3>
+              <p>Online (Zoom ) | Time: Thursday 6:30-7:30 PM Pacific Time / Friday 10:30-11:30 AM Beijing</p>
+              <p>Online (Rerun) | Time: Friday 6:30-7:30 AM Pacific Time / Friday 10:30-11:30 PM Beijing</p>
+              <p>Two-day online sessions for understanding the relationship between science and faith.</p>
             </div>
           </div>
         `
@@ -1794,14 +1797,17 @@ export const pages = [
         content: `
           <div class="timeline">
             <div class="timeline-item" id="monthly-potluck-202511">
-              <h3>2025年 11月8日 · 月度聚餐 </h3>
+              <h3>2025年 12月13日 · 月度聚餐 </h3>
               <p>生命跑者之家 | 太平洋时间下午6:30-9:30</p>
               <p>带一道菜来分享，在加州米尔皮塔斯的生命跑者之家聚会。</p>
             </div>
             <div class="timeline-item" id="science-and-faith">
-              <h3> 2025年 11月14日 或以后，具体日期待定 · 科学与信仰课程</h3>
-              <p> 线上（Zoom）| 时间待定，大约太平洋时间下午 6:00-7:00 / 北京时间上午 10:00-11:00。 </p>
-              <p> 每周一次双向交流的线上课程，探讨科学与信仰之间的关系。 </p>
+              <h3>2025年 11月14日 开始，每周一讲，正在进行中 · 科学与信仰课程 ·
+		<a href="/media/audio/sci/sci.html" target="_blank">存档</a>
+              </h3>
+              <p> 线上（Zoom）| 时间: 太平洋时间周四下午 6:30-7:30 / 北京时间周五上午 10:30-11:30。 </p>
+              <p> 线上（重播_）| 时间: 太平洋时间周五下午 6:30-7:30 / 北京时间周五下午 10:30-11:30。 </p>
+              <p> 双向交流的线上课程，探讨科学与信仰之间的关系。 </p>
             </div>
           </div>
         `
