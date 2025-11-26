@@ -2099,7 +2099,7 @@ export const pages = [
           <table class="table">
             <thead><tr><th>Method</th><th>Details</th></tr></thead>
             <tbody>
-              <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 121000358 · Account 325208794518 · Memo: Life Runners Fellowship</td></tr>
+              <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 121000358 · Account 325212699971 · Memo: Life Runners Fellowship</td></tr>
               <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
               <tr><td>Zelle (USD)</td><td>Account: love@life-runners.org</td></tr>
             </tbody>
@@ -2144,7 +2144,7 @@ export const pages = [
           <table class="table">
             <thead><tr><th>方式</th><th>资讯</th></tr></thead>
             <tbody>
-              <tr><td>美国银行转账</td><td>Bank of America · Routing 121000358 · Account 325208794518 · 备注写 Life Runners Fellowship</td></tr>
+              <tr><td>美国银行转账</td><td>Bank of America · Routing 121000358 · Account 325212699971 · 备注写 Life Runners Fellowship</td></tr>
               <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
               <tr><td>Zelle(美刀)</td><td>帐号：love@life-runners.org</td></tr>
             </tbody>
