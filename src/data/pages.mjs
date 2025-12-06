@@ -1302,12 +1302,6 @@ export const pages = [
           </div>
         `
       },
-      {
-        title: 'Update Process',
-        content: `
-          <p>Editors can update study content by editing the HTML snippets in <code>src/data/pages.mjs</code> or migrating to a CMS later. Each update triggers a static rebuild that keeps hosting cost minimal.</p>
-        `
-      }
     ]
   },
   {
@@ -1348,12 +1342,6 @@ export const pages = [
           </div>
         `
       },
-      {
-        title: '更新方式',
-        content: `
-          <p>内容团队可直接编辑 <code>src/data/pages.mjs</code> 的 HTML 区块，或未来接入 CMS。每次更新后重新生成静态网站，成本低且快速。</p>
-        `
-      }
     ]
   },
   {
@@ -1835,6 +1823,13 @@ export const pages = [
         title: 'Highlights',
         content: `
           <div class="cards">
+            <article class="card" id="thanksgiving-day">
+              <h3>Thanksgiving Day in SF</h3>
+              <p>Life Runners serving the homeless community.</p>
+              <ul>
+                <li><a href="/media/galleries/thanksgiving-day/index.html" target="_blank">Photo gallery</a></li>
+              </ul>
+            </article>
             <article class="card" id="morning-run-lake-e">
               <h3>Morning Run at Lake Elizabeth</h3>
               <p>Life Runners from the U.S. SF Bay Area running at Lake Elizabeth on Thursday morning.</p>
@@ -1846,7 +1841,7 @@ export const pages = [
             </article>
             <article class="card" id="morning-hike-vargas">
               <h3>Morning Hike Vargas Plateau</h3>
-              <p>Life Runners hiked East Bay Vargas Plateau on Thursday morning.</p>
+              <p>Life Runners hiked East Bay Vargas Plateau on a Thursday morning.</p>
               <ul>
                 <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">Photo gallery</a></li>
               </ul>
@@ -1884,6 +1879,13 @@ export const pages = [
         title: '亮点回顾',
         content: `
           <div class="cards">
+            <article class="card" id="thanksgiving-day">
+              <h3>感恩节-旧金山</h3>
+              <p> 生命跑者 关心街友</p>
+              <ul>
+                <li><a href="/media/galleries/thanksgiving-day/index.html" target="_blank">照片库</a></li>
+              </ul>
+            </article>
             <article class="card" id="morning-run-lake-e">
               <h3>伊丽莎白湖晨跑</h3>
               <p>来自美国旧金山湾区的生命跑者们周四早上在伊丽莎白湖跑步.</p>
@@ -1895,7 +1897,7 @@ export const pages = [
             </article>
             <article class="card" id="morning-hike-vargas">
               <h3>瓦尔加斯高原晨间徒步</h3>
-              <p>生命跑者成员周四上午徒步游览了东湾瓦尔加斯高原。</p>
+              <p>生命跑者成员早晨徒步游览了东湾瓦尔加斯高原。</p>
               <ul>
                 <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">照片库</a></li>
               </ul>
