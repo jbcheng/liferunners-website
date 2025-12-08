@@ -146,48 +146,48 @@ const motto = {
 };
 
 const sharedMediaNotice = {
-  en: `\n  <div class="notice">\n    <strong>YouTube access in China:</strong> If YouTube is unavailable, use the audio/PDF downloads provided below.\n  </div>\n`,
-  zh: `\n  <div class=\"notice\">\n    <strong>中国访问提醒：</strong> 若无法打开 YouTube，请使用下方提供的音频或 PDF 下载。\n  </div>\n`
+  en: `\n  <div class="notice">\n    <strong>YouTube access in China:</strong> If YouTube is unavailable, use the audio/PDF downloads provided.\n  </div>\n`,
+  zh: `\n  <div class=\"notice\">\n    <strong>中国访问提醒：</strong> 若无法打开 YouTube，请使用提供的音频或 PDF 下载。\n  </div>\n`
 };
 
 const latestHighlights = {
   en: [
     {
-      title: 'Advent Prayer Run (Dec 15)',
-      summary: 'Join Bay Area runners for a dawn prayer run across the Golden Gate Bridge. Livestream with bilingual devotion.',
-      link: '/en/events/upcoming/#advent-prayer-run',
-      badge: 'Upcoming Event'
+      title: 'CIM Marathon (Dec 07, 2025)',
+      summary: 'Life Runners Paster joined California International Marathon.',
+      link: '/media/galleries/cim-marathon/index.html',
+      badge: 'Recent Event'
     },
     {
-      title: 'Romans 8 Study Pack',
-      summary: 'Download bilingual study notes, slides, and MP3 reflections for Romans 8: Life in the Spirit.',
-      link: '/en/resources/nt/#romans-8',
+      title: 'Revelation Study Pack(started Dec 02, 2025)',
+      summary: 'Download MP3 scripture reading and PPT slides in PDF format.',
+      link: '/media/audio/nt27/nt27.html',
       badge: 'New Study'
     },
     {
-      title: 'Faith & Athletics Podcast',
-      summary: 'Listen to Coach Li and Pastor Anna discuss how spiritual disciplines fuel endurance on and off the course.',
-      link: '/en/events/past/#faith-athletics-podcast',
+      title: 'Faith & Science (started Nov 14, 2025)',
+      summary: 'Dr. Zhang and Pastor share the origin of the universe and life, and its relationship with faith.',
+      link: '/media/audio/sci/sci.html',
       badge: 'Media'
     }
   ],
   zh: [
     {
-      title: '将临期祷告跑（12月15日）',
-      summary: '湾区弟兄姊妹清晨在金门大桥祷告跑，同步提供中英文灵修直播。',
-      link: '/zh/events/upcoming/#advent-prayer-run',
-      badge: '活动预告'
-    },
-    {
-      title: '罗马书第八章查经包',
-      summary: '下载双语讲义、幻灯片与 MP3 灵修音频：〈在圣灵里的生命〉。',
-      link: '/zh/resources/nt/#romans-8',
+      title: '加州国际马拉松（2025年12月7日）',
+      summary: '生命跑者牧师在加州国际马拉松路跑。',
+      link: '/media/galleries/cim-marathon/index.html',
       badge: '最新资料'
     },
     {
-      title: '信仰与运动 Podcast',
-      summary: '李教练与安娜牧师分享灵修操练如何加添赛场内外的韧力。',
-      link: '/zh/events/past/#faith-athletics-podcast',
+      title: '启示录查经包（2025年12月2日起)',
+      summary: '下载经文朗读MP3音频与讲义。',
+      link: '/media/audio/nt27/nt27.html',
+      badge: '查看详情'
+    },
+    {
+      title: '信仰与科学（2025年11月14日起)',
+      summary: '张博士与牧师分享宇宙，生命的起源，并与信仰的关系。',
+      link: '/media/audio/sci/sci.html',
       badge: '影音更新'
     }
   ]
@@ -221,6 +221,25 @@ export const pages = [
         `
       },
       {
+        title: 'Latest Highlights',
+        content: `
+          <div class="cards">
+            ${latestHighlights.en
+              .map(
+                (item) => `
+                  <article class="card">
+                    <span class="badge">${item.badge}</span>
+                    <h3>${item.title}</h3>
+                    <p>${item.summary}</p>
+                    <a class="button" href="${item.link}">Read more</a>
+                  </article>
+                `
+              )
+              .join('')}
+          </div>
+        `
+      },
+      {
         title: 'Featured Ministries',
         content: `
           <div class="cards">
@@ -248,21 +267,29 @@ export const pages = [
         `
       },
       {
-        title: 'Latest Highlights',
+        title: 'Featured Ministries',
         content: `
           <div class="cards">
-            ${latestHighlights.en
-              .map(
-                (item) => `
-                  <article class="card">
-                    <span class="badge">${item.badge}</span>
-                    <h3>${item.title}</h3>
-                    <p>${item.summary}</p>
-                    <a class="button" href="${item.link}">Read more</a>
-                  </article>
-                `
-              )
-              .join('')}
+            <article class="card">
+              <h3>Training Crews</h3>
+              <p>Weekly running and conditioning sessions guided by coaches. Every workout closes with Scripture reflection and peer prayer.</p>
+              <a class="button" href="/en/ministries/body/">View details</a>
+            </article>
+            <article class="card">
+              <h3>Discipleship Cohorts</h3>
+              <p>Eight-week cohorts that blend Bible study, accountability, and wellness rhythms. English/Mandarin groups available.</p>
+              <a class="button" href="/en/ministries/godliness/">Explore cohorts</a>
+            </article>
+            <article class="card">
+              <h3>Mercy Runs</h3>
+              <p>Community service projects, seniors visits, and fundraising races that demonstrate Christ-like love in action.</p>
+              <a class="button" href="/en/ministries/love/">See impact</a>
+            </article>
+            <article class="card">
+              <h3>Family Track</h3>
+              <p>Family-friendly devotionals, kids athletics clinics, and mentoring for next-generation leaders.</p>
+              <a class="button" href="/en/about/team/">Meet the team</a>
+            </article>
           </div>
         `
       },
@@ -313,33 +340,6 @@ export const pages = [
         `
       },
       {
-        title: '核心事工',
-        content: `
-          <div class="cards">
-            <article class="card">
-              <h3>操练身体</h3>
-              <p>专业教练带领的跑步与体能训练，每次训练都以经文分享与彼此代祷作为结束。</p>
-              <a class="button" href="/zh/ministries/body/">了解详情</a>
-            </article>
-            <article class="card">
-              <h3>门训同伴</h3>
-              <p>八周门训课程，结合查经、属灵操练与健康节奏，提供英文与普通话小组。</p>
-              <a class="button" href="/zh/ministries/godliness/">报名门训</a>
-            </article>
-            <article class="card">
-              <h3>怜悯行动</h3>
-              <p>社区关怀、医院探访与慈善路跑，用具体行动分享基督的爱。</p>
-              <a class="button" href="/zh/ministries/love/">见证故事</a>
-            </article>
-            <article class="card">
-              <h3>家庭同行</h3>
-              <p>亲子灵修、儿童田径营与青年领袖培育，让家庭一起在主里成长。</p>
-              <a class="button" href="/zh/about/team/">团队介绍</a>
-            </article>
-          </div>
-        `
-      },
-      {
         title: '最新动态',
         content: `
           <div class="cards">
@@ -355,6 +355,33 @@ export const pages = [
                 `
               )
               .join('')}
+          </div>
+        `
+      },
+      {
+        title: '核心事工',
+        content: `
+          <div class="cards">
+            <article class="card">
+              <h3>操练身体</h3>
+              <p>教练带领的跑步与体能训练，每次训练都以经文分享与彼此代祷作为结束。</p>
+              <a class="button" href="/zh/ministries/body/">了解详情</a>
+            </article>
+            <article class="card">
+              <h3>门训同伴</h3>
+              <p>门训课程，结合查经、属灵操练与健康节奏，提供英文/普通话小组。</p>
+              <a class="button" href="/zh/ministries/godliness/">参加门训</a>
+            </article>
+            <article class="card">
+              <h3>怜悯行动</h3>
+              <p>社区关怀、肢体探访与慈善路跑，用具体行动分享基督的爱。</p>
+              <a class="button" href="/zh/ministries/love/">见证故事</a>
+            </article>
+            <article class="card">
+              <h3>家庭同行</h3>
+              <p>线上灵修、读经营与领袖培育，让弟兄姊一起在主里成长。</p>
+              <a class="button" href="/zh/about/team/">团队介绍</a>
+            </article>
           </div>
         `
       },
