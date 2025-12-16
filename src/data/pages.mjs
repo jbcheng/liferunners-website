@@ -155,6 +155,12 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Prayer Mountain (Dec 15, 2025)',
+      summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
+      link: '/media/galleries/prayer-mountain/index.html',
+      badge: 'Recent Event'
+    },
+    {
       title: 'CIM Marathon (Dec 07, 2025)',
       summary: 'Life Runners Paster joined California International Marathon.',
       link: '/media/galleries/cim-marathon/index.html',
@@ -174,6 +180,12 @@ const latestHighlights = {
     }
   ],
   zh: [
+    {
+      title: '祷告山 (2025年12月15日)',
+      summary: '生命跑者在北加州禁食祷告山',
+      link: '/media/galleries/prayer-mountain/index.html',
+      badge: '最新资料'
+    },
     {
       title: '加州国际马拉松（2025年12月7日）',
       summary: '生命跑者牧师在加州国际马拉松路跑。',
