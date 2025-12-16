@@ -167,7 +167,7 @@ const latestHighlights = {
       badge: 'Recent Event'
     },
     {
-      title: 'Revelation Study Pack(started Dec 02, 2025)',
+      title: 'Revelation Study Pack (started Dec 02, 2025)',
       summary: 'Download MP3 scripture reading and PPT slides in PDF format.',
       link: '/media/audio/nt27/nt27.html',
       badge: 'New Study'
