@@ -57,7 +57,8 @@ export const siteMeta = {
           title: 'Contact',
           items: [
             { label: 'Email', value: 'love@life-runners.org', href: 'mailto:love@life-runners.org' },
-            { label: 'WeChat', value: '生命跑者 Life Runners' }
+            { label: 'WeChat', value: '新生命跑者 New Life Runners' },
+            { label: 'Support', value: 'Offering', href: '/en/support/donation/' }
           ]
         },
         address: 'Serving the Bay Area, USA & online discipleship communities in mainland China.',
@@ -125,7 +126,8 @@ export const siteMeta = {
           title: '联系我们',
           items: [
             { label: '邮箱', value: 'love@life-runners.org', href: 'mailto:love@life-runners.org' },
-            { label: '微信', value: '生命跑者 Life Runners' }
+            { label: '微信', value: '新生命跑者 New Life Runners' },
+            { label: '支持', value: '奉献', href: '/zh/support/donation/' }
           ]
         },
         address: '服务美国湾区，并连结中国大陆线上门训小组。',
@@ -209,8 +211,8 @@ export const pages = [
     hero: {
       eyebrow: 'Life Runners Fellowship',
       title: 'Run with purpose. Live with eternal impact.',
-      subtitle: 'We unite runners, families, and disciple-makers across the United States and mainland China to exercise our bodies, practice godliness, and live out love in every community.',
-      cta: { label: 'Explore upcoming events', href: '/en/events/upcoming/' }
+      subtitle: 'We unite runners, families, and disciple-makers across the United States and China to exercise our bodies, practice godliness, and live out love in every community.',
+      cta: { label: 'Make a donation', href: '/en/support/donation/' }
     },
     sections: [
       {
@@ -254,35 +256,8 @@ export const pages = [
               <a class="button" href="/en/ministries/godliness/">Explore cohorts</a>
             </article>
             <article class="card">
-              <h3>Mercy Runs</h3>
+              <h3>Caring with Love</h3>
               <p>Community service projects, hospital visits, and fundraising races that demonstrate Christ-like love in action.</p>
-              <a class="button" href="/en/ministries/love/">See impact</a>
-            </article>
-            <article class="card">
-              <h3>Family Track</h3>
-              <p>Family-friendly devotionals, kids athletics clinics, and mentoring for next-generation leaders.</p>
-              <a class="button" href="/en/about/team/">Meet the team</a>
-            </article>
-          </div>
-        `
-      },
-      {
-        title: 'Featured Ministries',
-        content: `
-          <div class="cards">
-            <article class="card">
-              <h3>Training Crews</h3>
-              <p>Weekly running and conditioning sessions guided by coaches. Every workout closes with Scripture reflection and peer prayer.</p>
-              <a class="button" href="/en/ministries/body/">View details</a>
-            </article>
-            <article class="card">
-              <h3>Discipleship Cohorts</h3>
-              <p>Eight-week cohorts that blend Bible study, accountability, and wellness rhythms. English/Mandarin groups available.</p>
-              <a class="button" href="/en/ministries/godliness/">Explore cohorts</a>
-            </article>
-            <article class="card">
-              <h3>Mercy Runs</h3>
-              <p>Community service projects, seniors visits, and fundraising races that demonstrate Christ-like love in action.</p>
               <a class="button" href="/en/ministries/love/">See impact</a>
             </article>
             <article class="card">
@@ -328,14 +303,14 @@ export const pages = [
     hero: {
       eyebrow: '生命跑者团契',
       title: '带着永恒目标奔跑。活出爱的见证。',
-      subtitle: '我们连结美国与中国大陆的跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
-      cta: { label: '查看近期活动', href: '/zh/events/upcoming/' }
+      subtitle: '我们连结美国与中国的跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
+      cta: { label: '我要奉献', href: '/zh/support/donation/' }
     },
     sections: [
       {
         title: '异象使命',
         content: `
-          <p>生命跑者团契是一家经美国注册的 501(c)(3) 非营利机构，以双语（英文/简体中文）服事。我们通过耐力运动、以圣经为中心的教导，以及充满怜悯的行动来培养全人的门徒。聚会涵盖湾区实体小组与面向中国大陆的线上同行。</p>
+          <p>生命跑者团契是一家经美国注册的 501(c)(3) 非营利机构，以双语（英文/简体中文）服事。我们通过耐力运动、以圣经为中心的教导，以及充满怜悯的行动来培养全人的门徒。聚会涵盖湾区实体小组与面向中国的线上同行。</p>
           <p class="badge">${motto.zh}</p>
         `
       },
@@ -373,7 +348,7 @@ export const pages = [
               <a class="button" href="/zh/ministries/godliness/">参加门训</a>
             </article>
             <article class="card">
-              <h3>怜悯行动</h3>
+              <h3>爱心关怀</h3>
               <p>社区关怀、肢体探访与慈善路跑，用具体行动分享基督的爱。</p>
               <a class="button" href="/zh/ministries/love/">见证故事</a>
             </article>
@@ -993,7 +968,7 @@ export const pages = [
             </article>
             <article class="card">
               <h3>活出爱</h3>
-              <p>怜悯路跑、救灾动员与与 NGO 合作倡议。</p>
+              <p>爱心路跑、救灾动员与与 NGO 合作倡议。</p>
               <a class="button" href="/zh/ministries/love/">参与影响</a>
             </article>
           </div>
@@ -1250,7 +1225,7 @@ export const pages = [
     path: 'zh/ministries/love/index.html',
     url: '/zh/ministries/love/',
     title: '活出爱',
-    description: '以福音为动力的怜悯与公义行动。',
+    description: '以福音为动力的爱心与公义行动。',
     altLang: '/en/ministries/love/',
     hero: {
       eyebrow: '事工焦点',
@@ -1266,7 +1241,7 @@ export const pages = [
         title: '主要行动',
         content: `
           <ul>
-            <li><strong>怜悯路跑：</strong> 与庇护所、生命关怀中心合作，透过路跑筹募经费。</li>
+            <li><strong>爱心路跑：</strong> 与庇护所、生命关怀中心合作，透过路跑筹募经费。</li>
             <li><strong>关怀小组：</strong> 探访医院、送餐、为受伤运动员提供辅导支持。</li>
             <li><strong>倡导事工：</strong> 与 NGO 合作，关注反人口贩运与青少年身心健康。</li>
           </ul>
@@ -1277,7 +1252,7 @@ export const pages = [
         content: `
           <div class="cards">
             <article class="card">
-              <h3>马尼拉怜悯路跑</h3>
+              <h3>爱心路跑</h3>
               <p>为台风灾后重建筹得 18,000 美元，并提供双语灵修包。</p>
               <a class="button" href="/zh/events/past/#mercy-run-manila">活动回顾</a>
             </article>
