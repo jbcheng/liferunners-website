@@ -222,8 +222,8 @@ export const pages = [
     altLang: '/zh/',
     hero: {
       eyebrow: 'Life Runners Fellowship',
-      title: 'Run with purpose. Live with eternal impact.',
-      subtitle: 'We unite runners, families, and disciple-makers across the United States and China to exercise our bodies, practice godliness, and live out love in every community.',
+      title: 'Exercise your body, Practice godliness, Live out love.',
+      subtitle: 'We unite life runners, families, and disciple-makers across the United States and China to exercise our bodies, practice godliness, and live out love in every community.',
       cta: { label: 'Make a donation', href: '/en/support/donation/' }
     },
     sections: [
@@ -314,8 +314,8 @@ export const pages = [
     altLang: '/en/',
     hero: {
       eyebrow: '生命跑者团契',
-      title: '带着永恒目标奔跑。活出爱的见证。',
-      subtitle: '我们连结美国与中国的跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
+      title: '操练身体，操练敬虔，活出爱。',
+      subtitle: '我们连结美国与中国的生命跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
       cta: { label: '我要奉献', href: '/zh/support/donation/' }
     },
     sections: [
@@ -940,12 +940,6 @@ export const pages = [
           </div>
         `
       },
-      {
-        title: 'Editor Notes',
-        content: `
-          <p class="notice">Update ministry descriptions each season using <code>src/data/pages.mjs</code>. Static generation keeps deployment fast while remaining non-technical friendly via simple text edits.</p>
-        `
-      }
     ]
   },
   {
@@ -986,12 +980,6 @@ export const pages = [
           </div>
         `
       },
-      {
-        title: '编辑说明',
-        content: `
-          <p class="notice">更新事工简介时，只需编辑 <code>src/data/pages.mjs</code>，静态生成让部署快速且容易维护。</p>
-        `
-      }
     ]
   },
   {
