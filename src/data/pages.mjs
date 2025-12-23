@@ -148,8 +148,8 @@ const motto = {
 };
 
 const sharedMediaNotice = {
-  en: `\n  <div class="notice">\n    <strong>YouTube access in China:</strong> If YouTube is unavailable, use the audio/PDF downloads provided.\n  </div>\n`,
-  zh: `\n  <div class=\"notice\">\n    <strong>中国访问提醒：</strong> 若无法打开 YouTube，请使用提供的音频或 PDF 下载。\n  </div>\n`
+  en: `\n  <div class="notice">\n    <strong>YouTube access issue:</strong> If YouTube is unavailable, use the audio/PDF downloads provided.\n  </div>\n`,
+  zh: `\n  <div class=\"notice\">\n    <strong>油管访问困难：</strong> 若无法打开 YouTube，请使用提供的音频或 PDF 下载。\n  </div>\n`
 };
 
 const latestHighlights = {
@@ -1487,31 +1487,26 @@ export const pages = [
         title: 'Study Packs',
         content: `
           <div class="section">
-            <h3 id="romans-8">Romans 8 — Life in the Spirit</h3>
-            <p>Weekly study exploring the Spirit-led life, suffering, and glory.</p>
+            <h3 id="revelation-">Revelation — </h3>
+            <p>Five times a week studying the book of Revelation.</p>
             <ul>
-              <li><a href="/media/resources/romans8-guide.pdf">Leader & participant guide (PDF)</a></li>
-              <li><a href="/media/audio/romans8-devotional.mp3">Devotional audio (MP3)</a></li>
-              <li><a href="/media/transcripts/romans8-devotional.pdf">Transcript & discussion prompts</a></li>
+              <li><a href="/media/audio/nt27/nt27.html">Scripture reading audio and video links</a></li>
             </ul>
             ${sharedMediaNotice.en}
           </div>
           <div class="section">
-            <h3 id="mark-5">Mark 5 — Deliverance & Compassion</h3>
-            <p>Session covering healing narratives and mission to the marginalized.</p>
+            <h3 id="peter-john-jude">1st&2nd Peter, 1st/2nd/3td John, Jude — </h3>
+            <p>Five times a week studying the letters written by Peter, John and Jode.</p>
             <ul>
-              <li><a href="/media/resources/mark5-study.pdf">Study PDF</a></li>
-              <li><a href="/media/audio/mark5-story.mp3">Audio storytelling</a></li>
+              <li><a href="/media/audio/nt21/nt21.html">Scripture reading audio and video links</a></li>
             </ul>
+            ${sharedMediaNotice.en}
           </div>
           <div class="section">
-            <h3 id="acts-16">Acts 16 — Church on the move</h3>
-            <p>Interactive workshop with maps and cross-cultural reflections.</p>
+            <h3 id="hebrew-james">Hebrew and James — Faith and Action</h3>
+            <p>Five times a week studying the books of Hebrew and James.</p>
             <ul>
-              <li><a href="/media/resources/acts16-workshop.zip">Workshop kit</a></li>
-              <li><a href="https://www.youtube.com/watch?v=sample" target="_blank" rel="noopener">YouTube teaching</a></li>
-              <li><a href="/media/audio/acts16-teaching.mp3">Audio fallback</a></li>
-              <li><a href="/media/transcripts/acts16-teaching.pdf">Transcript & slides</a></li>
+              <li><a href="/media/audio/nt19/nt19.html">Scripture reading audio and video links</a></li>
             </ul>
             ${sharedMediaNotice.en}
           </div>
@@ -1540,31 +1535,26 @@ export const pages = [
         title: '教材内容',
         content: `
           <div class="section">
-            <h3 id="romans-8">罗马书第八章 — 在圣灵里的生命</h3>
-            <p>探讨圣灵引导、苦难与荣耀的周更查经。</p>
+            <h3 id="revelation-">启示录 — </h3>
+            <p>每周五天灵修与讨论</p>
             <ul>
-              <li><a href="/media/resources/romans8-guide.pdf">带领与学员讲义（PDF）</a></li>
-              <li><a href="/media/audio/romans8-devotional.mp3">灵修音频（MP3）</a></li>
-              <li><a href="/media/transcripts/romans8-devotional.pdf">讨论引导与逐字稿</a></li>
+              <li><a href="/media/audio/nt27/nt27.html">经文朗读与视频</a></li>
             </ul>
             ${sharedMediaNotice.zh}
           </div>
           <div class="section">
-            <h3 id="mark-5">马可福音第五章 — 医治与怜悯</h3>
-            <p>聚焦耶稣对边缘群体的怜悯与宣教呼召。</p>
+            <h3 id="peter-john-jude">彼得前后书，约翰一二三书，犹大书 — </h3>
+            <p>每周五天灵修与讨论</p>
             <ul>
-              <li><a href="/media/resources/mark5-study.pdf">查经讲义</a></li>
-              <li><a href="/media/audio/mark5-story.mp3">故事音频</a></li>
+              <li><a href="/media/audio/nt21/nt21.html">经文朗读与视频</a></li>
             </ul>
+            ${sharedMediaNotice.zh}
           </div>
           <div class="section">
-            <h3 id="acts-16">使徒行传第十六章 — 向前迈进的教会</h3>
-            <p>互动式工作坊，包含地图与跨文化反思。</p>
+            <h3 id="hebrew-james">希伯来书, 雅各书 — 信心与行为</h3>
+            <p>每周五天灵修与讨论</p>
             <ul>
-              <li><a href="/media/resources/acts16-workshop.zip">工作坊材料包</a></li>
-              <li><a href="https://www.youtube.com/watch?v=sample" target="_blank" rel="noopener">YouTube 教学</a></li>
-              <li><a href="/media/audio/acts16-teaching.mp3">音频备援</a></li>
-              <li><a href="/media/transcripts/acts16-teaching.pdf">逐字稿与简报</a></li>
+              <li><a href="/media/audio/nt19/nt19.html">经文朗读与视频</a></li>
             </ul>
             ${sharedMediaNotice.zh}
           </div>
