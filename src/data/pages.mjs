@@ -316,7 +316,7 @@ export const pages = [
       eyebrow: '生命跑者团契',
       title: '操练身体，操练敬虔，活出爱。',
       subtitle: '我们连结美国与中国的生命跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
-      cta: { label: '我要奉献', href: '/zh/support/donation/' }
+      cta: { label: '支持奉献', href: '/zh/support/donation/' }
     },
     sections: [
       {
