@@ -155,6 +155,12 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Newsletter (Dec 25, 2025)',
+      summary: 'Life Runners December Newsletter Gives Thanks and Prayer Requests',
+      link: '/newsletter/2025-christmas.pdf',
+      badge: 'Lastest Newslatter'
+    },
+    {
       title: 'Prayer Mountain (Dec 15, 2025)',
       summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
@@ -172,14 +178,14 @@ const latestHighlights = {
       link: '/media/audio/nt27/nt27.html',
       badge: 'New Study'
     },
-    {
-      title: 'Faith & Science (started Nov 14, 2025)',
-      summary: 'Dr. Zhang and Pastor share the origin of the universe and life, and its relationship with faith.',
-      link: '/media/audio/sci/sci.html',
-      badge: 'Media'
-    }
   ],
   zh: [
+    {
+      title: '电子通讯 (2025年年12月25日)',
+      summary: '生命跑者｜12月感恩代祷信（2025年圣诞＋2026展望)',
+      link: '/newsletter/2025-christmas.pdf',
+      badge: '最新通讯'
+    },
     {
       title: '祷告山 (2025年12月15日)',
       summary: '生命跑者在北加州禁食祷告山',
@@ -197,12 +203,6 @@ const latestHighlights = {
       summary: '下载经文朗读MP3音频与讲义。',
       link: '/media/audio/nt27/nt27.html',
       badge: '查看详情'
-    },
-    {
-      title: '信仰与科学（2025年11月14日起)',
-      summary: '张博士与牧师分享宇宙，生命的起源，并与信仰的关系。',
-      link: '/media/audio/sci/sci.html',
-      badge: '影音更新'
     }
   ]
 };
@@ -255,27 +255,28 @@ export const pages = [
       },
       {
         title: 'Featured Ministries',
+
         content: `
           <div class="cards">
             <article class="card">
-              <h3>Training Crews</h3>
+              <h3>Exercise Your Body - Promote Health</h3>
               <p>Weekly running and conditioning sessions guided by certified coaches. Every workout closes with Scripture reflection and peer prayer.</p>
               <a class="button" href="/en/ministries/body/">View details</a>
             </article>
             <article class="card">
-              <h3>Discipleship Cohorts</h3>
-              <p>Eight-week cohorts that blend Bible study, accountability, and wellness rhythms. English and Mandarin groups available.</p>
+              <h3>Practice Godliness - Discipleship Training</h3>
+              <p>Ten-week cohorts that blend Bible study, accountability, and wellness rhythms. English and Mandarin groups available.</p>
               <a class="button" href="/en/ministries/godliness/">Explore cohorts</a>
             </article>
             <article class="card">
-              <h3>Caring with Love</h3>
+              <h3>Live Out Love - Caring in Action</h3>
               <p>Community service projects, hospital visits, and fundraising races that demonstrate Christ-like love in action.</p>
               <a class="button" href="/en/ministries/love/">See impact</a>
             </article>
             <article class="card">
-              <h3>Family Track</h3>
-              <p>Family-friendly devotionals, kids athletics clinics, and mentoring for next-generation leaders.</p>
-              <a class="button" href="/en/about/team/">Meet the team</a>
+              <h3>Foundamental Truth - Faith & Science</h3>
+              <p>Dr. Zhang and Pastor Zhu share the origin of the universe and life, and its relationship with faith.</p>
+              <a class="button" href="/media/audio/sci/sci.html">See details</a>
             </article>
           </div>
         `
@@ -293,7 +294,7 @@ export const pages = [
             <div class="card">
               <h3>Audio Archive</h3>
               <p>MP3 reflections or Spotify mirror with downloadable transcripts for listeners in restricted regions.</p>
-              <a class="button" href="/media/audio/">Download audio & transcripts</a>
+              <a class="button" href="/media/audio/">Download audio & PDFs</a>
             </div>
             <div class="card">
               <h3>Resource Library</h3>
@@ -350,24 +351,24 @@ export const pages = [
         content: `
           <div class="cards">
             <article class="card">
-              <h3>操练身体</h3>
+              <h3>操练身体 - 促进健康</h3>
               <p>教练带领的跑步与体能训练，每次训练都以经文分享与彼此代祷作为结束。</p>
               <a class="button" href="/zh/ministries/body/">了解详情</a>
             </article>
             <article class="card">
-              <h3>门训同伴</h3>
+              <h3>操练敬虔 - 门徒训练</h3>
               <p>门训课程，结合查经、属灵操练与健康节奏，提供英文/普通话小组。</p>
               <a class="button" href="/zh/ministries/godliness/">参加门训</a>
             </article>
             <article class="card">
-              <h3>爱心关怀</h3>
+              <h3>活出爱 - 关怀行动</h3>
               <p>社区关怀、肢体探访与慈善路跑，用具体行动分享基督的爱。</p>
               <a class="button" href="/zh/ministries/love/">见证故事</a>
             </article>
             <article class="card">
-              <h3>家庭同行</h3>
-              <p>线上灵修、读经营与领袖培育，让弟兄姊一起在主里成长。</p>
-              <a class="button" href="/zh/about/team/">团队介绍</a>
+              <h3>基要真理 - 信仰与科学</h3>
+              <p>张博士和朱牧师探讨宇宙和生命的起源，并科学与信仰之间的关系。 </p>
+              <a class="button" href="/media/audio/sci/sci.html">更多资料</a>
             </article>
           </div>
         `
