@@ -1743,7 +1743,6 @@ export const pages = [
 		<a href="/media/audio/sci/sci.html" target="_blank">Past Recordings</a>
               </h3>
               <p>Online (Zoom ) | Time: Thursday 6:30-7:30 PM Pacific Time / Friday 10:30-11:30 AM Beijing</p>
-              <p>Online (Rerun) | Time: Friday 6:30-7:30 AM Pacific Time / Friday 10:30-11:30 PM Beijing</p>
               <p>Two-day online sessions for understanding the relationship between science and faith.</p>
             </div>
           </div>
@@ -1777,7 +1776,6 @@ export const pages = [
 		<a href="/media/audio/sci/sci.html" target="_blank">录影存档</a>
               </h3>
               <p> 线上（Zoom）| 时间: 太平洋时间周四下午 6:30-7:30 / 北京时间周五上午 10:30-11:30。 </p>
-              <p> 线上（重播_）| 时间: 太平洋时间周五下午 6:30-7:30 / 北京时间周五下午 10:30-11:30。 </p>
               <p> 双向交流的线上课程，探讨科学与信仰之间的关系。 </p>
             </div>
           </div>
