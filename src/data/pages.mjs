@@ -1373,33 +1373,12 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>Genesis 12-25</td>
-                <td>Journey of Abraham: covenant, hospitality, and mission.</td>
-                <td>
-                  <a href="/media/resources/genesis12-25-guide.pdf">PDF</a> ·
-                  <a href="/media/audio/genesis12-25.mp3">MP3</a> ·
-                  <a href="/media/resources/genesis12-25-slides.pptx">Slides</a>
+                <td>Genesis 50 chapters</td>
+                <td>Creation, Fall, Flood, Abraham, Issac, Jacob, Joseph.</td>
+                <td>Link to:
+                  <a href="/media/audio/ot01/ot01.html">Scripture reading, PDF & video</a> ·
                 </td>
-                <td>Aug 2025</td>
-              </tr>
-              <tr>
-                <td>Exodus 13-20</td>
-                <td>Freedom practices: Sabbath, justice, and covenant community.</td>
-                <td>
-                  <a href="/media/resources/exodus13-20-guide.pdf">PDF</a> ·
-                  <a href="/media/audio/exodus13-20.mp3">MP3</a>
-                </td>
-                <td>Jun 2025</td>
-              </tr>
-              <tr>
-                <td>Psalms of Ascent</td>
-                <td>Prayer liturgy for traveling worshippers.</td>
-                <td>
-                  <a href="/media/resources/psalms-ascent.pdf">PDF</a> ·
-                  <a href="/media/audio/psalms-ascent.mp3">MP3</a> ·
-                  <a href="/media/transcripts/psalms-ascent.txt">Transcript</a>
-                </td>
-                <td>Sep 2025</td>
+                <td>Jan 2026</td>
               </tr>
             </tbody>
           </table>
@@ -1433,33 +1412,12 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>创世记 12-25 章</td>
-                <td>亚伯拉罕旅程：盟约、接待与使命。</td>
-                <td>
-                  <a href="/media/resources/genesis12-25-guide.pdf">PDF</a> ·
-                  <a href="/media/audio/genesis12-25.mp3">音频</a> ·
-                  <a href="/media/resources/genesis12-25-slides.pptx">简报</a>
+                <td>创世记 共50 章</td>
+                <td>创造，堕落，洪水，亚伯拉罕，以撒，雅各，约瑟。</td>
+                <td>链接：
+                  <a href="/media/audio/ot01/ot01.html">经文朗读音频,PDF,视频</a> ·
                 </td>
-                <td>2025-08</td>
-              </tr>
-              <tr>
-                <td>出埃及记 13-20 章</td>
-                <td>自由实践：安息日、公义与盟约群体。</td>
-                <td>
-                  <a href="/media/resources/exodus13-20-guide.pdf">PDF</a> ·
-                  <a href="/media/audio/exodus13-20.mp3">音频</a>
-                </td>
-                <td>2025-06</td>
-              </tr>
-              <tr>
-                <td>上行之诗</td>
-                <td>旅途敬拜者的祷告礼仪。</td>
-                <td>
-                  <a href="/media/resources/psalms-ascent.pdf">PDF</a> ·
-                  <a href="/media/audio/psalms-ascent.mp3">音频</a> ·
-                  <a href="/media/transcripts/psalms-ascent.txt">文字稿</a>
-                </td>
-                <td>2025-09</td>
+                <td>2026-01</td>
               </tr>
             </tbody>
           </table>
