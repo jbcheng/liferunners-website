@@ -1446,20 +1446,26 @@ export const pages = [
         title: 'Study Packs',
         content: `
           <div class="section">
-            <h3 id="revelation-">Revelation — </h3>
-            <p>Five times a week studying the book of Revelation.</p>
+            <h3 id="matthew-">Matthew </h3>
+            <p>One chapter a day, five times a week, studying the Gospel of Matthew.</p>
             <ul>
-              <li><a href="/media/audio/nt27/nt27.html">Scripture reading audio and video links</a></li>
+              <li><a href="/media/audio/nt01/nt01.html">Scripture reading audio and video links</a></li>
             </ul>
             ${sharedMediaNotice.en}
           </div>
           <div class="section">
-            <h3 id="peter-john-jude">1st&2nd Peter, 1st/2nd/3td John, Jude — </h3>
+            <h3 id="revelation-">Revelation </h3>
+            <p>Five times a week studying the book of Revelation.</p>
+            <ul>
+              <li><a href="/media/audio/nt27/nt27.html">Scripture reading audio and video links</a></li>
+            </ul>
+          </div>
+          <div class="section">
+            <h3 id="peter-john-jude">1st&2nd Peter, 1st/2nd/3td John, Jude </h3>
             <p>Five times a week studying the letters written by Peter, John and Jode.</p>
             <ul>
               <li><a href="/media/audio/nt21/nt21.html">Scripture reading audio and video links</a></li>
             </ul>
-            ${sharedMediaNotice.en}
           </div>
           <div class="section">
             <h3 id="hebrew-james">Hebrew and James — Faith and Action</h3>
@@ -1467,7 +1473,6 @@ export const pages = [
             <ul>
               <li><a href="/media/audio/nt19/nt19.html">Scripture reading audio and video links</a></li>
             </ul>
-            ${sharedMediaNotice.en}
           </div>
         `
       }
@@ -1494,20 +1499,26 @@ export const pages = [
         title: '教材内容',
         content: `
           <div class="section">
-            <h3 id="revelation-">启示录 — </h3>
+            <h3 id="matthew-">马太福音</h3>
+            <p>每天一章，一周五天，阅读讲解马太福音</p>
+            <ul>
+              <li><a href="/media/audio/nt01/nt01.html">经文朗读与视频</a></li>
+            </ul>
+            ${sharedMediaNotice.en}
+          </div>
+          <div class="section">
+            <h3 id="revelation-">启示录 </h3>
             <p>每周五天灵修与讨论</p>
             <ul>
               <li><a href="/media/audio/nt27/nt27.html">经文朗读与视频</a></li>
             </ul>
-            ${sharedMediaNotice.zh}
           </div>
           <div class="section">
-            <h3 id="peter-john-jude">彼得前后书，约翰一二三书，犹大书 — </h3>
+            <h3 id="peter-john-jude">彼得前后书，约翰一二三书，犹大书 </h3>
             <p>每周五天灵修与讨论</p>
             <ul>
               <li><a href="/media/audio/nt21/nt21.html">经文朗读与视频</a></li>
             </ul>
-            ${sharedMediaNotice.zh}
           </div>
           <div class="section">
             <h3 id="hebrew-james">希伯来书, 雅各书 — 信心与行为</h3>
@@ -1515,7 +1526,6 @@ export const pages = [
             <ul>
               <li><a href="/media/audio/nt19/nt19.html">经文朗读与视频</a></li>
             </ul>
-            ${sharedMediaNotice.zh}
           </div>
         `
       }
