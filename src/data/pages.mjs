@@ -1445,35 +1445,47 @@ export const pages = [
       {
         title: 'Study Packs',
         content: `
-          <div class="section">
-            <h3 id="matthew-">Matthew </h3>
-            <p>One chapter a day, five times a week, studying the Gospel of Matthew.</p>
-            <ul>
-              <li><a href="/media/audio/nt01/nt01.html">Scripture reading audio and video links</a></li>
-            </ul>
+          <table class="table">
+            <thead>
+              <tr><th>Book</th><th>Description</th><th>Resources</th><th>Start Date</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Matthew 28 chapters</td>
+                <td>One chapter a day, five times a week, studying the Gospel of Matthew </td>
+                <td>
+                  <a href="/media/audio/nt01/nt01.html" target="_blank">Scripture Reading, Video/Audio</a>
+                </td>
+                <td>2026-01-05</td>
+              </tr>
+              <tr>
+                <td>Revelation 22 chapters</td>
+                <td>One chapter a day, five times a week, devotional study </td>
+                <td>
+                  <a href="/media/audio/nt27/nt27.html" target="_blank">Scripture Reading, PDF, Video</a> 
+                </td>
+                <td>2025-12-02</td>
+              </tr>
+              <tr>
+                <td>1&2 Peter, 1/2/3 John, Jude </td>
+                <td>Five times a week, devotional study and discussion </td>
+                <td>
+                  <a href="/media/audio/nt21/nt21.html" target="_blank">Scripture Reading, Video</a> 
+                </td>
+                <td>2025-11-10</td>
+              </tr>
+              <tr>
+                <td>Hebrews, James </td>
+                <td>Five Times a week, devotion and discussion - Faith vs. Action</td>
+                <td>
+                  <a href="/media/audio/nt19/nt19.html" target="_blank">Scripture Reading, Video</a> 
+                </td>
+                <td>2025-10-15</td>
+              </tr>
+            </tbody>
+          </table>
+
             ${sharedMediaNotice.en}
-          </div>
-          <div class="section">
-            <h3 id="revelation-">Revelation </h3>
-            <p>Five times a week studying the book of Revelation.</p>
-            <ul>
-              <li><a href="/media/audio/nt27/nt27.html">Scripture reading audio and video links</a></li>
-            </ul>
-          </div>
-          <div class="section">
-            <h3 id="peter-john-jude">1st&2nd Peter, 1st/2nd/3td John, Jude </h3>
-            <p>Five times a week studying the letters written by Peter, John and Jode.</p>
-            <ul>
-              <li><a href="/media/audio/nt21/nt21.html">Scripture reading audio and video links</a></li>
-            </ul>
-          </div>
-          <div class="section">
-            <h3 id="hebrew-james">Hebrew and James — Faith and Action</h3>
-            <p>Five times a week studying the books of Hebrew and James.</p>
-            <ul>
-              <li><a href="/media/audio/nt19/nt19.html">Scripture reading audio and video links</a></li>
-            </ul>
-          </div>
         `
       }
     ]
@@ -1488,7 +1500,7 @@ export const pages = [
     hero: {
       eyebrow: '资源',
       title: '新约查经包。',
-      subtitle: '适合每周小组与个人灵修。'
+      subtitle: '依书卷分类，附 PDF、音频与教学简报。'
     },
     breadcrumbs: [
       { href: '/zh/', label: '首页' },
@@ -1498,35 +1510,46 @@ export const pages = [
       {
         title: '教材内容',
         content: `
-          <div class="section">
-            <h3 id="matthew-">马太福音</h3>
-            <p>每天一章，一周五天，阅读讲解马太福音</p>
-            <ul>
-              <li><a href="/media/audio/nt01/nt01.html">经文朗读与视频</a></li>
-            </ul>
-            ${sharedMediaNotice.en}
-          </div>
-          <div class="section">
-            <h3 id="revelation-">启示录 </h3>
-            <p>每周五天灵修与讨论</p>
-            <ul>
-              <li><a href="/media/audio/nt27/nt27.html">经文朗读与视频</a></li>
-            </ul>
-          </div>
-          <div class="section">
-            <h3 id="peter-john-jude">彼得前后书，约翰一二三书，犹大书 </h3>
-            <p>每周五天灵修与讨论</p>
-            <ul>
-              <li><a href="/media/audio/nt21/nt21.html">经文朗读与视频</a></li>
-            </ul>
-          </div>
-          <div class="section">
-            <h3 id="hebrew-james">希伯来书, 雅各书 — 信心与行为</h3>
-            <p>每周五天灵修与讨论</p>
-            <ul>
-              <li><a href="/media/audio/nt19/nt19.html">经文朗读与视频</a></li>
-            </ul>
-          </div>
+          <table class="table">
+            <thead>
+              <tr><th>书卷</th><th>主题</th><th>资源</th><th>开始日期</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>马太福音 共28 章</td>
+                <td> 每天一章，一周五天，灵修与讨论</td>
+                <td>链接：
+                  <a href="/media/audio/nt01/nt01.html" target="_blank">经文朗读,视频/音频</a>
+                </td>
+                <td>2026-01-05</td>
+              </tr>
+              <tr>
+                <td>启示录 共22章</td>
+                <td>每天一章， 一周五天，灵修与讨论</td>
+                <td>链接：
+                  <a href="/media/audio/nt27/nt27.html" target="_blank">经文朗读,PDF,视频</a> 
+                </td>
+                <td>2025-12-02</td>
+              </tr>
+              <tr>
+                <td>彼得前后书，约翰一二三书，犹大书</td>
+                <td>每周五天灵修与讨论</td>
+                <td>链接：
+                  <a href="/media/audio/nt21/nt21.html" target="_blank">经文朗读,视频</a> 
+                </td>
+                <td>2025-11-10</td>
+              </tr>
+              <tr>
+                <td>希伯来书, 雅各书 </td>
+                <td>每周五天灵修与讨论 - 信心与行为</td>
+                <td>链接：
+                  <a href="/media/audio/nt19/nt19.html" target="_blank">经文朗读,视频</a> 
+                </td>
+                <td>2025-10-15</td>
+              </tr>
+            </tbody>
+          </table>
+          ${sharedMediaNotice.en}
         `
       }
     ]
