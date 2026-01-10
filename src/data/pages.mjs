@@ -1575,17 +1575,17 @@ export const pages = [
         title: 'Latest Questions',
         content: `
           <div class="section">
-            <h3>How do we respond when competitions happen on Sundays?</h3>
-            <p>We encourage families to discern with church leadership, consider Saturday worship services, and host team communion gatherings on race weekends.</p>
-            <p><strong>Scripture:</strong> Hebrews 10:24-25, Romans 14:5-9.</p>
+            <h3>Are there conflicts between Faith and Science？</h3>
+            <p>Refer to Fundamental Truth class material：<a href="/media/audio/sci/sci.html">《Faith and Science》10 sessions</a></p>
           </div>
           <div class="section">
             <h3>What media platforms work best inside mainland China?</h3>
-            <p>We mirror essential audio files on this site and recommend using WeChat Channels or Bilibili for short-form video. All external links open in new tabs with fallback downloads.</p>
+            <p>We mirror essential audio files on this site and recommend using WeChat Channels or Bilibili for short-form video. All external links open in new tabs with downloads.</p>
           </div>
           <div class="section">
-            <h3>How can we disciple youth athletes facing burnout?</h3>
-            <p>Invite them into rhythms of rest, Sabbath practices, and mentoring circles that prioritize identity in Christ over performance. See <a href="/en/ministries/godliness/">Practice godliness</a> resources.</p>
+            <h3>As athletes, how do we respond when competitions happen on Sundays?</h3>
+            <p>We encourage families to discern with church leadership, consider Saturday worship services, or host team communion gatherings on race weekends.</p>
+            <p><strong>Scripture:</strong> Hebrews 10:24-25, Romans 14:5-9.</p>
           </div>
         `
       }
@@ -1612,17 +1612,17 @@ export const pages = [
         title: '最新提问',
         content: `
           <div class="section">
-            <h3>比赛若安排在主日该如何处理？</h3>
-            <p>鼓励家庭与教会牧者一同辨明，可参加周六礼拜或在赛事周末举行团队圣餐聚会。</p>
-            <p><strong>经文：</strong> 希伯来书 10:24-25，罗马书 14:5-9。</p>
+            <h3>信仰与科学有冲突吗？</h3>
+            <p>参考基要真理课程：<a href="/media/audio/sci/sci.html">《信仰与科学》十讲</a></p>
           </div>
           <div class="section">
             <h3>在中国大陆适合使用哪些媒体平台？</h3>
-            <p>关键音频已在本站镜像，并建议使用视频号或 B 站作为短影音管道。所有外部连结都会在新分页开启，并提供备用下载。</p>
+            <p>关键音频已在本站镜像，并建议使用 视频号 或 嗶哩嗶哩 作为短影音管道。所有外部连结都会在新分页开启，并提供下载。</p>
           </div>
           <div class="section">
-            <h3>如何陪伴面对倦怠的青少年运动员？</h3>
-            <p>带领他们建立安息节奏、学习属灵操练，并透过导师小组确认身分根源于基督而非成绩。参考<a href="/zh/ministries/godliness/">操练敬虔</a>资源。</p>
+            <h3>比赛若安排在主日运动员该如何处理？</h3>
+            <p>鼓励家庭与教会牧者一同辨明，可参加 周六礼拜 或在 赛事周末举行 团队圣餐聚会。</p>
+            <p><strong>经文：</strong> 希伯来书 10:24-25，罗马书 14:5-9。</p>
           </div>
         `
       }
