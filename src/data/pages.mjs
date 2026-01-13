@@ -161,7 +161,7 @@ const latestHighlights = {
       badge: 'Lastest Newslatter'
     },
     {
-      title: 'Prayer Mountain (Dec 15, 2025)',
+      title: 'Prayer Mountain Bible Reading & Devotion Camp (Jan 10-11, 2026)',
       summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
       badge: 'Recent Event'
@@ -187,7 +187,7 @@ const latestHighlights = {
       badge: '最新通讯'
     },
     {
-      title: '祷告山 (2025年12月15日)',
+      title: '祷告山读经灵修营 (2026年1月10-11日)',
       summary: '生命跑者在北加州禁食祷告山',
       link: '/media/galleries/prayer-mountain/index.html',
       badge: '最新资料'
