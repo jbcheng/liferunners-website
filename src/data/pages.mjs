@@ -155,10 +155,10 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
-      title: 'Newsletter (Dec 25, 2025)',
-      summary: 'Life Runners December Newsletter Gives Thanks and Prayer Requests',
-      link: '/newsletter/2025-christmas.pdf',
-      badge: 'Lastest Newslatter'
+      title: '2026 Bible Study Marathon',
+      summary: '2026.01.19-25 Weekly Schudule',
+      link: '/newsletter/2026-0119-week-plan.png',
+      badge: 'New Study'
     },
     {
       title: 'Prayer Mountain Bible Reading & Devotion Camp (Jan 10-11, 2026)',
@@ -167,24 +167,24 @@ const latestHighlights = {
       badge: 'Recent Event'
     },
     {
+      title: 'Newsletter (Dec 25, 2025)',
+      summary: 'Life Runners December Newsletter Gives Thanks and Prayer Requests',
+      link: '/newsletter/2025-christmas.pdf',
+      badge: 'Lastest Newslatter'
+    },
+    {
       title: 'CIM Marathon (Dec 07, 2025)',
       summary: 'Life Runners Paster joined California International Marathon.',
       link: '/media/galleries/cim-marathon/index.html',
       badge: 'Recent Event'
     },
-    {
-      title: 'Revelation Study Pack (started Dec 02, 2025)',
-      summary: 'Download MP3 scripture reading and PPT slides in PDF format.',
-      link: '/media/audio/nt27/nt27.html',
-      badge: 'New Study'
-    },
   ],
   zh: [
     {
-      title: '电子通讯 (2025年年12月25日)',
-      summary: '生命跑者｜12月感恩代祷信（2025年圣诞＋2026展望)',
-      link: '/newsletter/2025-christmas.pdf',
-      badge: '最新通讯'
+      title: '2026圣经马拉松 周课表',
+      summary: '1月19-25日 本周学习与聚会安排',
+      link: '/newsletter/2026-0119-week-plan.png',
+      badge: '查看详情'
     },
     {
       title: '祷告山读经灵修营 (2026年1月10-11日)',
@@ -193,17 +193,17 @@ const latestHighlights = {
       badge: '最新资料'
     },
     {
+      title: '电子通讯 (2025年年12月25日)',
+      summary: '生命跑者｜12月感恩代祷信（2025年圣诞＋2026展望)',
+      link: '/newsletter/2025-christmas.pdf',
+      badge: '最新通讯'
+    },
+    {
       title: '加州国际马拉松（2025年12月7日）',
       summary: '生命跑者牧师在加州国际马拉松路跑。',
       link: '/media/galleries/cim-marathon/index.html',
       badge: '最新资料'
     },
-    {
-      title: '启示录查经包（2025年12月2日起)',
-      summary: '下载经文朗读MP3音频与讲义。',
-      link: '/media/audio/nt27/nt27.html',
-      badge: '查看详情'
-    }
   ]
 };
 
