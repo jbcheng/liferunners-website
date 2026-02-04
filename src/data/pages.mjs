@@ -155,13 +155,7 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
-      title: '2026 Bible Study Marathon',
-      summary: '2026.01.19-25 Weekly Schudule',
-      link: '/newsletter/2026-0119-week-plan.png',
-      badge: 'New Study'
-    },
-    {
-      title: 'Prayer Mountain Bible Reading & Devotion Camp (Jan 10-11, 2026)',
+      title: 'Prayer Mountain Bible Reading & Devotion Camp (Jan 31-Feb 01, 2026)',
       summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
       badge: 'Recent Event'
@@ -181,13 +175,7 @@ const latestHighlights = {
   ],
   zh: [
     {
-      title: '2026圣经马拉松 周课表',
-      summary: '1月19-25日 本周学习与聚会安排',
-      link: '/newsletter/2026-0119-week-plan.png',
-      badge: '查看详情'
-    },
-    {
-      title: '祷告山读经灵修营 (2026年1月10-11日)',
+      title: '祷告山读经灵修营 (2026年1月31日-2月1日)',
       summary: '生命跑者在北加州禁食祷告山',
       link: '/media/galleries/prayer-mountain/index.html',
       badge: '最新资料'
@@ -199,7 +187,7 @@ const latestHighlights = {
       badge: '最新通讯'
     },
     {
-      title: '加州国际马拉松（2025年12月7日）',
+      title: '加州国际马拉松（2025年17日）',
       summary: '生命跑者牧师在加州国际马拉松路跑。',
       link: '/media/galleries/cim-marathon/index.html',
       badge: '最新资料'
