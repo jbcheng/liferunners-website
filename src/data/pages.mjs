@@ -1439,6 +1439,14 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
+                <td>Mark 16 chapters</td>
+                <td>One chapter a day, five times a week, studying the Gospel of Matthew </td>
+                <td>
+                  <a href="/media/audio/nt02/mark.html" target="_blank">Scripture Reading, Video/Audio</a>
+                </td>
+                <td>2026-02-12</td>
+              </tr>
+              <tr>
                 <td>Matthew 28 chapters</td>
                 <td>One chapter a day, five times a week, studying the Gospel of Matthew </td>
                 <td>
@@ -1504,7 +1512,15 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>马太福音 共28 章</td>
+                <td>马可福音 共16章</td>
+                <td> 每天一章，一周五天，灵修与讨论</td>
+                <td>链接：
+                  <a href="/media/audio/nt02/mark.html" target="_blank">经文朗读,视频/音频</a>
+                </td>
+                <td>2026-02-12</td>
+              </tr>
+              <tr>
+                <td>马太福音 共28章</td>
                 <td> 每天一章，一周五天，灵修与讨论</td>
                 <td>链接：
                   <a href="/media/audio/nt01/nt01.html" target="_blank">经文朗读,视频/音频</a>
