@@ -1440,25 +1440,25 @@ export const pages = [
             <tbody>
               <tr>
                 <td>Mark 16 chapters</td>
-                <td>One chapter a day, five times a week, studying the Gospel of Matthew </td>
+                <td>One chapter a day, studying the Gospel of Mark </td>
                 <td>
-                  <a href="/media/audio/nt02/mark.html" target="_blank">Scripture Reading, Video/Audio</a>
+                  <a href="/media/audio/nt02/mark.html" target="_blank">Scripture, Video/Audio</a>
                 </td>
                 <td>2026-02-12</td>
               </tr>
               <tr>
                 <td>Matthew 28 chapters</td>
-                <td>One chapter a day, five times a week, studying the Gospel of Matthew </td>
+                <td>One chapter a day, studying the Gospel of Matthew </td>
                 <td>
-                  <a href="/media/audio/nt01/nt01.html" target="_blank">Scripture Reading, Video/Audio</a>
+                  <a href="/media/audio/nt01/nt01.html" target="_blank">Scripture, Video/Audio</a>
                 </td>
                 <td>2026-01-05</td>
               </tr>
               <tr>
                 <td>Revelation 22 chapters</td>
-                <td>One chapter a day, five times a week, devotional study </td>
+                <td>One chapter a day, devotional study </td>
                 <td>
-                  <a href="/media/audio/nt27/nt27.html" target="_blank">Scripture Reading, PDF, Video</a> 
+                  <a href="/media/audio/nt27/nt27.html" target="_blank">Scripture, PDF, Video</a> 
                 </td>
                 <td>2025-12-02</td>
               </tr>
@@ -1466,15 +1466,15 @@ export const pages = [
                 <td>1&2 Peter, 1/2/3 John, Jude </td>
                 <td>Five times a week, devotional study and discussion </td>
                 <td>
-                  <a href="/media/audio/nt21/nt21.html" target="_blank">Scripture Reading, Video</a> 
+                  <a href="/media/audio/nt21/nt21.html" target="_blank">Scripture, Video</a> 
                 </td>
                 <td>2025-11-10</td>
               </tr>
               <tr>
                 <td>Hebrews, James </td>
-                <td>Five Times a week, devotion and discussion - Faith vs. Action</td>
+                <td>Devotion and discussion - Faith vs. Action</td>
                 <td>
-                  <a href="/media/audio/nt19/nt19.html" target="_blank">Scripture Reading, Video</a> 
+                  <a href="/media/audio/nt19/nt19.html" target="_blank">Scripture, Video</a> 
                 </td>
                 <td>2025-10-15</td>
               </tr>
