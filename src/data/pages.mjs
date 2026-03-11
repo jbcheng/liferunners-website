@@ -155,16 +155,16 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Prayer Mountain Bible Reading & Devotion Day (March 09, 2026)',
+      summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
+      link: '/media/galleries/prayer-mountain/index.html',
+      badge: 'Recent Event'
+    },
+    {
       title: 'Newsletter (Feb 17, 2026)',
       summary: 'Life Runners Chinese New Year Newsletter',
       link: '/newsletter/2026-02CNY.pdf',
       badge: 'Lastest Newslatter'
-    },
-    {
-      title: 'Prayer Mountain Bible Reading & Devotion Camp (Jan 31-Feb 01, 2026)',
-      summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
-      link: '/media/galleries/prayer-mountain/index.html',
-      badge: 'Recent Event'
     },
     {
       title: 'Newsletter (Dec 25, 2025)',
@@ -181,16 +181,16 @@ const latestHighlights = {
   ],
   zh: [
     {
+      title: '祷告山读经灵修日 (2026年3月09日)',
+      summary: '生命跑者在北加州禁食祷告山',
+      link: '/media/galleries/prayer-mountain/index.html',
+      badge: '最新资料'
+    },
+    {
       title: '电子通讯 (2026年年02月17日)',
       summary: '生命跑者｜正月奔跑，新年献主',
       link: '/newsletter/2026-02CNY.pdf',
       badge: '最新通讯'
-    },
-    {
-      title: '祷告山读经灵修营 (2026年1月31日-2月1日)',
-      summary: '生命跑者在北加州禁食祷告山',
-      link: '/media/galleries/prayer-mountain/index.html',
-      badge: '最新资料'
     },
     {
       title: '电子通讯 (2025年年12月25日)',
@@ -199,7 +199,7 @@ const latestHighlights = {
       badge: '岁末通讯'
     },
     {
-      title: '加州国际马拉松（2025年17日）',
+      title: '加州国际马拉松（2025年12月7日）',
       summary: '生命跑者牧师在加州国际马拉松路跑。',
       link: '/media/galleries/cim-marathon/index.html',
       badge: '最新资料'
