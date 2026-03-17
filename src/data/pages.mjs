@@ -32,7 +32,8 @@ export const siteMeta = {
           children: [
             { href: '/en/resources/ot/', label: 'Old Testament Studies' },
             { href: '/en/resources/nt/', label: 'New Testament Studies' },
-            { href: '/en/resources/faq/', label: 'Faith Q&A' }
+            { href: '/en/resources/faq/', label: 'Faith Q&A' },
+            { href: '/media/audio/desert/', label: 'Springs in the Desert' }
           ]
         },
         {
@@ -97,11 +98,12 @@ export const siteMeta = {
         },
         {
           href: '/zh/resources/',
-          label: '查经资料',
+          label: '查经灵修',
           children: [
             { href: '/zh/resources/ot/', label: '旧约系列' },
             { href: '/zh/resources/nt/', label: '新约系列' },
-            { href: '/zh/resources/faq/', label: '信仰问答' }
+            { href: '/zh/resources/faq/', label: '信仰问答' },
+            { href: '/media/audio/desert/', label: '荒漠甘泉' }
           ]
         },
         {
@@ -155,6 +157,12 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Devotional Resource (Mar 17, 2026)',
+      summary: 'Springs in the Desert | Recited by Mr. Chen',
+      link: '/media/audio/desert/',
+      badge: 'New Resources'
+    },
+    {
       title: 'Prayer Mountain Bible Reading & Devotion Day (March 09, 2026)',
       summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
@@ -167,12 +175,6 @@ const latestHighlights = {
       badge: 'Lastest Newslatter'
     },
     {
-      title: 'Newsletter (Dec 25, 2025)',
-      summary: 'Life Runners December Newsletter Gives Thanks and Prayer Requests',
-      link: '/newsletter/2025-christmas.pdf',
-      badge: 'Year End Newsletter'
-    },
-    {
       title: 'CIM Marathon (Dec 07, 2025)',
       summary: 'Life Runners Paster joined California International Marathon.',
       link: '/media/galleries/cim-marathon/index.html',
@@ -180,6 +182,12 @@ const latestHighlights = {
     },
   ],
   zh: [
+    {
+      title: '灵修资源 (2026年3月17日)',
+      summary: '荒漠甘泉 ｜ 陈先生朗读',
+      link: '/media/audio/desert/',
+      badge: '最新资源'
+    },
     {
       title: '祷告山读经灵修日 (2026年3月09日)',
       summary: '生命跑者在北加州禁食祷告山',
@@ -191,12 +199,6 @@ const latestHighlights = {
       summary: '生命跑者｜正月奔跑，新年献主',
       link: '/newsletter/2026-02CNY.pdf',
       badge: '最新通讯'
-    },
-    {
-      title: '电子通讯 (2025年年12月25日)',
-      summary: '生命跑者｜12月感恩代祷信（2025年圣诞＋2026展望)',
-      link: '/newsletter/2025-christmas.pdf',
-      badge: '岁末通讯'
     },
     {
       title: '加州国际马拉松（2025年12月7日）',
