@@ -1375,16 +1375,22 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>Genesis 50 chapters</td>
-                <td>Creation, Fall, Flood, Abraham, Issac, Jacob, Joseph.</td>
-                <td><a href="/media/audio/ot01/ot01.html">Scripture, PDF & video</a></td>
-                <td>2026-01</td>
+                <td>Leviticus 27 chapters</td>
+                <td>Offerings, Purification, Atonement, Laws, Feasts, Jubilee, Vows.</td>
+                <td><a href="/media/audio/ot03/lev.html">Scripture, PDF & video</a></td>
+                <td>2026-03</td>
               </tr>
               <tr>
                 <td>Exodus 40 chapters</td>
                 <td>Moses, Plagues, Passover, Red Sea, Mount Sinai, Tabernacle.</td>
                 <td><a href="/media/audio/ot02/exo.html">Scripture, PDF & video</a></td>
                 <td>2026-02</td>
+              </tr>
+              <tr>
+                <td>Genesis 50 chapters</td>
+                <td>Creation, Fall, Flood, Abraham, Issac, Jacob, Joseph.</td>
+                <td><a href="/media/audio/ot01/ot01.html">Scripture, PDF & video</a></td>
+                <td>2026-01</td>
               </tr>
             </tbody>
           </table>
@@ -1418,16 +1424,22 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>创世记 共50 章</td>
-                <td>创造，堕落，洪水，亚伯拉罕，以撒，雅各，约瑟。</td>
-                <td>链接：<a href="/media/audio/ot01/ot01.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-01</td>
+                <td>利未记 共27章</td>
+                <td>五种祭礼，洁净之律法，赎罪日，道德律，节期，安息年，许愿。</td>
+                <td>链接：<a href="/media/audio/ot03/lev.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-03</td>
               </tr>
               <tr>
-                <td>出埃及记 共40 章</td>
+                <td>出埃及记 共40章</td>
                 <td>摩西，十灾，逾越节，红海，西奈之约，会幕。</td>
                 <td>链接：<a href="/media/audio/ot02/exo.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-02</td>
+              </tr>
+              <tr>
+                <td>创世记 共50章</td>
+                <td>创造，堕落，洪水，亚伯拉罕，以撒，雅各，约瑟。</td>
+                <td>链接：<a href="/media/audio/ot01/ot01.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-01</td>
               </tr>
             </tbody>
           </table>
