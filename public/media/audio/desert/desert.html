@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>荒漠甘泉 — 生命跑者团契</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:       #1a1714;
+    --ink-muted: #6b6560;
+    --ink-faint: #b0aaa5;
+    --parchment: #faf8f4;
+    --surface:   #f3f0ea;
+    --border:    #e2ddd5;
+    --gold:      #9b6f2e;
+    --gold-light:#f0e4cc;
+    --teal:      #2a6b5e;
+    --teal-light:#d8ede9;
+    --radius:    6px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  header {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header a { color: inherit; text-decoration: none; }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+  }
+  .header-logo img { height: 28px; border-radius: 3px; }
+  .header-nav { display: flex; gap: 1.5rem; font-size: 13px; color: #b0a898; }
+  .header-nav a:hover { color: #f5f1ea; }
+
+  .hero {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 3.5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+  .hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .hero-sub { font-size: 14px; color: #a09880; }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* Month section */
+  .month-block {
+    margin-bottom: 2.5rem;
+  }
+  .month-heading {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .month-heading::before {
+    content: '';
+    display: inline-block;
+    width: 4px; height: 1em;
+    background: var(--gold);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* Day grid */
+  .day-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .day-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius);
+    background: #fff;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ink);
+    text-decoration: none;
+    transition: background 0.12s, border-color 0.12s, color 0.12s;
+  }
+  .day-btn:hover {
+    background: var(--gold-light);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .page-footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .page-footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://www.life-runners.org/zh/" class="header-logo">
+    <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="Life Runners">
+    生命跑者团契
+  </a>
+  <nav class="header-nav">
+    <a href="https://www.life-runners.org/zh/">首页</a>
+    <a href="https://www.life-runners.org/zh/resources/nt/">新约</a>
+    <a href="https://www.life-runners.org/zh/support/donation/">奉献</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="hero-eyebrow">每日灵修</p>
+  <h1>荒漠甘泉</h1>
+  <p class="hero-sub">陈先生朗读 · 全年每日一篇</p>
+</div>
+
+<main class="container" id="calendar"></main>
+
+<footer class="page-footer">
+  <p>© 生命跑者团契 &nbsp;·&nbsp; <a href="https://www.life-runners.org/zh/">life-runners.org</a></p>
+</footer>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+// Month names and day counts.
+// To add or fix an entry: find the month object and adjust days[] if needed.
+// All audio files follow the pattern:
+//   https://www.life-runners.org/media/audio/desert/荒漠甘泉{M}月{D}日.m4a
+// ─────────────────────────────────────────────────────────────────────────────
+
+const BASE = 'https://www.life-runners.org/media/audio/desert/';
+
+const MONTHS = [
+  { num: 1,  name: '01月', days: 31 },
+  { num: 2,  name: '02月', days: 29 },  // leap-year file exists (2月29日)
+  { num: 3,  name: '03月', days: 31 },
+  { num: 4,  name: '04月', days: 30 },
+  { num: 5,  name: '05月', days: 31 },
+  { num: 6,  name: '06月', days: 30 },
+  { num: 7,  name: '07月', days: 31 },
+  { num: 8,  name: '08月', days: 31 },
+  { num: 9,  name: '09月', days: 30 },
+  { num: 10, name: '10月', days: 31 },
+  { num: 11, name: '11月', days: 30 },
+  { num: 12, name: '12月', days: 31 },
+];
+
+const calendar = document.getElementById('calendar');
+
+MONTHS.forEach(({ num, name, days }) => {
+  const block = document.createElement('div');
+  block.className = 'month-block';
+
+  const heading = document.createElement('h2');
+  heading.className = 'month-heading';
+  heading.textContent = name;
+  block.appendChild(heading);
+
+  const grid = document.createElement('div');
+  grid.className = 'day-grid';
+
+  for (let d = 1; d <= days; d++) {
+    const url = `${BASE}荒漠甘泉${num}月${d}日.m4a`;
+    const a = document.createElement('a');
+    a.className = 'day-btn';
+    a.href = url;
+    a.textContent = d;
+    a.title = `荒漠甘泉 ${num}月${d}日`;
+    grid.appendChild(a);
+  }
+
+  block.appendChild(grid);
+  calendar.appendChild(block);
+});
+</script>
+
+</body>
+</html>
