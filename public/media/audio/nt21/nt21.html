@@ -1,50 +1,414 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>彼约犹</title>
-    <link rel="icon" type="image/jpeg"/ href="/assets/img/logo.jpg"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新约：彼得前后书 · 约翰书信 · 犹大书 — 生命跑者团契</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:       #1a1714;
+    --ink-muted: #6b6560;
+    --ink-faint: #b0aaa5;
+    --parchment: #faf8f4;
+    --surface:   #f3f0ea;
+    --border:    #e2ddd5;
+    --gold:      #9b6f2e;
+    --gold-light:#f0e4cc;
+    --teal:      #2a6b5e;
+    --teal-light:#d8ede9;
+    --red:       #8b3a3a;
+    --red-light: #f5e4e4;
+    --radius:    6px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  header {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header a { color: inherit; text-decoration: none; }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+  }
+  .header-logo img { height: 28px; border-radius: 3px; }
+  .header-nav { display: flex; gap: 1.5rem; font-size: 13px; color: #b0a898; }
+  .header-nav a:hover { color: #f5f1ea; }
+  .hero {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 3.5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+  .hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(1.3rem, 3.5vw, 2.2rem);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+  .hero-sub {
+    font-size: 13px;
+    color: #a09880;
+    margin-bottom: 0.5rem;
+  }
+  .hero-breadcrumb {
+    font-size: 14px;
+    color: #a09880;
+    margin-bottom: 0.75rem;
+  }
+  .hero-breadcrumb a { color: #c4a96a; text-decoration: none; }
+  .hero-breadcrumb a:hover { text-decoration: underline; }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  .book-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .book-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--gold);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .episode {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.25rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: border-color 0.15s;
+    flex-wrap: wrap;
+  }
+  .episode:hover { border-color: var(--gold); }
+  .episode-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+  }
+  .episode-chapters {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .episode-date {
+    font-size: 11.5px;
+    color: var(--ink-faint);
+    white-space: nowrap;
+  }
+  .links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    transition: opacity 0.15s;
+  }
+  .chip:hover { opacity: 0.75; }
+  .chip-audio  { background: var(--teal-light); color: var(--teal); border-color: #b3d9d2; }
+  .chip-video  { background: var(--red-light);  color: var(--red);  border-color: #e5c0c0; }
+  .chip-pdf    { background: var(--gold-light);  color: var(--gold); border-color: #d9c49e; }
+  .chip-reader { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
+  .chip::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+  .chip-audio::before  { background: var(--teal); }
+  .chip-video::before  { background: var(--red); }
+  .chip-pdf::before    { background: var(--gold); }
+  .chip-reader::before { background: var(--ink-faint); }
+  .page-footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .page-footer a { color: var(--gold); text-decoration: none; }
+</style>
 </head>
-
 <body>
-<a href="https://www.life-runners.org/zh/">
-  <img src="/assets/img/logo.jpg" alt="Life Runners Logo" style="width:48;height:48;"></a>
-<font size="8">生命跑者团契</font>
-<a href="https://www.life-runners.org/zh/support/donation/">
-  <img src="/assets/img/donation.png" alt="Donation" style="width:72;height:48;"></a>
-<hr>
 
-<h1>朗读新约：彼得前后书，约翰一二三书，犹大书</h1>
-<p>
-<h3>2025年11月10日起：彼得前书</h3>
-<ul>
-<li>彼得前书第1章 周一 11/10, <a href="nt21-1pe01.mp3" target="_blank">艳-朗读</a>
-<li>彼得前书第2章 周二 11/11, <a href="nt21-1pe02.m4a" target="_blank">华-朗读</a>
-<li>彼得前书第3章 周三 11/12, <a href="nt21-1pe03.mp3" target="_blank">苏-朗读</a>
-<li>彼得前书第4章 周四 11/13, <a href="nt21-1pe04.m4a" target="_blank">蒋-朗读</a>
-<li>彼得前书第5章 周五 11/14, <a href="nt21-1pe05.m4a" target="_blank">枚-朗读</a>
-</ul>
-<h3>2025年11月17日起：彼得后书</h3>
-<ul>
-<li>彼得后书第1章 周一 11/17, <a href="nt22-2pe01.mp3" target="_blank">苏-朗读</a>
-<li>彼得后书第2章 周二 11/18, <a href="nt22-2pe02.m4a" target="_blank">莎-朗读</a>
-<li>彼得后书第3章 周三 11/19, <a href="nt22-2pe03.mp3" target="_blank">艳-朗读</a>
-</ul>
-<h3>2025年11月20日起：约翰一二三书</h3>
-<ul>
-<li>约翰一书第1章 周四 11/20, <a href="nt23-1jo01.m4a" target="_blank">蒋-朗读</a>
-<li>约翰一书第2章 周五 11/21, <a href="nt23-1jo02.m4a" target="_blank">雯-朗读</a>
-<li>约翰一书第3章 周一 11/24, <a href="nt23-1jo03.mp3" target="_blank">艳-朗读</a>
-<li>约翰一书第4章 周二 11/25, <a href="nt23-1jo04.m4a" target="_blank">华-朗读</a>
-, <a href="https://www.youtube.com/watch?v=6FPScnOCbos" target="_blank">艳-视频</a>
-<li>约翰一书第5章 周三 11/26, <a href="nt23-1jo05.m4a" target="_blank">蒋-朗读</a>
-<li>约翰二书第1章 周四 11/27, <a href="nt24-2jo01.m4a" target="_blank">Fay朗读</a>
-, <a href="https://www.youtube.com/watch?v=XnFmEHs0zeU" target="_blank">述恩聚會-视频</a>
-<li>约翰三书第1章 周五 11/28, <a href="nt25-3jo01.m4a" target="_blank">枚-朗读</a>
-</ul>
-<h3>2025年12月01日：犹大书</h3>
-<ul>
-<li>犹大书第1章 周一 12/01, <a href="nt26-jud01.m4a" target="_blank">枚-朗读</a>
-</ul>
+<header>
+  <a href="https://www.life-runners.org/zh/" class="header-logo">
+    <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="Life Runners">
+    生命跑者团契
+  </a>
+  <nav class="header-nav">
+    <a href="https://www.life-runners.org/zh/">首页</a>
+    <a href="https://www.life-runners.org/zh/resources/nt/">新约</a>
+    <a href="https://www.life-runners.org/zh/support/donation/">奉献</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="hero-eyebrow">新约朗读系列</p>
+  <h1>彼得前后书 · 约翰书信 · 犹大书</h1>
+  <p class="hero-sub">2025年 周一至周五，每天一章圣经，一年读完新约</p>
+  <p class="hero-breadcrumb">
+    <a href="https://www.life-runners.org/media/audio/nt19/nt19.html">← 希伯来书 · 雅各书</a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/media/audio/nt27/nt27.html">启示录 →</a>
+  </p>
+</div>
+
+<main class="container">
+
+  <!-- ═══════════════════════════════════════
+       HOW TO ADD NEW CONTENT:
+       Copy an <article class="episode"> block,
+       update the chapter title, date, and reader href.
+       Add chip-video chips as needed.
+  ════════════════════════════════════════ -->
+
+  <h2 class="book-title">彼得前书（2025年11月10日起）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼前 01 章</span>
+      <span class="episode-date">周一 11/10</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="nt21-1pe01.mp3">艳朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼前 02 章</span>
+      <span class="episode-date">周二 11/11</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt21-1pe02.m4a">华朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼前 03 章</span>
+      <span class="episode-date">周三 11/12</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="nt21-1pe03.mp3">苏朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼前 04 章</span>
+      <span class="episode-date">周四 11/13</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt21-1pe04.m4a">蒋朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼前 05 章</span>
+      <span class="episode-date">周五 11/14</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt21-1pe05.m4a">枚朗读</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">彼得后书（2025年11月17日起）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼后 01 章</span>
+      <span class="episode-date">周一 11/17</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="nt22-2pe01.mp3">苏朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼后 02 章</span>
+      <span class="episode-date">周二 11/18</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt22-2pe02.m4a">莎朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">彼后 03 章</span>
+      <span class="episode-date">周三 11/19</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="nt22-2pe03.mp3">艳朗读</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">约翰一书（2025年11月20日起）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约一 01 章</span>
+      <span class="episode-date">周四 11/20</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt23-1jo01.m4a">蒋朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约一 02 章</span>
+      <span class="episode-date">周五 11/21</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt23-1jo02.m4a">雯朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约一 03 章</span>
+      <span class="episode-date">周一 11/24</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="nt23-1jo03.mp3">艳朗读</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约一 04 章</span>
+      <span class="episode-date">周二 11/25</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt23-1jo04.m4a">华朗读</a>
+      <a class="chip chip-video"  href="https://www.youtube.com/watch?v=6FPScnOCbos">视频</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约一 05 章</span>
+      <span class="episode-date">周三 11/26</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt23-1jo05.m4a">蒋朗读</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">约翰二书（2025年11月27日）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约二 01 章</span>
+      <span class="episode-date">周四 11/27</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt24-2jo01.m4a">Fay 朗读</a>
+      <a class="chip chip-video"  href="https://www.youtube.com/watch?v=XnFmEHs0zeU">述恩聚会视频</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">约翰三书（2025年11月28日）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">约三 01 章</span>
+      <span class="episode-date">周五 11/28</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt25-3jo01.m4a">枚朗读</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">犹大书（2025年12月01日）</h2>
+
+  <article class="episode">
+    <div class="episode-meta">
+      <span class="episode-chapters">犹 01 章</span>
+      <span class="episode-date">周一 12/01</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/nt21/nt26-jud01.m4a">枚朗读</a>
+    </div>
+  </article>
+
+</main>
+
+<footer class="page-footer">
+  <p>
+    <a href="https://www.life-runners.org/media/audio/nt19/nt19.html">← 希伯来书 · 雅各书</a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/media/audio/nt27/nt27.html">启示录 →</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/zh/resources/nt/">新约系列</a>
+  </p>
+  <p style="margin-top:0.5rem;">© 生命跑者团契 &nbsp;·&nbsp; <a href="https://www.life-runners.org/zh/">life-runners.org</a></p>
+</footer>
+
 </body>
 </html>
