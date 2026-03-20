@@ -1,202 +1,619 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>出埃及纪</title>
-    <link rel="icon" type="image/jpeg"/ href="/assets/img/logo.jpg"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旧约：出埃及纪 — 生命跑者团契</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:       #1a1714;
+    --ink-muted: #6b6560;
+    --ink-faint: #b0aaa5;
+    --parchment: #faf8f4;
+    --surface:   #f3f0ea;
+    --border:    #e2ddd5;
+    --gold:      #9b6f2e;
+    --gold-light:#f0e4cc;
+    --teal:      #2a6b5e;
+    --teal-light:#d8ede9;
+    --red:       #8b3a3a;
+    --red-light: #f5e4e4;
+    --radius:    6px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header a { color: inherit; text-decoration: none; }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+  }
+  .header-logo img { height: 28px; border-radius: 3px; }
+  .header-nav { display: flex; gap: 1.5rem; font-size: 13px; color: #b0a898; }
+  .header-nav a:hover { color: #f5f1ea; }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--ink);
+    color: #f5f1ea;
+    padding: 3.5rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+  .hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  .hero-breadcrumb {
+    font-size: 14px;
+    color: #a09880;
+    margin-bottom: 0.75rem;
+  }
+  .hero-breadcrumb a { color: #c4a96a; text-decoration: none; }
+  .hero-breadcrumb a:hover { text-decoration: underline; }
+  .hero-meta {
+    font-size: 13px;
+    color: #a09880;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .hero-meta a { color: #c4a96a; text-decoration: none; }
+  .hero-meta a:hover { text-decoration: underline; }
+  .sep { color: #4a4540; }
+
+  /* ── Main layout ── */
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  /* ── Section heading ── */
+  .book-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .book-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--gold);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── Episode card ── */
+  .episode {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    transition: border-color 0.15s;
+  }
+  .episode:hover { border-color: var(--gold); }
+
+  .episode-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .episode-chapters {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-top: 1px;
+  }
+
+  .episode-summary {
+    font-size: 13.5px;
+    color: var(--ink-muted);
+    flex: 1;
+    line-height: 1.6;
+  }
+
+  /* ── Links row ── */
+  .links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.6rem;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    transition: opacity 0.15s;
+  }
+  .chip:hover { opacity: 0.75; }
+  .chip-audio  { background: var(--teal-light); color: var(--teal); border-color: #b3d9d2; }
+  .chip-video  { background: var(--red-light);  color: var(--red);  border-color: #e5c0c0; }
+  .chip-pdf    { background: var(--gold-light);  color: var(--gold); border-color: #d9c49e; }
+  .chip-img    { background: var(--gold-light);  color: var(--gold); border-color: #d9c49e; }
+  .chip-song   { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
+  .chip-reader { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
+
+  .chip::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .chip-audio::before  { background: var(--teal); }
+  .chip-video::before  { background: var(--red); }
+  .chip-pdf::before    { background: var(--gold); }
+  .chip-img::before    { background: var(--gold); }
+  .chip-song::before   { background: var(--ink-faint); }
+  .chip-reader::before { background: var(--ink-faint); }
+
+  /* ── Special card (sermon, summary, intro) ── */
+  .episode-special {
+    background: var(--surface);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  /* ── Footer ── */
+  .page-footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding: 2rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .page-footer a { color: var(--gold); text-decoration: none; }
+</style>
 </head>
 <body>
-<a href="/zh/">
-  <img src="/assets/img/logo.jpg" alt="Life Runners Logo" style="width:48;height:48;"></a>
-<font size="8"> 生命跑者团契 </font>
-<a href=" /zh/support/donation/">
-  <img src="/assets/img/donation.png" alt="Donation" style="width:72;height:48;"></a>
-<hr>
-<h1>旧约：
-<a href="/media/audio/ot01/ot01.html" target="_blank">创世纪</a> <--
-出埃及纪
---> <a href="/media/audio/ot03/lev.html" target="_blank">利未纪</a> 
-</h1>
-<h3>朗读版本：
-中文 <a href=" https://bible.fhl.net/gbdoc/new/read.php?chineses=%E5%87%BA&strongflag=0&SSS=0&VERSION1=unv&TABFLAG=1&nodic=&chap=1 " target="_blank"> 和合本 </a>
-，English <a href=" https://www.biblestudytools.com/exodus/1.html " target="_blank"> NIV </a>
-</h3>
-<hr>
-<ul>
-<li>出埃及记导论：
- <a href="exo-intro.pdf" target="_blank">PDF</a>
-^<a href="https://www.youtube.com/watch?v=MiLjauk2IUE" target="_blank">视频</a>
-/<a href="" target="_blank"></a>
-<hr>
 
-<li>2026.02.15 主日敬拜:
- <a href="https://www.youtube.com/watch?v=PG8U78oWuNA" target="_blank">视频</a>
-/<a href="sunday2026-0215.mp3" target="_blank">音频</a>
-- 新春，新人，新生命
+<header>
+  <a href="https://www.life-runners.org/zh/" class="header-logo">
+    <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="Life Runners">
+    生命跑者团契
+  </a>
+  <nav class="header-nav">
+    <a href="https://www.life-runners.org/zh/">首页</a>
+    <a href="https://www.life-runners.org/zh/resources/nt/">新约</a>
+    <a href="https://www.life-runners.org/zh/support/donation/">奉献</a>
+  </nav>
+</header>
 
-<li>出埃及纪 01-02章：
- <a href="exo01-02.m4a" target="_blank">蒋-朗读</a>
-，<a href="exo01-02.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=yX_vtucbb98" target="_blank">视频</a>
-/<a href="exo01-02aud.mp3" target="_blank">音频</a>
-- 2:23-25 神听见、看顾、纪念
+<div class="hero">
+  <p class="hero-eyebrow">旧约音频系列</p>
+  <h1>出埃及纪</h1>
+  <p class="hero-breadcrumb">
+    <a href="https://www.life-runners.org/media/audio/ot01/ot01.html">← 创世纪</a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/media/audio/ot03/lev.html">利未纪 →</a>
+  </p>
+  <div class="hero-meta">
+    <span>朗读版本：</span>
+    <a href="https://bible.fhl.net/gbdoc/new/read.php?chineses=%E5%87%BA&strongflag=0&SSS=0&VERSION1=unv&TABFLAG=1&nodic=&chap=1">中文和合本</a>
+    <span class="sep">·</span>
+    <a href="https://www.biblestudytools.com/exodus/1.html">English NIV</a>
+  </div>
+</div>
 
-<li>出埃及纪 03-04章：
- <a href="exo03.m4a" target="_blank">Sunny读3</a>
- <a href="exo04.m4a" target="_blank">4</a>
-，<a href="exo03-04.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=RlPKhUQO_BM" target="_blank">视频</a>
-/<a href="exo03-04aud.mp3" target="_blank">音频</a>
-- 3:1-7 自有永有的神 
- 
-<li>出埃及纪 05-06章：
- <a href="exo05-06.m4a" target="_blank">图-朗读</a>
-，
- <a href="https://www.youtube.com/watch?v=zCos6lyKxqI" target="_blank">视频</a>
-- 6:2-8 從苦工到救贖的七重應許
- 
-<li>出埃及纪 07-08章：
- <a href="exo07-08.m4a" target="_blank">图-朗读</a>
-，<a href="exo07-08.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=uD7r65eYrKo" target="_blank">视频</a>
-- 神在审判中显明自己 
-</ul>
+<main class="container">
 
-<ul>
-<li> 2026.02.22 主日崇拜:
- <a href=" https://www.youtube.com/watch?v=XS7cPXy4skc " target="_blank">视频</a>
-- 当春节遇上预苦期
+  <!-- ═══════════════════════════════════════
+       HOW TO ADD NEW CONTENT:
+       Copy an <article class="episode"> block,
+       update chapters, summary, reader name,
+       and href values. That's it.
+       For sermons/specials use class="episode episode-special".
+  ════════════════════════════════════════ -->
 
-<li>出埃及纪 09-10章：
- <a href="exo09-10.m4a" target="_blank">蒋-朗读</a>
- <a href="https://www.youtube.com/watch?v=eAGnqAkUh9U" target="_blank">视频</a>
-- 容我的百姓去!
+  <h2 class="book-title">导论</h2>
 
-<li>出埃及纪 11-12章：
- <a href="exo11.m4a" target="_blank">Sunny读11</a>
- <a href="exo12.m4a" target="_blank">12</a>
-，<a href="exo11-12.png" target="_blank">PNG</a>
- <a href="https://www.youtube.com/watch?v=1RQocwWHqRE" target="_blank">视频</a>
-- 耶和華的夜
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">出埃及记导论</span>
+      <span class="episode-summary">全书背景与概览</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=MiLjauk2IUE">视频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo-intro.pdf">PDF</a>
+    </div>
+  </article>
 
-<li>出埃及纪 13-14章：
- <a href="exo13-14.m4a" target="_blank">Amei朗读</a>
-，<a href="exo13-14.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=nSKoBkAVVHA" target="_blank">视频</a>
-/<a href=" exo13-14aud.m4a" target="_blank">音频</a>
-- 云柱火柱总不离开你｜问答：云柱火柱代表的意义是什么？如何明白是神的带领还是自己的想法？
+  <h2 class="book-title">出埃及纪 第 1–10 章</h2>
 
-<li>出埃及纪 15-16章：
- <a href="exo15-16.mp3" target="_blank">艳-朗读</a>
- <a href="https://www.youtube.com/watch?v=akh1GLRPsFs" target="_blank">视频</a>
-- 耶和华是医治
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">主日敬拜 (2026.02.15)</span>
+      <span class="episode-summary">新春，新人，新生命</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=PG8U78oWuNA">视频</a>
+      <a class="chip chip-audio" href="sunday2026-0215.mp3">音频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 17-18章：
- <a href="exo01-02.m4a" target="_blank"></a>-朗读
- <a href="https://www.youtube.com/watch?v=NUPkfsjQ1k0" target="_blank">视频</a>
-- 耶和华尼西 问答：耶和华尼西是什么意思？为何摩西岳父来指教摩西
-</ul>
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 01–02 章</span>
+      <span class="episode-summary">2:23–25 神听见、看顾、纪念</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo01-02.m4a">蒋朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=yX_vtucbb98">视频</a>
+      <a class="chip chip-audio" href="exo01-02aud.mp3">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo01-02.pdf">PDF</a>
+    </div>
+  </article>
 
-<ul>
-<li> 2026.03.01 主日崇拜:
- <a href="https://www.youtube.com/watch?v=kmpEj3U77q0" target="_blank">视频</a>
-- 主所舍的身体 
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 03–04 章</span>
+      <span class="episode-summary">3:1–7 自有永有的神</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo03.m4a">Sunny 读 3</a>
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo04.m4a">Sunny 读 4</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=RlPKhUQO_BM">视频</a>
+      <a class="chip chip-audio" href="exo03-04aud.mp3">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo03-04.pdf">PDF</a>
+    </div>
+  </article>
 
-<li>出埃及纪 19-20章：
- <a href="exo19-20.m4a" target="_blank">玫-朗读</a>
-，
- <a href="https://www.youtube.com/watch?v=cqtHuz-2xr4" target="_blank">视频</a>
-- 十誡神学
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 05–06 章</span>
+      <span class="episode-summary">6:2–8 从苦工到救赎的七重应许</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo05-06.m4a">图朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=zCos6lyKxqI">视频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 21-22章：
- <a href="exo21.m4a" target="_blank">Sunny读21</a>
- <a href="exo22.m4a" target="_blank">22</a>
-， <a href="https://www.youtube.com/watch?v=8pLord03jX4" target="_blank">视频</a>
-- 不可苦待寄居的、寡婦孤兒｜问答：以牙还牙 以眼还眼 如何理解？如何为伊朗、中东地区的人祷告？如何看待身边的穷人、流浪者？
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 07–08 章</span>
+      <span class="episode-summary">神在审判中显明自己</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo07-08.m4a">图朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=uD7r65eYrKo">视频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo07-08.pdf">PDF</a>
+    </div>
+  </article>
 
-<li>出埃及纪 23-24章：
- <a href="exo23.mp3" target="_blank">艳-朗读23</a>
- <a href="exo24.mp3" target="_blank">24</a>
-， <a href="https://www.youtube.com/watch?v=TBkiZJeyT_4" target="_blank">视频</a>
-- 公義七誡：律法與恩典相交｜问答：「以眼還眼」與「幫助仇敵的牛驢」是否互相矛盾？
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">主日崇拜 (2026.02.22)</span>
+      <span class="episode-summary">当春节遇上预苦期</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=XS7cPXy4skc">视频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 25-26章：
- <a href="exo25-26.m4a" target="_blank">枚-朗读</a>
-，<a href="exo25-26.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/live/W4o0Dgoi3Dg" target="_blank">视频</a>
-- 凡甘心乐意的我们就可以收下
- 
-<li>出埃及纪 27-28章：
- <a href="exo27-28.m4a" target="_blank">Ami读</a>
-，<a href="exo27-28.png" target="_blank">PNG</a>
- <a href="https://www.youtube.com/live/SCyr9JcoV4w" target="_blank">视频</a>
-- 聖潔事奉榮耀裝束
-</ul>
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 09–10 章</span>
+      <span class="episode-summary">容我的百姓去！</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo09-10.m4a">蒋朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=eAGnqAkUh9U">视频</a>
+    </div>
+  </article>
 
-<ul>
-<li> 2026.03.08 主日崇拜:
-<a href="sunday2026-0308.pdf" target="_blank">PDF</a>
- <a href=" https://www.youtube.com/watch?v=UjuWS6SBs8w " target="_blank">视频</a>
-- 效法基督 妇女节蒙福
+  <h2 class="book-title">出埃及纪 第 11–20 章</h2>
 
-<li>出埃及纪 29-30章：
- <a href="exo29.m4a" target="_blank">蒋-朗读29</a>
- <a href="exo30.m4a" target="_blank">30</a>
-， <a href="https://www.youtube.com/watch?v=3cRAM_XG0f4" target="_blank">视频</a>
-/<a href="exo29-30aud.m4a" target="_blank">音频</a>
-- 祭司國度，聖潔國民 旧约如何讲？
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 11–12 章</span>
+      <span class="episode-summary">耶和华的夜</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo11.m4a">Sunny 读 11</a>
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo12.m4a">Sunny 读 12</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=1RQocwWHqRE">视频</a>
+      <a class="chip chip-img"   href="exo11-12.png">图表</a>
+    </div>
+  </article>
 
-<li>出埃及纪 31-32章：
- <a href="exo31-32.m4a" target="_blank">枚-朗读</a>
-， <a href="https://www.youtube.com/watch?v=xRBs-4NHoEI" target="_blank">视频</a>
-/<a href="exo31-32aud.m4a" target="_blank">音频</a>
-- 金牛犢风云 为何神叫利未人击杀3000以色列百姓？
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 13–14 章</span>
+      <span class="episode-summary">云柱火柱总不离开你｜云柱火柱的意义是什么？如何辨别神的带领？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo13-14.m4a">Amei 朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=nSKoBkAVVHA">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo13-14aud.m4a">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo13-14.pdf">PDF</a>
+    </div>
+  </article>
 
-<li>出埃及纪 33-34章：
- <a href="exo33-34.mp3" target="_blank">枚-朗读</a>
-， <a href="https://www.youtube.com/live/fxEnp-jtlOA" target="_blank">视频</a>
-/<a href="exo33-34aud.m4a" target="_blank">音频</a>
-- 何處得安息？｜问答：1为何不能见神的面？2爲什麽摩西要蒙帕子？3新旧约中，神的同在有什么区别吗？
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 15–16 章</span>
+      <span class="episode-summary">耶和华是医治</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="exo15-16.mp3">艳朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=akh1GLRPsFs">视频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 35-36章：
- <a href="exo35-36.mp3" target="_blank">Suping读</a>
-，<a href="exo35-36.pdf" target="_blank">PDF</a>
-<a href="https://www.youtube.com/live/hdLvkun5mho" target="_blank">视频</a>
-/<a href="exo35-36aud.m4a" target="_blank">音频</a>
-- 甘心乐意回应神的呼召 
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 17–18 章</span>
+      <span class="episode-summary">耶和华尼西｜耶和华尼西是什么意思？为何摩西岳父来指教摩西？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=NUPkfsjQ1k0">视频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 37-38章：
- <a href="exo37-38.m4a" target="_blank">Fay朗读</a>
-，<a href="https://www.youtube.com/watch?v=POm8miTaYU0" target="_blank">视频</a>
-/<a href="exo37-38aud.m4a" target="_blank">音频</a>
--  會幕何許、約櫃几何？—照山上樣式建造 | 问答：为何与前几章重复？約櫃為何用皂莢木包金，而不是純金？
-詩歌:<a href=" https://www.youtube.com/watch?v=DV2vMt3i8tc" target="_blank">求祢國度降臨</a>
-</ul>
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">主日崇拜 (2026.03.01)</span>
+      <span class="episode-summary">主所舍的身体</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=kmpEj3U77q0">视频</a>
+    </div>
+  </article>
 
-<ul>
-<li> 2026.03.15 主日崇拜:
-<a href="sunday2026-0315.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=PqbBj-qn1UQ" target="_blank">视频</a>
-/<a href="sunday2026-0315aud.mp3" target="_blank">音频</a>
-  一个人 一座城｜约翰福音4:1-30
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 19–20 章</span>
+      <span class="episode-summary">十诫神学</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo19-20.m4a">玫朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=cqtHuz-2xr4">视频</a>
+    </div>
+  </article>
 
-<li>出埃及纪 39-40章：
- <a href="exo39.m4a" target="_blank">图-朗读39</a>
- <a href="exo40.m4a" target="_blank">40</a>，
- <a href="exo39-40.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=qkgD38NFpk4" target="_blank">视频</a>
-/<a href="exo39-40aud.m4a" target="_blank">音频</a>
-- 神荣光充满帐幕 圣经问答：为何会幕制做如此繁琐？为何摩西不能进会幕？
+  <h2 class="book-title">出埃及纪 第 21–30 章</h2>
 
-<li>出埃及纪 总结 回应 分享：
- <a href="exo-sum.pdf" target="_blank">PDF</a>
- <a href="https://www.youtube.com/watch?v=3J_6L30OnqM" target="_blank">视频</a>
-/<a href="exo-sum-aud.m4a" target="_blank">音频</a>
-</ul>
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 21–22 章</span>
+      <span class="episode-summary">不可苦待寄居的、寡妇孤儿｜以牙还牙如何理解？如何为伊朗、中东祷告？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo21.m4a">Sunny 读 21</a>
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo22.m4a">Sunny 读 22</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=8pLord03jX4">视频</a>
+    </div>
+  </article>
 
-<hr>
-<h2>新约：
-<a href=" /zh/resources/nt/ " target="_blank">链接</a>
-</h2>
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 23–24 章</span>
+      <span class="episode-summary">公义七诫：律法与恩典相交｜"以眼还眼"与"帮助仇敌的牛驴"是否矛盾？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="exo23.mp3">艳朗读 23</a>
+      <a class="chip chip-reader" href="exo24.mp3">艳朗读 24</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=TBkiZJeyT_4">视频</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 25–26 章</span>
+      <span class="episode-summary">凡甘心乐意的我们就可以收下</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo25-26.m4a">枚朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/live/W4o0Dgoi3Dg">视频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo25-26.pdf">PDF</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 27–28 章</span>
+      <span class="episode-summary">圣洁事奉荣耀装束</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo27-28.m4a">Ami 读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/live/SCyr9JcoV4w">视频</a>
+      <a class="chip chip-img"   href="exo27-28.png">图表</a>
+    </div>
+  </article>
+
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">主日崇拜 (2026.03.08)</span>
+      <span class="episode-summary">效法基督——妇女节蒙福</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=UjuWS6SBs8w">视频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/sunday2026-0308.pdf">PDF</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 29–30 章</span>
+      <span class="episode-summary">祭司国度，圣洁国民——旧约如何讲？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo29.m4a">蒋朗读 29</a>
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo30.m4a">蒋朗读 30</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=3cRAM_XG0f4">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo29-30aud.m4a">音频</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">出埃及纪 第 31–40 章</h2>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 31–32 章</span>
+      <span class="episode-summary">金牛犊风云——为何神叫利未人击杀 3000 以色列百姓？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo31-32.m4a">枚朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=xRBs-4NHoEI">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo31-32aud.m4a">音频</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 33–34 章</span>
+      <span class="episode-summary">何处得安息？｜为何不能见神的面？为何摩西蒙帕子？新旧约中神的同在有何区别？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="exo33-34.mp3">枚朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/live/fxEnp-jtlOA">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo33-34aud.m4a">音频</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 35–36 章</span>
+      <span class="episode-summary">甘心乐意回应神的呼召</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="exo35-36.mp3">Suping 读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/live/hdLvkun5mho">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo35-36aud.m4a">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo35-36.pdf">PDF</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 37–38 章</span>
+      <span class="episode-summary">会幕何许、约柜几何——照山上样式建造｜约柜为何用皂荚木包金而不是纯金？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo37-38.m4a">Fay 朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=POm8miTaYU0">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo37-38aud.m4a">音频</a>
+      <a class="chip chip-song"  href="https://www.youtube.com/watch?v=DV2vMt3i8tc">诗歌：求你国度降临</a>
+    </div>
+  </article>
+
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">主日崇拜 (2026.03.15)</span>
+      <span class="episode-summary">一个人，一座城｜约翰福音 4:1–30</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=PqbBj-qn1UQ">视频</a>
+      <a class="chip chip-audio" href="sunday2026-0315aud.mp3">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/sunday2026-0315.pdf">PDF</a>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-header">
+      <span class="episode-chapters">出 39–40 章</span>
+      <span class="episode-summary">神荣光充满帐幕｜会幕制做为何如此繁琐？为何摩西不能进会幕？</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo39.m4a">图朗读 39</a>
+      <a class="chip chip-reader" href="https://www.life-runners.org/media/audio/ot02/exo40.m4a">图朗读 40</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=qkgD38NFpk4">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo39-40aud.m4a">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo39-40.pdf">PDF</a>
+    </div>
+  </article>
+
+  <h2 class="book-title">出埃及纪 总结</h2>
+
+  <article class="episode episode-special">
+    <div class="episode-header">
+      <span class="episode-chapters">总结·回应·分享</span>
+      <span class="episode-summary">出埃及纪全书回顾与见证</span>
+    </div>
+    <div class="links-row">
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=3J_6L30OnqM">视频</a>
+      <a class="chip chip-audio" href="https://www.life-runners.org/media/audio/ot02/exo-sum-aud.m4a">音频</a>
+      <a class="chip chip-pdf"   href="https://www.life-runners.org/media/audio/ot02/exo-sum.pdf">PDF</a>
+    </div>
+  </article>
+
+</main>
+
+<footer class="page-footer">
+  <p>
+    <a href="https://www.life-runners.org/media/audio/ot01/ot01.html">← 创世纪</a>
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/media/audio/ot03/lev.html">利未纪 →</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://www.life-runners.org/zh/resources/nt/">新约系列</a>
+  </p>
+  <p style="margin-top:0.5rem;">© 生命跑者团契 &nbsp;·&nbsp; <a href="https://www.life-runners.org/zh/">life-runners.org</a></p>
+</footer>
+
 </body>
 </html>
