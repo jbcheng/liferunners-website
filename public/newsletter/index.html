@@ -1,50 +1,596 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>电子通讯</title>
-    <link rel="icon" type="image/jpeg"/ href="/assets/img/logo.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电子通讯 · 生命跑者团契</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ── Design tokens mirroring life-runners.org/zh/ ── */
+:root {
+  --navy:      #1a2540;
+  --navy-dark: #111827;
+  --orange:    #e07b2a;
+  --orange-lt: #f5a455;
+  --cream:     #faf9f6;
+  --white:     #ffffff;
+  --gray-50:   #f8f7f4;
+  --gray-100:  #eeebe4;
+  --gray-200:  #ddd9d0;
+  --gray-400:  #9c9488;
+  --gray-600:  #5c5650;
+  --gray-800:  #2c2a26;
+  --gold:      #c49a3c;
+  --teal:      #2a6b5e;
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 14px;
+  --shadow:    0 2px 12px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+  background: var(--cream);
+  color: var(--gray-800);
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus {
+  position: fixed; top: 1rem; left: 1rem; z-index: 9999;
+  background: var(--orange); color: #fff; padding: .5rem 1rem;
+  border-radius: var(--radius); font-size: 14px;
+}
+
+/* ── Nav ── */
+.site-nav {
+  background: var(--navy-dark);
+  position: sticky; top: 0; z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px; gap: 1rem;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  color: #fff;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px; font-weight: 600;
+  letter-spacing: 0.03em; white-space: nowrap;
+}
+.nav-brand img { height: 30px; border-radius: 3px; }
+.nav-links {
+  display: flex; align-items: center; gap: 0.25rem; list-style: none;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.72);
+  font-size: 13px; font-weight: 400;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: color .15s, background .15s;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: #fff; background: rgba(255,255,255,0.08);
+}
+.nav-donate {
+  background: var(--orange); color: #fff !important;
+  border-radius: var(--radius-sm); font-weight: 500 !important;
+  padding: .4rem .9rem !important;
+}
+.nav-donate:hover { background: var(--orange-lt) !important; }
+
+/* ── Hero ── */
+.page-hero {
+  background: var(--navy);
+  color: #fff;
+  padding: 4rem 1.5rem 3.5rem;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 55% 70% at 75% 50%, rgba(224,123,42,0.13) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 20% 60%, rgba(42,107,94,0.09) 0%, transparent 70%);
+  pointer-events: none;
+}
+.page-hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+.page-hero-eyebrow {
+  display: inline-block;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--orange-lt);
+  background: rgba(224,123,42,0.15);
+  border: 1px solid rgba(224,123,42,0.3);
+  border-radius: 20px;
+  padding: 3px 14px; margin-bottom: 1.25rem;
+}
+.page-hero h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-weight: 700; line-height: 1.25;
+  margin-bottom: 1rem; letter-spacing: -0.01em;
+}
+.page-hero p {
+  font-size: 16px; color: rgba(255,255,255,0.72);
+  max-width: 500px; margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Layout ── */
+.main-wrap {
+  max-width: 1000px; margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+/* ── Section headers ── */
+.section-head {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 1.25rem; margin-top: 3rem;
+}
+.section-head:first-child { margin-top: 0; }
+.section-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--orange); flex-shrink: 0;
+}
+.section-head h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem; font-weight: 600; color: var(--navy);
+}
+.section-sub {
+  font-size: 12.5px; color: var(--gray-400);
+  margin-left: auto; white-space: nowrap;
+}
+
+/* ── Schedule overview card ── */
+.overview-card {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+.overview-card h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.05rem; font-weight: 600; color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+.overview-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 13px; color: var(--orange); font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.overview-link:hover { text-decoration: underline; }
+
+/* Schedule rows */
+.schedule-rows { display: flex; flex-direction: column; gap: 0; }
+.sched-row {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.sched-row:last-child { border-bottom: none; }
+.sched-label {
+  font-size: 11px; font-weight: 500; letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 10px; border-radius: 20px;
+  white-space: nowrap; flex-shrink: 0; margin-top: 1px;
+}
+.label-weekly  { background: #DBEAFE; color: #1E3A5F; }
+.label-daily   { background: #D1FAE5; color: #064E3B; }
+.label-event   { background: #FEF3C7; color: #92400E; }
+.label-special { background: #EDE9FE; color: #3730A3; }
+.sched-content { flex: 1; }
+.sched-content strong {
+  display: block; font-size: 13.5px; font-weight: 500;
+  color: var(--gray-800); margin-bottom: 0.15rem;
+}
+.sched-content span {
+  font-size: 12.5px; color: var(--gray-600); line-height: 1.55;
+}
+.sched-content a { color: var(--orange); font-weight: 500; }
+.sched-date {
+  font-size: 11.5px; color: var(--gray-400);
+  white-space: nowrap; flex-shrink: 0; padding-top: 3px;
+}
+
+/* ── Newsletter cards ── */
+.newsletter-list {
+  display: flex; flex-direction: column; gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.newsletter-card {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.4rem;
+  display: flex; align-items: center; gap: 1.25rem;
+  transition: box-shadow .2s, border-color .2s;
+}
+.newsletter-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gray-200);
+}
+.nl-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 20px;
+}
+.nl-body { flex: 1; min-width: 0; }
+.nl-title {
+  font-size: 14px; font-weight: 500; color: var(--navy);
+  line-height: 1.4; margin-bottom: 0.2rem;
+}
+.nl-date { font-size: 12px; color: var(--gray-400); }
+.nl-action {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12.5px; font-weight: 500;
+  color: var(--orange);
+  background: rgba(224,123,42,0.08);
+  border: 1px solid rgba(224,123,42,0.2);
+  border-radius: var(--radius);
+  padding: 5px 14px;
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.nl-action:hover { background: rgba(224,123,42,0.15); }
+
+/* ── Events grid ── */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.event-card {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.4rem;
+  display: flex; flex-direction: column; gap: 0.5rem;
+  transition: box-shadow .2s, transform .2s;
+}
+.event-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.event-date-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11.5px; font-weight: 500; color: var(--orange);
+  margin-bottom: 0.1rem;
+}
+.event-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem; font-weight: 600; color: var(--navy);
+  line-height: 1.4;
+}
+.event-desc { font-size: 12.5px; color: var(--gray-600); line-height: 1.6; }
+
+/* ── Contact block ── */
+.contact-strip {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.5rem; flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.contact-strip h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.1rem; font-weight: 600; margin-bottom: 0.4rem;
+}
+.contact-strip p { font-size: 13.5px; color: rgba(255,255,255,0.7); }
+.contact-strip a { color: var(--orange-lt); }
+.contact-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: .55rem 1.25rem; border-radius: var(--radius);
+  font-size: 13.5px; font-weight: 500;
+  transition: background .15s, transform .1s; cursor: pointer;
+}
+.btn:active { transform: scale(0.98); }
+.btn-orange { background: var(--orange); color: #fff; }
+.btn-orange:hover { background: var(--orange-lt); }
+.btn-ghost {
+  background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.85);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.18); }
+
+/* ── Divider ── */
+.divider { height: 1px; background: var(--gray-100); margin: 2.5rem 0; }
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.55);
+  padding: 2.5rem 1.5rem;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.footer-brand {
+  display: flex; align-items: center; gap: 8px;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Noto Serif SC', serif; font-size: 14px;
+}
+.footer-brand img { height: 24px; border-radius: 2px; }
+.footer-links { display: flex; gap: 1.5rem; font-size: 13px; flex-wrap: wrap; }
+.footer-links a { color: rgba(255,255,255,0.45); transition: color .15s; }
+.footer-links a:hover { color: rgba(255,255,255,0.8); }
+.footer-copy { font-size: 12px; width: 100%; text-align: center; margin-top: .5rem; }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .events-grid { grid-template-columns: 1fr; }
+  .contact-strip { padding: 1.25rem; }
+  .main-wrap { padding: 2rem 1rem 4rem; }
+  .newsletter-card { flex-wrap: wrap; }
+}
+</style>
 </head>
 <body>
-<a href="https://www.life-runners.org/zh/">
-  <img src="/assets/img/logo.jpg" alt="Life Runners Logo" style="width:48;height:48;"></a>
-<font size="8">电子通讯。生命跑者团契 </font>
-<a href=" https://www.life-runners.org/zh/support/donation/">
-  <img src="/assets/img/donation.png" alt="Donation" style="width:72;height:48;"></a>
-<hr>
 
-<h2> 2026年 每周线上聚会 <a href="2026q1plan.png" target="_blank">概览</a> </h2>
-<h2> 每日读经门训：新旧约“双线”推进</h2>
-<ul>
- <li>查经门训旧约上：摩西五经＋历史书（2026年1月5日开始） 每日两章 ：<a href="/media/audio/ot02/exo.html" target="_blank">出埃及纪</a> 
- <li>查经门训新约：四福音；使徒行传＋保罗书信；大公书信＋启示录（2026年1月5日开始） 每日一章 ：<a href="/media/audio/nt02/mark.html" target="_blank">马可福音</a>
- <li>查经门训旧约下：诗歌智慧书243章+大小先知书250章（2027年开始）
-</ul>
-<hr>
+<a href="#main" class="skip-link">跳到主内容</a>
 
-<h2> 每周一次：专题 和 主日敬拜</h2>
-<ul>
- <li>信仰与科学十講（2026年1月8日继续）第六 講：重返理性 
-   ：<a href="/media/audio/sci/sci.html" target="_blank">信仰与科学</a>
- <li>神学：新旧约逐卷导论（2026年1月9日开始）
- <li>线上主日敬拜（2026年1月11日开始）
- <li>福音与初信造就班/读書观影会（交替）（26年2月开始）
-</ul>
-<hr>
+<!-- ── Navigation ── -->
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="https://www.life-runners.org/zh/" class="nav-brand">
+      <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="生命跑者">
+      生命跑者团契
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="https://www.life-runners.org/zh/">首页</a></li>
+      <li><a href="https://www.life-runners.org/zh/about/">关于我们</a></li>
+      <li><a href="https://www.life-runners.org/zh/resources/">查经灵修</a></li>
+      <li><a href="https://www.life-runners.org/zh/events/">活动</a></li>
+      <li><a href="https://www.life-runners.org/media/audio/">音频资源</a></li>
+      <li><a href="https://www.life-runners.org/newsletter/" class="active">通讯</a></li>
+      <li><a href="https://www.life-runners.org/zh/support/donation/" class="nav-donate">奉献</a></li>
+    </ul>
+  </div>
+</nav>
 
-<h2> 每季度实体活动： 操练身体、操练敬虔、活出爱。</h2>
- <ul>
-  <li> 2026年 1月10-11日/1月31-2月01日：两天一夜灵修读经营（禁食祷告山）
-  <li> 2月22日：探访露宿者行动
-  <li> 3月07日：湾区“小狼山”马拉松接力跑
- </ul>
-<hr>
-<h2>代祷信</h2>
-<ul>
-<li>2026年02月17日春节：<a href="/newsletter/2026-02CNY.pdf" target="_blank">生命跑者 正月奔跑，新年献主</a>
-<li>2025年12月25日圣诞节：<a href="/newsletter/2025-christmas.pdf" target="_blank">生命跑者12月感恩代祷信</a>（2025年圣诞＋2026展望）
-<li>2025年11月27日感恩节：<a href="/newsletter/2025-thanksgiving.pdf" target="_blank">生命跑者感恩代祷信</a>
-</ul>
+<!-- ── Hero ── -->
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-hero-eyebrow">电子通讯 · 代祷信</span>
+    <h1>生命跑者<br>通讯与聚会概览</h1>
+    <p>每周聚会安排、每季度活动预告，以及最新代祷信下载。</p>
+  </div>
+</header>
+
+<!-- ── Main ── -->
+<main id="main" class="main-wrap">
+
+  <!-- ── Weekly Schedule ── -->
+  <div class="section-head">
+    <span class="section-dot"></span>
+    <h2>2026 年每周聚会安排</h2>
+    <a href="https://www.life-runners.org/newsletter/2026q1plan.png" class="section-sub" style="color:var(--orange)">查看完整概览图 →</a>
+  </div>
+
+  <div class="overview-card">
+    <h3>每日读经门训：旧约·新约</h3>
+    <div class="schedule-rows">
+
+      <div class="sched-row">
+        <span class="sched-label label-daily">每日·旧约</span>
+        <div class="sched-content">
+          <strong>摩西五经 + 历史书（2026年1月5日起）</strong>
+          <span>每日两章 · 进行中：<a href="https://www.life-runners.org/media/audio/ot03/lev.html">利未纪</a></span>
+        </div>
+        <span class="sched-date">美西 6:30</span>
+      </div>
+
+      <div class="sched-row">
+        <span class="sched-label label-daily">每日·新约</span>
+        <div class="sched-content">
+          <strong>四福音 → 书信 → 启示录（2026年1月5日起）</strong>
+          <span>每日一章 · 已完成：<a href="https://www.life-runners.org/media/audio/nt02/mark.html">马可福音</a></span>
+        </div>
+        <span class="sched-date">北京 6:30</span>
+      </div>
+
+      <div class="sched-row">
+        <span class="sched-label label-daily">每日·旧约</span>
+        <div class="sched-content">
+          <strong>诗歌智慧书 + 大小先知书（2027年开始）</strong>
+          <span>243 章诗歌智慧书 + 250 章先知书</span>
+        </div>
+        <span class="sched-date">即将开始</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="overview-card">
+    <h3>每周一次：专题 &amp; 主日敬拜</h3>
+    <div class="schedule-rows">
+
+      <div class="sched-row">
+        <span class="sched-label label-weekly">每周·课程</span>
+        <div class="sched-content">
+          <strong>信仰与科学十讲（2026年1月8日继续）</strong>
+          <span><a href="https://www.life-runners.org/media/audio/sci/sci.html">信仰与科学</a> — 张博士 &amp; 朱牧师</span>
+        </div>
+        <span class="sched-date">周四</span>
+      </div>
+
+      <div class="sched-row">
+        <span class="sched-label label-weekly">每周·神学</span>
+        <div class="sched-content">
+          <strong>新旧约逐卷导论（2026年1月9日起）</strong>
+          <span>系统神学：每卷圣经背景与主题介绍</span>
+        </div>
+        <span class="sched-date">周五</span>
+      </div>
+
+      <div class="sched-row">
+        <span class="sched-label label-weekly">每周·主日</span>
+        <div class="sched-content">
+          <strong>线上主日敬拜（2026年1月11日起）</strong>
+          <span>诗歌敬拜、证道与代祷</span>
+        </div>
+        <span class="sched-date">主日</span>
+      </div>
+
+      <div class="sched-row">
+        <span class="sched-label label-special">双周·造就</span>
+        <div class="sched-content">
+          <strong>福音初信造就班 / 读书观影会（2026年2月起）</strong>
+          <span>两班交替，服事初信者与深入门训</span>
+        </div>
+        <span class="sched-date">双周</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Quarterly Events ── -->
+  <div class="section-head">
+    <span class="section-dot" style="background:var(--gold)"></span>
+    <h2>2026 年季度实体活动</h2>
+    <span class="section-sub">操练身体 · 操练敬虔 · 活出爱</span>
+  </div>
+
+  <div class="events-grid">
+
+    <div class="event-card">
+      <span class="event-date-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        1月10–11日 / 1月31–2月1日 / 3月9日 
+      </span>
+      <div class="event-title">灵修读经营</div>
+      <div class="event-desc">北加州禁食祷告山 — 身体操练、圣经默想与集体祷告。</div>
+    </div>
+
+    <div class="event-card">
+      <span class="event-date-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        2月22日
+      </span>
+      <div class="event-title">探访露宿者行动</div>
+      <div class="event-desc">用具体行动活出爱 — 社区关怀与实地探访。</div>
+    </div>
+
+    <div class="event-card">
+      <span class="event-date-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        4月18日
+      </span>
+      <div class="event-title">湾区"小狼山"接力跑</div>
+      <div class="event-desc">马拉松接力赛 — 团队配合、操练身体、彼此鼓励。</div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Newsletters ── -->
+  <div class="section-head">
+    <span class="section-dot" style="background:var(--teal)"></span>
+    <h2>代祷信 &amp; 电子通讯</h2>
+    <span class="section-sub">PDF 下载</span>
+  </div>
+
+  <div class="newsletter-list">
+
+    <a href="https://www.life-runners.org/newsletter/2026-02CNY.pdf" class="newsletter-card">
+      <div class="nl-icon">✉️</div>
+      <div class="nl-body">
+        <div class="nl-title">生命跑者 · 正月奔跑，新年献主</div>
+        <div class="nl-date">2026年2月17日 · 春节特刊</div>
+      </div>
+      <span class="nl-action">
+        下载 PDF
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </span>
+    </a>
+
+    <a href="https://www.life-runners.org/newsletter/2025-christmas.pdf" class="newsletter-card">
+      <div class="nl-icon">✉️</div>
+      <div class="nl-body">
+        <div class="nl-title">生命跑者 · 12月感恩代祷信（2025年圣诞 + 2026展望）</div>
+        <div class="nl-date">2025年12月25日 · 圣诞特刊</div>
+      </div>
+      <span class="nl-action">
+        下载 PDF
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </span>
+    </a>
+
+    <a href="https://www.life-runners.org/newsletter/2025-thanksgiving.pdf" class="newsletter-card">
+      <div class="nl-icon">✉️</div>
+      <div class="nl-body">
+        <div class="nl-title">生命跑者感恩代祷信</div>
+        <div class="nl-date">2025年11月27日 · 感恩节特刊</div>
+      </div>
+      <span class="nl-action">
+        下载 PDF
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </span>
+    </a>
+
+  </div>
+
+  <!-- ── Subscribe / Contact CTA ── -->
+  <div class="contact-strip">
+    <div>
+      <h3>接收最新通讯</h3>
+      <p>
+        透过微信或邮件接收双语动态、祷告事项与训练资源。<br>
+        微信：<strong style="color:#fff;">新生命跑者 New Life Runners</strong> ·
+        邮箱：<a href="mailto:love@life-runners.org">love@life-runners.org</a>
+      </p>
+    </div>
+    <div class="contact-actions">
+      <a href="mailto:love@life-runners.org" class="btn btn-orange">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        发送邮件
+      </a>
+      <a href="https://www.life-runners.org/zh/support/donation/" class="btn btn-ghost">支持奉献</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="https://www.life-runners.org/zh/" class="footer-brand">
+      <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="生命跑者">
+      生命跑者团契
+    </a>
+    <nav class="footer-links">
+      <a href="https://www.life-runners.org/zh/">首页</a>
+      <a href="https://www.life-runners.org/media/audio/">音频资源</a>
+      <a href="https://www.life-runners.org/zh/resources/">查经灵修</a>
+      <a href="https://www.life-runners.org/zh/events/">活动</a>
+      <a href="https://www.youtube.com/@BibleRunners">YouTube</a>
+      <a href="https://www.life-runners.org/zh/support/donation/">奉献</a>
+    </nav>
+    <p class="footer-copy">© 2026 生命跑者团契 版权所有 · <a href="mailto:love@life-runners.org">love@life-runners.org</a></p>
+  </div>
+</footer>
 
 </body>
 </html>
