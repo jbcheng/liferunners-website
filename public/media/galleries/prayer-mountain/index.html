@@ -1,51 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <title>Prayer Mountain · Life Runners Fellowship</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fasting Prayer Mountain | 禁食祷告山 · 生命跑者团契</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:      #1a2540;
+  --navy-dark: #111827;
+  --orange:    #e07b2a;
+  --orange-lt: #f5a455;
+  --cream:     #faf9f6;
+  --white:     #ffffff;
+  --gray-100:  #eeebe4;
+  --gray-200:  #ddd9d0;
+  --gray-400:  #9c9488;
+  --gray-600:  #5c5650;
+  --gray-800:  #2c2a26;
+  --teal:      #2a6b5e;
+  --radius:    8px;
+  --radius-lg: 14px;
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.14);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans SC',sans-serif;font-weight:300;background:var(--cream);color:var(--gray-800);line-height:1.75;font-size:15px}
+a{color:inherit;text-decoration:none}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{position:fixed;top:1rem;left:1rem;z-index:9999;background:var(--orange);color:#fff;padding:.5rem 1rem;border-radius:var(--radius);font-size:14px}
+
+/* nav */
+.site-nav{background:var(--navy-dark);position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
+.nav-brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Noto Serif SC',serif;font-size:15px;font-weight:600;letter-spacing:.03em;white-space:nowrap}
+.nav-brand img{height:30px;border-radius:3px}
+.nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.72);font-size:13px;padding:.4rem .75rem;border-radius:4px;transition:color .15s,background .15s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-donate{background:var(--orange);color:#fff!important;border-radius:4px;font-weight:500!important;padding:.4rem .9rem!important}
+.nav-donate:hover{background:var(--orange-lt)!important}
+
+/* hero */
+.page-hero{background:var(--navy);color:#fff;padding:3.5rem 1.5rem 3rem;text-align:center;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 75% at 15% 50%,rgba(42,107,94,.18) 0%,transparent 70%),radial-gradient(ellipse 50% 65% at 85% 40%,rgba(224,123,42,.11) 0%,transparent 70%);pointer-events:none}
+.page-hero-inner{position:relative;max-width:700px;margin:0 auto}
+.page-hero-eyebrow{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-lt);background:rgba(224,123,42,.15);border:1px solid rgba(224,123,42,.3);border-radius:20px;padding:3px 14px;margin-bottom:1.1rem}
+.page-hero h1{font-family:'Noto Serif SC',serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;line-height:1.25;margin-bottom:.75rem;letter-spacing:-.01em}
+.page-hero p{font-size:15px;color:rgba(255,255,255,.72);max-width:540px;margin:0 auto 1rem;line-height:1.7}
+.hero-meta{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:5px 16px}
+
+/* breadcrumb */
+.breadcrumb{max-width:1100px;margin:1.25rem auto 0;padding:0 1.5rem;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-400);flex-wrap:wrap}
+.breadcrumb a{color:var(--orange);transition:opacity .15s}
+.breadcrumb a:hover{opacity:.75}
+.breadcrumb-sep{color:var(--gray-200)}
+
+/* gallery wrap */
+.gallery-wrap{max-width:1100px;margin:0 auto;padding:2rem 1.5rem 5rem}
+
+/* section */
+.gallery-section{margin-bottom:3.5rem}
+.section-label{display:flex;align-items:center;gap:12px;margin-bottom:1rem;flex-wrap:wrap}
+.section-dot{width:9px;height:9px;border-radius:50%;background:var(--orange);flex-shrink:0}
+.section-label h2{font-family:'Noto Serif SC',serif;font-size:1.05rem;font-weight:600;color:var(--navy)}
+.section-label .slabel-sub{font-size:12px;color:var(--gray-400)}
+.section-doc-link{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:var(--orange);background:rgba(224,123,42,.08);border:1px solid rgba(224,123,42,.2);border-radius:20px;padding:3px 12px;transition:background .15s;margin-left:auto;flex-shrink:0}
+.section-doc-link:hover{background:rgba(224,123,42,.16)}
+
+/* masonry photo grid */
+.photo-grid{columns:3 240px;column-gap:12px}
+.photo-item{break-inside:avoid;margin-bottom:12px;border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;position:relative;background:var(--gray-100)}
+.photo-item img{width:100%;display:block;transition:transform .35s ease,filter .35s}
+.photo-item:hover img{transform:scale(1.04);filter:brightness(.88)}
+.photo-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(17,24,39,.82) 0%,transparent 100%);color:#fff;padding:.6rem .9rem .7rem;font-size:12.5px;line-height:1.4;opacity:0;transition:opacity .25s}
+.photo-item:hover .photo-caption{opacity:1}
+
+/* video card */
+.video-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);overflow:hidden;margin-top:1rem}
+.video-card video{width:100%;display:block;max-height:480px;background:#000}
+.video-card-cap{padding:.75rem 1.1rem;font-size:13px;color:var(--gray-600);border-top:1px solid var(--gray-100)}
+
+/* divider */
+.section-divider{height:1px;background:var(--gray-100);margin:1rem 0 3.5rem}
+
+/* lightbox */
+.lb-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:1.5rem}
+.lb-overlay.open{display:flex}
+.lb-box{position:relative;max-width:920px;width:100%}
+.lb-box img{width:100%;border-radius:var(--radius);display:block;max-height:82vh;object-fit:contain}
+.lb-caption{text-align:center;color:rgba(255,255,255,.72);font-size:13px;margin-top:.75rem;line-height:1.5}
+.lb-close{position:absolute;top:-2.5rem;right:0;background:none;border:none;color:#fff;font-size:1.75rem;cursor:pointer;line-height:1;opacity:.7;transition:opacity .15s}
+.lb-close:hover{opacity:1}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;transition:background .15s}
+.lb-prev{left:-58px}.lb-next{right:-58px}
+.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.25)}
+
+/* footer */
+.site-footer{background:var(--navy-dark);color:rgba(255,255,255,.55);padding:2.5rem 1.5rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-brand{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.8);font-family:'Noto Serif SC',serif;font-size:14px}
+.footer-brand img{height:24px;border-radius:2px}
+.footer-links{display:flex;gap:1.5rem;font-size:13px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.45);transition:color .15s}
+.footer-links a:hover{color:rgba(255,255,255,.8)}
+.footer-copy{font-size:12px;width:100%;text-align:center;margin-top:.5rem}
+@media(max-width:640px){.nav-links{display:none}.lb-prev{left:-8px}.lb-next{right:-8px}.gallery-wrap{padding:1.5rem 1rem 4rem}}
+</style>
 </head>
 <body>
-  <main style="width:min(92%,900px);margin:2rem auto;">
-    <h1>Fasting Prayer Mountain | 禁食祷告山</h1>
-    <h3>Life Runners at the Prayer Mountain in Scotts Valley, California</h3>
+<a href="#main" class="skip-link">跳到主内容</a>
 
-    <h3>2026.03.09 生命跑者-祷告山读经灵修日 (<a href=" 2026_0309prayer_day.pdf " target="_blank">一日来回</a>) </h3>
-    <figure> <img src="544077f667401aad83ca90219fd3a633.jpeg" alt="CIM Image" style="width:70%"> <figcaption>Arriving｜抵达大十字架</figcaption> </figure>
-    <figure> <img src="Image_20260309213746_321_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Spring Flowers｜春暖花开</figcaption> </figure>
-    <figure> <img src="Image_20260309213543_312_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Hiking the Forest｜森林漫步</figcaption> </figure>
-    <figure> <img src="04f6e1b77cf5a6bc90ffa6870b0121cf.jpeg " alt="CIM Image" style="width:70%"> <figcaption>Praying at Hidden Garden｜花园秘境祷告</figcaption> </figure>
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="https://www.life-runners.org/zh/" class="nav-brand">
+      <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="生命跑者">
+      生命跑者团契
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="https://www.life-runners.org/zh/">首页</a></li>
+      <li><a href="https://www.life-runners.org/zh/ministries/">事工</a></li>
+      <li><a href="https://www.life-runners.org/zh/events/">活动</a></li>
+      <li><a href="https://www.life-runners.org/media/audio/">音频资源</a></li>
+      <li><a href="https://www.life-runners.org/newsletter/">通讯</a></li>
+      <li><a href="https://www.life-runners.org/zh/support/donation/" class="nav-donate">奉献</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <h3>2026.01.31-02.01 生命跑者-祷告山读经灵修营 
-	(<a href="2026_0131-0201retreat.jpg" target="_blank">两天一夜</a>)
-    </h3>
-    <figure> <img src="Image_20260131222248_230_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Backpacking｜ 行山</figcaption> </figure>
-    <figure> <img src="Image_20260201145035_260_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>John 3:16｜约翰福音三章16节</figcaption> </figure>
-    <figure> <img src="Image_20260201081749_248_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Under the Cross｜在十字架前</figcaption> </figure>
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-hero-eyebrow">操练敬虔 · 禁食祷告</span>
+    <h1>Fasting Prayer Mountain<br><span style="font-size:.8em;font-weight:400;opacity:.85">禁食祷告山</span></h1>
+    <p>Life Runners at the Prayer Mountain in Scotts Valley, California.<br>
+    <span style="color:rgba(255,255,255,.55);font-size:13.5px">生命跑者在加州斯科茨谷禁食祷告山灵修读经营。</span></p>
+    <span class="hero-meta">📍 Scotts Valley, CA · 2025.12 – 2026.03</span>
+  </div>
+</header>
 
-    <h3>2026.01.10-11 生命跑者-祷告山读经灵修营
-	(<a href="2026_01_10-11retreat.pdf" target="_blank">两天一夜</a>)
-    </h3>
-    <figure> <img src="Image_20260110151223_96_254.jpg " alt="CIM Image" style="width:70%"> <figcaption>Day 1｜第一天 </figcaption> </figure>
-    <figure> <img src="Image_20260112140620_108_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Marvelous Trees｜奇树異木 </figcaption> </figure>
-    <figure> <img src="Image_20260112140625_111_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Walking in the Forest｜漫步树林中 </figcaption> </figure>
-    <figure> <img src=" Image_20260112141359_117_254.jpg" alt="CIM Image" style="width:70%"> <figcaption>Day 2 After Sunday Worship｜第二天主日崇拜后 </figcaption> </figure>
-<hr>
-    <h3>2025.12.15 生命跑者在祷告山 </h3>
-    <figure> <img src="Image_20251215215926_5486_13.jpg" alt="CIM Image" style="width:70%"> <figcaption>Arrived ｜ 抵达目的地</figcaption> </figure>
-    <figure> <img src="Image_20251215215928_5487_13.jpg" alt="CIM Image" style="width:70%"> <figcaption>Love One Another ｜ 彼此相爱</figcaption> </figure>
-    <figure> <img src="Image_20251215191140_2_245.jpg" alt="CIM Image" style="width:70%"> <figcaption>Hiking ｜ 走山</figcaption> </figure>
-    <figure> <img src="Image_20251215215446_18_245.jpg" alt="CIM Image" style="width:70%"> <figcaption>Solitude ｜ 独处</figcaption> </figure>
-    <figure> <img src="Image_20251215215448_19_245.jpg" alt="CIM Image" style="width:70%"> <figcaption>Solitude ｜ 独处</figcaption> </figure>
-    <figure> <img src="Image_20251215191142_3_245.jpg" alt="CIM Image" style="width:70%"> <figcaption>Sisters Sharing ｜ 姊妹分享</figcaption> </figure>
-    <figure> <img src="Image_20251215215444_17_245.jpg" alt="CIM Image" style="width:70%"> <figcaption>Brothers Sharing ｜ 弟兄分享</figcaption> </figure>
-    <figure> <img src="Image_20251215215758_5485_13.jpg" alt="CIM Image" style="width:90%"> <figcaption>Break the Fast｜禁食结束</figcaption> </figure>
-    <video width="840" height="630" controls>
-      <source src="Load_sPrayerMountain2.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    Lord's Prayer | 主祷文
-  </main>
+<div class="breadcrumb">
+  <a href="https://www.life-runners.org/zh/">首页</a>
+  <span class="breadcrumb-sep">/</span>
+  <a href="https://www.life-runners.org/zh/events/">活动</a>
+  <span class="breadcrumb-sep">/</span>
+  <a href="https://www.life-runners.org/zh/ministries/godliness/">操练敬虔</a>
+  <span class="breadcrumb-sep">/</span>
+  <span>禁食祷告山</span>
+</div>
+
+<main id="main" class="gallery-wrap">
+  <div class="gallery-section">
+  <div class="section-label">
+    <span class="section-dot" style="background:#2a6b5e"></span>
+    <h2>2026.03.09 — Prayer Day</h2>
+    <span class="slabel-sub">祷告山读经灵修日（一日来回）</span>
+    <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_0309prayer_day.pdf" class="section-doc-link" target="_blank">📄 行程 PDF</a>
+  </div>
+  <div class="photo-grid">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/544077f667401aad83ca90219fd3a633.jpeg" data-caption="Arriving｜抵达大十字架">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/544077f667401aad83ca90219fd3a633.jpeg" alt="Arriving｜抵达大十字架" loading="lazy">
+      <div class="photo-caption">Arriving｜抵达大十字架</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213746_321_254.jpg" data-caption="Spring Flowers｜春暖花开">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213746_321_254.jpg" alt="Spring Flowers｜春暖花开" loading="lazy">
+      <div class="photo-caption">Spring Flowers｜春暖花开</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg" data-caption="Hiking the Forest｜森林漫步">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg" alt="Hiking the Forest｜森林漫步" loading="lazy">
+      <div class="photo-caption">Hiking the Forest｜森林漫步</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/04f6e1b77cf5a6bc90ffa6870b0121cf.jpeg" data-caption="Praying at Hidden Garden｜花园秘境祷告">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/04f6e1b77cf5a6bc90ffa6870b0121cf.jpeg" alt="Praying at Hidden Garden｜花园秘境祷告" loading="lazy">
+      <div class="photo-caption">Praying at Hidden Garden｜花园秘境祷告</div>
+    </div>
+  </div>
+  
+</div>
+<div class="section-divider"></div>
+  <div class="gallery-section">
+  <div class="section-label">
+    <span class="section-dot"></span>
+    <h2>2026.01.31–02.01 — Retreat</h2>
+    <span class="slabel-sub">祷告山读经灵修营（两天一夜）</span>
+    <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_0131-0201retreat.jpg" class="section-doc-link" target="_blank">🖼 行程图</a>
+  </div>
+  <div class="photo-grid">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260131222248_230_254.jpg" data-caption="Backpacking｜行山">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260131222248_230_254.jpg" alt="Backpacking｜行山" loading="lazy">
+      <div class="photo-caption">Backpacking｜行山</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" data-caption="John 3:16｜约翰福音三章16节">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" alt="John 3:16｜约翰福音三章16节" loading="lazy">
+      <div class="photo-caption">John 3:16｜约翰福音三章16节</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201081749_248_254.jpg" data-caption="Under the Cross｜在十字架前">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201081749_248_254.jpg" alt="Under the Cross｜在十字架前" loading="lazy">
+      <div class="photo-caption">Under the Cross｜在十字架前</div>
+    </div>
+  </div>
+  
+</div>
+<div class="section-divider"></div>
+  <div class="gallery-section">
+  <div class="section-label">
+    <span class="section-dot" style="background:#c49a3c"></span>
+    <h2>2026.01.10–11 — Retreat</h2>
+    <span class="slabel-sub">祷告山读经灵修营（两天一夜）</span>
+    <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_01_10-11retreat.pdf" class="section-doc-link" target="_blank">📄 行程 PDF</a>
+  </div>
+  <div class="photo-grid">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260110151223_96_254.jpg" data-caption="Day 1｜第一天">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260110151223_96_254.jpg" alt="Day 1｜第一天" loading="lazy">
+      <div class="photo-caption">Day 1｜第一天</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112140620_108_254.jpg" data-caption="Marvelous Trees｜奇树异木">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112140620_108_254.jpg" alt="Marvelous Trees｜奇树异木" loading="lazy">
+      <div class="photo-caption">Marvelous Trees｜奇树异木</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112140625_111_254.jpg" data-caption="Walking in the Forest｜漫步树林中">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112140625_111_254.jpg" alt="Walking in the Forest｜漫步树林中" loading="lazy">
+      <div class="photo-caption">Walking in the Forest｜漫步树林中</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112141359_117_254.jpg" data-caption="Day 2 After Sunday Worship｜第二天主日崇拜后">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112141359_117_254.jpg" alt="Day 2 After Sunday Worship｜第二天主日崇拜后" loading="lazy">
+      <div class="photo-caption">Day 2 After Sunday Worship｜第二天主日崇拜后</div>
+    </div>
+  </div>
+  
+</div>
+<div class="section-divider"></div>
+  <div class="gallery-section">
+  <div class="section-label">
+    <span class="section-dot" style="background:#5c5650"></span>
+    <h2>2025.12.15 — Prayer Mountain Day</h2>
+    <span class="slabel-sub">生命跑者在祷告山</span>
+    
+  </div>
+  <div class="photo-grid">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215926_5486_13.jpg" data-caption="Arrived｜抵达目的地">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215926_5486_13.jpg" alt="Arrived｜抵达目的地" loading="lazy">
+      <div class="photo-caption">Arrived｜抵达目的地</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215928_5487_13.jpg" data-caption="Love One Another｜彼此相爱">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215928_5487_13.jpg" alt="Love One Another｜彼此相爱" loading="lazy">
+      <div class="photo-caption">Love One Another｜彼此相爱</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" data-caption="Hiking｜走山">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" alt="Hiking｜走山" loading="lazy">
+      <div class="photo-caption">Hiking｜走山</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" data-caption="Solitude｜独处">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" alt="Solitude｜独处" loading="lazy">
+      <div class="photo-caption">Solitude｜独处</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" data-caption="Solitude｜独处">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" alt="Solitude｜独处" loading="lazy">
+      <div class="photo-caption">Solitude｜独处</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191142_3_245.jpg" data-caption="Sisters Sharing｜姊妹分享">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191142_3_245.jpg" alt="Sisters Sharing｜姊妹分享" loading="lazy">
+      <div class="photo-caption">Sisters Sharing｜姊妹分享</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215444_17_245.jpg" data-caption="Brothers Sharing｜弟兄分享">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215444_17_245.jpg" alt="Brothers Sharing｜弟兄分享" loading="lazy">
+      <div class="photo-caption">Brothers Sharing｜弟兄分享</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215758_5485_13.jpg" data-caption="Break the Fast｜禁食结束">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215758_5485_13.jpg" alt="Break the Fast｜禁食结束" loading="lazy">
+      <div class="photo-caption">Break the Fast｜禁食结束</div>
+    </div>
+  </div>
+  <div class="video-card">
+  <video controls preload="none" poster="">
+    <source src="https://www.life-runners.org/media/galleries/prayer-mountain/Load_sPrayerMountain2.mov" type="video/mp4">
+    您的浏览器不支持视频播放。
+  </video>
+  <div class="video-card-cap">🎬 Lord's Prayer | 主祷文</div>
+</div>
+</div>
+<div class="section-divider"></div>
+</main>
+
+<div class="lb-overlay" role="dialog" aria-modal="true" aria-label="图片预览">
+  <div class="lb-box">
+    <button class="lb-close" aria-label="关闭">×</button>
+    <img src="" alt="">
+    <div class="lb-prev" role="button" aria-label="上一张">&#8249;</div>
+    <div class="lb-next" role="button" aria-label="下一张">&#8250;</div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="https://www.life-runners.org/zh/" class="footer-brand">
+      <img src="https://www.life-runners.org/assets/img/logo.jpg" alt="生命跑者">
+      生命跑者团契
+    </a>
+    <nav class="footer-links">
+      <a href="https://www.life-runners.org/zh/">首页</a>
+      <a href="https://www.life-runners.org/zh/events/">活动</a>
+      <a href="https://www.life-runners.org/zh/ministries/godliness/">操练敬虔</a>
+      <a href="https://www.life-runners.org/media/audio/">音频</a>
+      <a href="https://www.life-runners.org/newsletter/">通讯</a>
+      <a href="https://www.life-runners.org/zh/support/donation/">奉献</a>
+    </nav>
+    <p class="footer-copy">© 2026 生命跑者团契 版权所有 · <a href="mailto:love@life-runners.org" style="color:rgba(255,255,255,.45)">love@life-runners.org</a></p>
+  </div>
+</footer>
+
+<script>
+const items = Array.from(document.querySelectorAll('.photo-item'));
+const overlay = document.querySelector('.lb-overlay');
+const lbImg = overlay.querySelector('.lb-box img');
+const lbCap = overlay.querySelector('.lb-caption');
+let cur = 0;
+function openLb(i){cur=i;const el=items[i];lbImg.src=el.dataset.full||el.querySelector('img').src;lbCap.textContent=el.dataset.caption||'';overlay.classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){overlay.classList.remove('open');document.body.style.overflow='';}
+function move(d){openLb((cur+d+items.length)%items.length);}
+items.forEach((el,i)=>el.addEventListener('click',()=>openLb(i)));
+overlay.querySelector('.lb-close').addEventListener('click',closeLb);
+overlay.querySelector('.lb-prev').addEventListener('click',()=>move(-1));
+overlay.querySelector('.lb-next').addEventListener('click',()=>move(1));
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeLb();});
+document.addEventListener('keydown',e=>{if(!overlay.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);});
+</script>
 </body>
 </html>
