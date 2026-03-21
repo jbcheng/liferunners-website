@@ -1766,14 +1766,14 @@ export const pages = [
       {
         title: 'Event Timeline',
         content: `
-            </div>
-            <div class="timeline-item" id="science-and-faith">
-              <h3>Started on Nov 14, 2025 ongoing weekly · Faith and Science ·
-		<a href="/media/audio/sci/sci.html" target="_blank">Past Recordings</a>
+          <div class="timeline">
+            <div class="timeline-item" id="daily-devotion">
+              <h3>Started on Mar 18, 2026, five times a week, Leviticus ·
+		<a href="/media/audio/ot03/lev.html" target="_blank">Past Recordings</a>
               </h3>
-              <p>Live Online (Zoom) | Time: Thursday 6:30-7:30PM Pacific Daylight Saving Time / Friday 10:30-11:30AM Beijing Time</p>
-              <p>Rerun+Q&A (Zoom) | Time: Friday   6:30-7:30AM Pacific Daylight Saving Time / Friday 10:30-11:30PM Beijing Time</p>
-              <p>Two-day online sessions for understanding the relationship between faith and science.</p>
+              <p>Time: Monday-Friday 06:30-07:30AM Pacific Daylight Saving Time </p>
+              <p>Time: Monday-Friday 09:30-10:30PM Beijing Time</p>
+              <p>Two-way online sessions for Bible study, devotion, sharing and discussion.</p>
             </div>
           </div>
         `
@@ -1801,13 +1801,13 @@ export const pages = [
         title: '时间轴',
         content: `
           <div class="timeline">
-            <div class="timeline-item" id="science-and-faith">
-              <h3>2025年 11月14日 开始，每周一讲，正在进行中 · 信仰与科学课程 ·
-		<a href="/media/audio/sci/sci.html" target="_blank">录影存档</a>
+            <div class="timeline-item" id="daily-devotion">
+              <h3>2026年 3月18日 开始，每周五天，正在进行中 · 利未记 ·
+		<a href="/media/audio/ot03/lev.html" target="_blank">录影存档</a>
               </h3>
-              <p> 现场 直播（Zoom）| 时间: 太平洋夏令时间周四晚上 6:30-7:30 / 北京时间周五早晨 10:30-11:30。 </p>
-              <p> 回放+问答（Zoom）| 时间: 太平洋夏令时间周五早晨 6:30-7:30 / 北京时间周五晚上 10:30-11:30。 </p>
-              <p> 双向交流的线上课程，探讨信仰与科学之间的关系。 </p>
+              <p> 太平洋夏令时间 周一至周五 早晨6:30-7:30 </p>
+              <p> 北京时间 周一至周五 晚上09:30-10:30 </p>
+              <p> 双向交流的线上读经灵修，分享与讨论 </p>
             </div>
           </div>
         `
