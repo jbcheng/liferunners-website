@@ -1835,6 +1835,14 @@ export const pages = [
         title: 'Highlights',
         content: `
           <div class="cards">
+            <article class="card" id="cim-marathon">
+              <h3>2025.12.07 CIM in Sacramento</h3>
+              <p>Life Runners Paster Zhu in California International Marathon</p>
+              <ul>
+                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">照片库</a></li>
+              </ul>
+            </article>
+
             <article class="card" id="thanksgiving-day">
               <h3>Thanksgiving Day in SF</h3>
               <p>Life Runners serving the homeless community.</p>
@@ -1842,6 +1850,7 @@ export const pages = [
                 <li><a href="/media/galleries/thanksgiving-day/index.html" target="_blank">Photo gallery</a></li>
               </ul>
             </article>
+
             <article class="card" id="morning-run-lake-e">
               <h3>Morning Run at Lake Elizabeth</h3>
               <p>Life Runners from the U.S. SF Bay Area running at Lake Elizabeth on Thursday morning.</p>
@@ -1851,6 +1860,7 @@ export const pages = [
                 <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.pdf" target="_blank">PDF report </a></li>
               </ul>
             </article>
+
             <article class="card" id="morning-hike-vargas">
               <h3>Morning Hike Vargas Plateau</h3>
               <p>Life Runners hiked East Bay Vargas Plateau on a Thursday morning.</p>
@@ -1858,6 +1868,7 @@ export const pages = [
                 <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">Photo gallery</a></li>
               </ul>
             </article>
+
             <article class="card" id="monthly-potluck">
               <h3>Monthly Potluck</h3>
               <p>Monthly meal sharing at Life Runners' Home.</p>
@@ -1865,6 +1876,15 @@ export const pages = [
                 <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">Photo gallery</a></li>
               </ul>
             </article>
+
+            <article class="card" id="prayer-mountain">
+              <h3>Prayer Mountain</h3>
+              <p>Life Runners at the Prayer Mountain in Scotts Valley, California.</p>
+              <ul>
+                <li><a href="/media/galleries/prayer-mountain/index.html" target="_blank">Photo gallery</a></li>
+              </ul>
+            </article>
+
           </div>
         `
       }
@@ -1891,6 +1911,15 @@ export const pages = [
         title: '亮点回顾',
         content: `
           <div class="cards">
+
+            <article class="card" id="cim-marathon">
+              <h3>2025 加州国际马拉松</h3>
+              <p>牧师首次马拉松 </p>
+              <ul>
+                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">照片库</a></li>
+              </ul>
+            </article>
+
             <article class="card" id="thanksgiving-day">
               <h3>感恩节-旧金山</h3>
               <p> 生命跑者 关心街友</p>
@@ -1898,6 +1927,7 @@ export const pages = [
                 <li><a href="/media/galleries/thanksgiving-day/index.html" target="_blank">照片库</a></li>
               </ul>
             </article>
+
             <article class="card" id="morning-run-lake-e">
               <h3>伊丽莎白湖晨跑</h3>
               <p>来自美国旧金山湾区的生命跑者们周四早上在伊丽莎白湖跑步.</p>
@@ -1907,6 +1937,7 @@ export const pages = [
                 <li><a href="/media/galleries/morning-run-lake-e/morning-run-lake-e.pdf" target="_blank">生命故事PDF</a></li>
               </ul>
             </article>
+
             <article class="card" id="morning-hike-vargas">
               <h3>瓦尔加斯高原晨间徒步</h3>
               <p>生命跑者成员早晨徒步游览了东湾瓦尔加斯高原。</p>
@@ -1914,6 +1945,7 @@ export const pages = [
                 <li><a href="/media/galleries/morning-hike-vargas/index.html" target="_blank">照片库</a></li>
               </ul>
             </article>
+
             <article class="card" id="monthly-potluck">
               <h3>每月聚餐</h3>
               <p>生命跑者每月一次的聚餐。</p>
@@ -1921,6 +1953,15 @@ export const pages = [
                 <li><a href="/media/galleries/monthly-potluck/index.html" target="_blank">照片库</a></li>
               </ul>
             </article>
+
+            <article class="card" id="prayer-mountain">
+              <h3>禁食祷告山</h3>
+              <p>生命跑者在加州 斯科茨谷 禁食祷告山灵修读经营。p>
+              <ul>
+                <li><a href="/media/galleries/prayer-mountain/index.html" target="_blank">照片库</a></li>
+              </ul>
+            </article>
+
           </div>
         `
       }
