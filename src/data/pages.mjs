@@ -2079,7 +2079,7 @@ export const pages = [
             <article class="card">
               <h3>Mailing Address</h3>
               <p>Life Runners Fellowship</p>
-              <p>430 Monmouth Dr. Milpitas, CA 95035</p>
+              <p>2026 19th Ave, San Francisco, CA 94116</p>
             </article>
           </div>
         `
@@ -2118,7 +2118,7 @@ export const pages = [
             <article class="card">
               <h3>邮寄地址</h3>
               <p>Life Runners Fellowship</p>
-              <p>430 Monmouth Dr. Milpitas, CA 95035</p>
+              <p>2026 19th Ave, San Francisco, CA 94116</p>
             </article>
           </div>
         `
@@ -2155,7 +2155,7 @@ export const pages = [
             <thead><tr><th>Method</th><th>Details</th></tr></thead>
             <tbody>
               <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 1x1x00xxx · Account (Contact Us) · Memo: Life Runners Fellowship</td></tr>
-              <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
+              <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to: 2026 19th Ave, San Francisco, CA 94116</td></tr>
               <tr><td>Zelle (USD)</td><td>Account: love@life-runners.org</td></tr>
             </tbody>
           </table>
@@ -2200,7 +2200,7 @@ export const pages = [
             <thead><tr><th>方式</th><th>资讯</th></tr></thead>
             <tbody>
               <tr><td>美国银行转账</td><td>Bank of America · Routing 1x1x00xxx · Account (联系我们) · 备注写 Life Runners Fellowship</td></tr>
-              <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至 430 Monmouth Dr. Milpitas, CA 95035</td></tr>
+              <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至: 2026 19th Ave, San Francisco, CA 94116 </td></tr>
               <tr><td>Zelle(美刀)</td><td>帐号：love@life-runners.org</td></tr>
             </tbody>
           </table>
