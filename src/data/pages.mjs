@@ -32,8 +32,9 @@ export const siteMeta = {
           children: [
             { href: '/en/resources/ot/', label: 'Old Testament Studies' },
             { href: '/en/resources/nt/', label: 'New Testament Studies' },
-            { href: '/en/resources/faq/', label: 'Faith Q&A' },
-            { href: '/media/audio/desert/', label: 'Springs in the Desert' }
+            { href: '/media/audio/sunday/', label: 'Sunday Services' },
+            { href: '/media/audio/desert/', label: 'Springs in the Desert' },
+            { href: '/en/resources/faq/', label: 'Faith Q&A' }
           ]
         },
         {
@@ -98,17 +99,18 @@ export const siteMeta = {
         },
         {
           href: '/zh/resources/',
-          label: '查经灵修',
+          label: '灵修资源',
           children: [
             { href: '/zh/resources/ot/', label: '旧约系列' },
             { href: '/zh/resources/nt/', label: '新约系列' },
-            { href: '/zh/resources/faq/', label: '信仰问答' },
-            { href: '/media/audio/desert/', label: '荒漠甘泉' }
+            { href: '/media/audio/sunday/', label: '主日信息' },
+            { href: '/media/audio/desert/', label: '荒漠甘泉' },
+            { href: '/zh/resources/faq/', label: '信仰问答' }
           ]
         },
         {
           href: '/zh/events/',
-          label: '活动预告·记录',
+          label: '活动记录',
           children: [
             { href: '/zh/events/upcoming/', label: '即将举行' },
             { href: '/zh/events/past/', label: '往期回顾' }
@@ -116,7 +118,7 @@ export const siteMeta = {
         },
         {
           href: '/zh/support/',
-          label: '支持与奉献',
+          label: '支持奉献',
           children: [
             { href: '/zh/support/contact/', label: '联系方式' },
             { href: '/zh/support/donation/', label: '奉献须知' }
