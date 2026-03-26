@@ -758,6 +758,10 @@ export const pages = [
               <p>Assist in finance and growth of the organization.</p>
             </article>
             <article class="card">
+              <h3>Suping Ren, Board Member</h3>
+              <p>Prayer, Devotion, Worship.</p>
+            </article>
+            <article class="card">
               <h3>Jia-bing Cheng, Board Member</h3>
               <p>Technical Team Lead.</p>
             </article>
@@ -817,6 +821,10 @@ export const pages = [
             <article class="card">
               <h3>张艳玲，董事会成员</h3>
               <p>协助组织的财务与成长。</p>
+            </article>
+            <article class="card">
+              <h3>任苏平，董事会成员</h3>
+              <p>祷告灵修，敬拜赞美。</p>
             </article>
             <article class="card">
               <h3>程嘉彬，董事会成员</h3>
