@@ -1385,10 +1385,10 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>Leviticus 27 chapters</td>
-                <td>Offerings, Purification, Atonement, Laws, Feasts, Jubilee, Vows.</td>
-                <td><a href="/media/audio/ot03/lev.html">Scripture, PDF & video</a></td>
-                <td>2026-03</td>
+                <td>Genesis 50 chapters</td>
+                <td>Creation, Fall, Flood, Abraham, Issac, Jacob, Joseph.</td>
+                <td><a href="/media/audio/ot01/ot01.html">Scripture, PDF & video</a></td>
+                <td>2026-01</td>
               </tr>
               <tr>
                 <td>Exodus 40 chapters</td>
@@ -1397,10 +1397,16 @@ export const pages = [
                 <td>2026-02</td>
               </tr>
               <tr>
-                <td>Genesis 50 chapters</td>
-                <td>Creation, Fall, Flood, Abraham, Issac, Jacob, Joseph.</td>
-                <td><a href="/media/audio/ot01/ot01.html">Scripture, PDF & video</a></td>
-                <td>2026-01</td>
+                <td>Leviticus 27 chapters</td>
+                <td>Offerings, Purification, Atonement, Laws, Feasts, Jubilee, Vows.</td>
+                <td><a href="/media/audio/ot03/lev.html">Scripture, PDF & video</a></td>
+                <td>2026-03</td>
+              </tr>
+              <tr>
+                <td>Numbers 36 chapters</td>
+                <td>Census, Journey through Wilderness, New Generations.</td>
+                <td><a href="/media/audio/ot04/num.html">Scripture, PDF & video</a></td>
+                <td>2026-04</td>
               </tr>
             </tbody>
           </table>
@@ -1434,10 +1440,10 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>利未记 共27章</td>
-                <td>五种祭礼，洁净之律法，赎罪日，道德律，节期，安息年，许愿。</td>
-                <td>链接：<a href="/media/audio/ot03/lev.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-03</td>
+                <td>创世记 共50章</td>
+                <td>创造，堕落，洪水，亚伯拉罕，以撒，雅各，约瑟。</td>
+                <td>链接：<a href="/media/audio/ot01/ot01.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-01</td>
               </tr>
               <tr>
                 <td>出埃及记 共40章</td>
@@ -1446,10 +1452,16 @@ export const pages = [
                 <td>2026-02</td>
               </tr>
               <tr>
-                <td>创世记 共50章</td>
-                <td>创造，堕落，洪水，亚伯拉罕，以撒，雅各，约瑟。</td>
-                <td>链接：<a href="/media/audio/ot01/ot01.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-01</td>
+                <td>利未记 共27章</td>
+                <td>五种祭礼，洁净之律法，赎罪日，道德律，节期，安息年，许愿。</td>
+                <td>链接：<a href="/media/audio/ot03/lev.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-03</td>
+              </tr>
+              <tr>
+                <td>民数记 共36章</td>
+                <td>数点百姓，旷野的旅程，新的一代。</td>
+                <td>链接：<a href="/media/audio/ot04/num.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-04</td>
               </tr>
             </tbody>
           </table>
