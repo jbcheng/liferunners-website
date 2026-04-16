@@ -1789,14 +1789,23 @@ export const pages = [
         title: 'Event Timeline',
         content: `
           <div class="timeline">
+
             <div class="timeline-item" id="daily-devotion">
-              <h3>Started on Mar 18, 2026, five times a week, Leviticus ·
-		<a href="/media/audio/ot03/lev.html" target="_blank">Past Recordings</a>
+              <h3>Started on Apr 08, 2026, five times a week, Numbers ·
+		<a href="/media/audio/ot04/num.html" target="_blank">Past Recordings</a>
               </h3>
               <p>Time: Monday-Friday 06:30-07:30AM Pacific Daylight Saving Time </p>
               <p>Time: Monday-Friday 09:30-10:30PM Beijing Time</p>
               <p>Two-way online sessions for Bible study, devotion, sharing and discussion.</p>
             </div>
+
+            <div class="timeline-item" id="2026-marathon">
+              <h3>Apr 18, 2026, Marathon Practice ·
+		<a href="/media/galleries/marathon-2026/index.html" target="_blank">Photos</a>
+              </h3>
+              <p>Pastor Zhu plans for running a practicing marathon on Alameda Creek Trail in the Bay Area.</p>
+            </div>
+
           </div>
         `
       }
@@ -1824,12 +1833,18 @@ export const pages = [
         content: `
           <div class="timeline">
             <div class="timeline-item" id="daily-devotion">
-              <h3>2026年 3月18日 开始，每周五天，正在进行中 · 利未记 ·
-		<a href="/media/audio/ot03/lev.html" target="_blank">录影存档</a>
+              <h3>2026年 4月 8日 开始，每周五天，正在进行中 · 民数记 ·
+		<a href="/media/audio/ot04/num.html" target="_blank">录影存档</a>
               </h3>
               <p> 太平洋夏令时间 周一至周五 早晨6:30-7:30 </p>
               <p> 北京时间 周一至周五 晚上09:30-10:30 </p>
               <p> 双向交流的线上读经灵修，分享与讨论 </p>
+            </div>
+            <div class="timeline-item" id="2026-marathon">
+              <h3>2026年 4月 18日, 马拉松练习·
+		<a href="/media/galleries/marathon-2026/index.html" target="_blank">照片库</a>
+              </h3>
+              <p>朱牧师计划一次马拉松练习跑, 在湾区 Alameda Creek Trail.</p>
             </div>
           </div>
         `
