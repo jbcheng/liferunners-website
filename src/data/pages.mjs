@@ -159,6 +159,12 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Newsletter (Apr. 17, 2026)',
+      summary: 'Life Runners | April Newsletter : Run for Mark。',
+      link: '/newsletter/2026-04-run-for-mark.pdf',
+      badge: 'Latest Newsletter'
+    },
+    {
       title: 'Devotional Resource (Mar 17, 2026)',
       summary: 'Springs in the Desert | Recited by Mr. Chen',
       link: '/media/audio/desert/',
@@ -174,16 +180,16 @@ const latestHighlights = {
       title: 'Newsletter (Feb 17, 2026)',
       summary: 'Life Runners Chinese New Year Newsletter',
       link: '/newsletter/2026-02CNY.pdf',
-      badge: 'Lastest Newslatter'
-    },
-    {
-      title: 'CIM Marathon (Dec 07, 2025)',
-      summary: 'Life Runners Paster joined California International Marathon.',
-      link: '/media/galleries/cim-marathon/index.html',
-      badge: 'Recent Event'
+      badge: 'Newsletter'
     },
   ],
   zh: [
+    {
+      title: '电子通讯 (2026年4月17日)',
+      summary: '生命跑者 | 四月代祷信:为主奔跑。',
+      link: '/newsletter/2026-04-run-for-mark.pdf',
+      badge: '最新通讯'
+    },
     {
       title: '灵修资源 (2026年3月17日)',
       summary: '荒漠甘泉 ｜ 陈先生朗读',
@@ -201,12 +207,6 @@ const latestHighlights = {
       summary: '生命跑者｜正月奔跑，新年献主',
       link: '/newsletter/2026-02CNY.pdf',
       badge: '最新通讯'
-    },
-    {
-      title: '加州国际马拉松（2025年12月7日）',
-      summary: '生命跑者牧师在加州国际马拉松路跑。',
-      link: '/media/galleries/cim-marathon/index.html',
-      badge: '最新资料'
     },
   ]
 };
