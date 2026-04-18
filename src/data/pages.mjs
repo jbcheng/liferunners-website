@@ -1872,11 +1872,14 @@ export const pages = [
         title: 'Highlights',
         content: `
           <div class="cards">
+
             <article class="card" id="cim-marathon">
-              <h3>2025.12.07 CIM in Sacramento</h3>
-              <p>Life Runners Paster Zhu in California International Marathon</p>
+              <h3>Pastor Zhu in Marathon </h3>
+              <p>2026.04.18 Alameda Creek Trail | 2025.12.07 CIM </p>
               <ul>
-                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">照片库</a></li>
+                <li><a href="/media/galleries/marathon-2026/2026-0418-run-for-life.pdf" target="_blank">Run for Life, by OneMei</a></li>
+                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.04.18 Marathon Self Test - Photos</a></li>
+                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">2025.12.07 CIM 2025 - Photos </a></li>
               </ul>
             </article>
 
@@ -1950,10 +1953,12 @@ export const pages = [
           <div class="cards">
 
             <article class="card" id="cim-marathon">
-              <h3>2025 加州国际马拉松</h3>
-              <p>牧师首次马拉松 </p>
+              <h3>牧师跑马拉松</h3>
+              <p>2026.04.18 Alameda Creek Trail | 2025.12.07 CIM</p>
               <ul>
-                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">照片库</a></li>
+                <li><a href="/media/galleries/marathon-2026/2026-0418-run-for-life.pdf" target="_blank">为生命奔跑 文：一枚</a></li>
+                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.04.18 自测马拉松 照片库</a></li>
+                <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">2025.12.07 加州国际马拉松 照片库</a></li>
               </ul>
             </article>
 
