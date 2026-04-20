@@ -44,6 +44,12 @@ a{color:inherit;text-decoration:none}
 .photo-item:hover img{transform:scale(1.04);filter:brightness(.88)}
 .photo-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(17,24,39,.82) 0%,transparent 100%);color:#fff;padding:.6rem .9rem .7rem;font-size:12.5px;line-height:1.4;opacity:0;transition:opacity .25s}
 .photo-item:hover .photo-caption{opacity:1}
+
+/* video card */
+.video-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);overflow:hidden;margin-top:1rem}
+.video-card video{width:100%;display:block;max-height:480px;background:#000}
+.video-card-cap{padding:.75rem 1.1rem;font-size:13px;color:var(--gray-600);border-top:1px solid var(--gray-100)}
+
 .section-divider{height:1px;background:var(--gray-100);margin:1rem 0 3.5rem}
 .lb-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.93);align-items:center;justify-content:center;padding:1.5rem}
 .lb-overlay.open{display:flex}
@@ -110,15 +116,48 @@ a{color:inherit;text-decoration:none}
   <div class="gallery-section">
   <div class="section-label">
     <span class="section-dot" style="background:#c49a3c"></span>
-    <h2>Pre-Race · 赛前准备</h2>
-    <span class="slabel-sub">2026.04.16 · Fremont, CA</span>
+    <h2>Photos Video · 像片 视频</h2>
+    <span class="slabel-sub">2026.04.18 · Alameda Creek Trail, Fremont, CA</span>
   </div>
-  <div class="photo-grid"><div class="photo-item" data-full=""act.png data-caption="Alameda Creek Trail ｜ACT">
+  <div class="photo-grid">
+    <div class="photo-item" data-full="act.png" data-caption="Alameda Creek Trail ｜ACT">
       <img src="act.png" alt="Planned Runnig Route｜计划跑步路线" loading="lazy">
       <div class="photo-caption">Planned Runnig Route｜计划跑步路线</div>
-    </div></div>
+    </div>
+    <div class="photo-item" data-full="Image_20260418145033_3113_243.jpg" data-caption="Personal Record | 个人最佳纪录">
+      <img src="Image_20260418145033_3113_243.jpg" alt="Personal Record | 个人最佳纪录" loading="lazy">
+      <div class="photo-caption">Personal Record | 个人最佳纪录 </div>
+    </div>
+
+    <div class="photo-item" data-full="Image_20260418125941_3112_243.jpg" data-caption="Last Few Miles｜最后几邁">
+      <img src="Image_20260418125941_3112_243.jpg" alt="Last Few Miles｜最后几邁" loading="lazy">
+      <div class="photo-caption">Last Few Miles｜最后几邁</div>
+    </div>
+    <div class="photo-item" data-full="Image_20260418095423_974_253.jpg" data-caption="Finishing Line | 终点线">
+      <img src="Image_20260418095423_974_253.jpg" alt="Finishing Line | 终点线" loading="lazy">
+      <div class="photo-caption">Finishing Line | 终点线</div>
+    </div>
+    <div class="photo-item" data-full=" 2026_0418Run4Mark.png" data-caption="Framed | 框起来收藏">
+      <img src=" 2026_0418Run4Mark.png" alt="Framed｜框起来收藏" loading="lazy">
+      <div class="photo-caption">Framed｜框起来收藏</div>
+    </div>
+    <div class="photo-item" data-full="Image_20260418223612_213_327.jpg" data-caption="Celebration | 庆祝聚餐">
+      <img src="Image_20260418223612_213_327.jpg" alt="Celebration | 庆祝聚餐" loading="lazy">
+      <div class="photo-caption">Celebration | 庆祝聚餐</div>
+    </div>
+  </div>
+
+  <div class="video-card">
+  <video controls preload="none" poster="">
+    <source src="2026_0418.mp4" type="video/mp4">
+    您的浏览器不支持视频播放。
+  </video>
+  <div class="video-card-cap">🎬 Marathon Video | 马拉松视频</div>
+
 </div>
 <div class="section-divider"></div>
+
+
 </main>
 
 <div class="lb-overlay" role="dialog" aria-modal="true" aria-label="图片预览">
