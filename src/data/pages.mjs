@@ -2243,7 +2243,7 @@ export const pages = [
             <tbody>
               <tr><td>美国银行转账</td><td>Bank of America · Routing 1x1x00xxx · Account (联系我们) · 备注写 Life Runners Fellowship</td></tr>
               <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至: 2026 19th Ave, San Francisco, CA 94116 </td></tr>
-              <tr><td>Zelle(美刀)</td><td>帐号：love@life-runners.org</td></tr>
+              <tr><td>Zelle(美元)</td><td>帐号：love@life-runners.org</td></tr>
             </tbody>
           </table>
         `
