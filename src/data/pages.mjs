@@ -278,7 +278,7 @@ export const pages = [
               <a class="button" href="/en/ministries/love/">See impact</a>
             </article>
             <article class="card">
-              <h3>Foundamental Truth - Faith & Science</h3>
+              <h3>Fundamental Truth - Faith & Science</h3>
               <p>Dr. Zhang and Pastor Zhu share the origin of the universe and life, and its relationship with faith.</p>
               <a class="button" href="/media/audio/sci/sci.html">See details</a>
             </article>
