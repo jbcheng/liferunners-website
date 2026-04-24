@@ -1030,7 +1030,7 @@ export const pages = [
               <h3>Weekly Training Plan</h3>
               <p>Download PDF and Mandarin audio walkthrough.</p>
               <a class="button" href="/media/resources/training-plan.pdf">Download PDF</a>
-              <a class="button" href="/media/audio/training-plan-mandarin.mp3">听取中文音频</a>
+              <a class="button" href="/media/audio/training-plan-mandarin.m4a">听取中文音频</a>
             </article>
             <article class="card">
               <h3>Stretch & Scripture</h3>
@@ -1078,7 +1078,7 @@ export const pages = [
               <h3>每周训练表</h3>
               <p>提供 PDF 与普通话音频讲解。</p>
               <a class="button" href="/media/resources/training-plan.pdf">下载 PDF</a>
-              <a class="button" href="/media/audio/training-plan-mandarin.mp3">收听音频</a>
+              <a class="button" href="/media/audio/training-plan-mandarin.m4a">收听音频</a>
             </article>
             <article class="card">
               <h3>伸展与经文</h3>
@@ -1131,7 +1131,7 @@ export const pages = [
             <article class="card">
               <h3>Breath Prayer Audio</h3>
               <p>5-minute bilingual guidance with transcript.</p>
-              <a class="button" href="/media/audio/breath-prayer.mp3">MP3</a>
+              <a class="button" href="/media/audio/breath-prayer.m4a">Audio</a>
               <a class="button" href="/media/transcripts/breath-prayer.pdf">Transcript</a>
             </article>
           </div>
@@ -1179,7 +1179,7 @@ export const pages = [
             <article class="card">
               <h3>呼吸祷告音频</h3>
               <p>5 分钟双语引导，附逐字稿。</p>
-              <a class="button" href="/media/audio/breath-prayer.mp3">MP3</a>
+              <a class="button" href="/media/audio/breath-prayer.m4a">音频</a>
               <a class="button" href="/media/transcripts/breath-prayer.pdf">逐字稿</a>
             </article>
           </div>
