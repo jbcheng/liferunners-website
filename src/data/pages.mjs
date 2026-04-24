@@ -13,7 +13,7 @@ export const siteMeta = {
           children: [
             { href: '/en/about/confession/', label: 'Confession of Faith' },
             { href: '/en/about/logo/', label: 'Our Logo' },
-            { href: '/en/about/team/', label: 'Leadership Team' },
+            { href: '/en/about/team/', label: 'Core Members' },
             { href: '/en/about/calendar/', label: 'Calendar' }
           ]
         },
@@ -63,7 +63,7 @@ export const siteMeta = {
             { label: 'Support', value: 'Offering', href: '/en/support/donation/' }
           ]
         },
-        address: 'Serving the Bay Area, USA & online discipleship communities in mainland China.',
+        address: 'Serving the Bay Area, USA & online discipleship communities around the world.',
         social: [
           { label: 'YouTube', href: 'https://www.youtube.com/@BibleRunners', note: 'Includes China-accessible transcripts.' },
           { label: 'Audio recordings', href: '/media/audio/' },
@@ -84,7 +84,7 @@ export const siteMeta = {
           children: [
             { href: '/zh/about/confession/', label: '信仰告白' },
             { href: '/zh/about/logo/', label: '标志故事' },
-            { href: '/zh/about/team/', label: '领袖团队' },
+            { href: '/zh/about/team/', label: '核心同工' },
             { href: '/zh/about/calendar/', label: '活动日历' }
           ]
         },
@@ -134,7 +134,7 @@ export const siteMeta = {
             { label: '支持', value: '奉献', href: '/zh/support/donation/' }
           ]
         },
-        address: '服务美国湾区，并连结中国大陆线上门训小组。',
+        address: '服务美国湾区，并连结世界各地线上门训小组。',
         social: [
           { label: 'YouTube 视频（翻墙）', href: 'https://www.youtube.com/@BibleRunners' },
           { label: '音频镜像（国内可访问）', href: '/media/audio/' },
@@ -389,7 +389,7 @@ export const pages = [
             </div>
             <div class="card">
               <h3>音频存档</h3>
-              <p>MP3 灵修与 Spotify 镜像，并附带国内可下载的逐字稿。</p>
+              <p>MP3 灵修与 Spotify 镜像，并附带国内可下载的逐字音频与简报</p>
               <a class="button" href="/media/audio/">下载音频与文字</a>
             </div>
             <div class="card">
@@ -470,7 +470,7 @@ export const pages = [
       eyebrow: '关于我们',
       title: '在美国与中国之间同行的宣教家庭。',
       subtitle: '生命跑者团契起初是一群马拉松跑者为运动员复兴祷告，如今装备教会、校园与家庭，在双语环境中建立门徒。',
-      cta: { label: '认识领袖团队', href: '/zh/about/team/' }
+      cta: { label: '认识核心同工', href: '/zh/about/team/' }
     },
     breadcrumbs: [
       { href: '/zh/', label: '首页' }
@@ -720,11 +720,11 @@ export const pages = [
     lang: 'en',
     path: 'en/about/team/index.html',
     url: '/en/about/team/',
-    title: 'Leadership Team',
+    title: 'Core Members',
     description: 'Meet the servant leaders who steward Life Runners Fellowship.',
     altLang: '/zh/about/team/',
     hero: {
-      eyebrow: 'Leadership',
+      eyebrow: 'Core Members',
       title: 'A cross-cultural team running together.',
       subtitle: 'Our board and staff serve bi-vocationally across ministry, business, and athletics.'
     },
@@ -769,11 +769,11 @@ export const pages = [
         `
       },
       {
-        title: 'Core Volunteers',
+        title: 'Coworkers Team',
         content: `
           <div class="cards">
             <article class="card">
-              <h3>Coworkers</h3>
+              <h3>Fellowship Coworkers</h3>
               <p>Over 10 volunteers steward online Bible study, prayer, hospitality, tech support, and mentoring.</p>
             </article>
           </div>
@@ -785,11 +785,11 @@ export const pages = [
     lang: 'zh',
     path: 'zh/about/team/index.html',
     url: '/zh/about/team/',
-    title: '领袖团队',
+    title: '核心同工',
     description: '认识生命跑者团契的同工与顾问。',
     altLang: '/en/about/team/',
     hero: {
-      eyebrow: '团队',
+      eyebrow: '核心同工',
       title: '跨文化团队并肩奔跑。',
       subtitle: '董事与同工多元职业背景，联合服事。'
     },
@@ -834,12 +834,12 @@ export const pages = [
         `
       },
       {
-        title: '核心同工',
+        title: '同工团队',
         content: `
           <div class="cards">
             
             <article class="card">
-              <h3>同工团队</h3>
+              <h3>团契同工</h3>
               <p>超过 10 位志愿者分工承担圣经学习、祷告、关怀接待、技术支援，和属灵导师。</p>
             </article>
           </div>
