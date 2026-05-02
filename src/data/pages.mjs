@@ -159,15 +159,21 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'New Classes (Started May 01, 2026)',
+      summary: 'Faith Journey - Discipleship',
+      link: '/media/audio/scj/scj.html',
+      badge: 'New Resources'
+    },
+    {
       title: 'Newsletter (Apr. 17, 2026)',
       summary: 'Life Runners | April Newsletter : Run for Mark。',
       link: '/newsletter/2026-04-run-for-mark.pdf',
       badge: 'Latest Newsletter'
     },
     {
-      title: 'Devotional Resource (Mar 17, 2026)',
-      summary: 'Springs in the Desert | Recited by Mr. Chen',
-      link: '/media/audio/desert/',
+      title: 'Devotional Resource (Started Apr. 08, 2026)',
+      summary: 'Daily Devotion | Old Testament - Numbers',
+      link: '/media/audio/ot04/num.html',
       badge: 'New Resources'
     },
     {
@@ -176,14 +182,14 @@ const latestHighlights = {
       link: '/media/galleries/prayer-mountain/index.html',
       badge: 'Recent Event'
     },
-    {
-      title: 'Newsletter (Feb 17, 2026)',
-      summary: 'Life Runners Chinese New Year Newsletter',
-      link: '/newsletter/2026-02CNY.pdf',
-      badge: 'Newsletter'
-    },
   ],
   zh: [
+    {
+      title: '新一季课程 (2026年年05月01日 起)',
+      summary: '信仰之路 - 门徒训练',
+      link: '/media/audio/scj/scj.html',
+      badge: '最新资源'
+    },
     {
       title: '电子通讯 (2026年4月17日)',
       summary: '生命跑者 | 四月代祷信:为主奔跑。',
@@ -191,9 +197,9 @@ const latestHighlights = {
       badge: '最新通讯'
     },
     {
-      title: '灵修资源 (2026年3月17日)',
-      summary: '荒漠甘泉 ｜ 陈先生朗读',
-      link: '/media/audio/desert/',
+      title: '灵修资源 (2026年4月08日)',
+      summary: '每日读经 ｜ 旧约民数记',
+      link: '/media/audio/ot04/num.html',
       badge: '最新资源'
     },
     {
@@ -201,12 +207,6 @@ const latestHighlights = {
       summary: '生命跑者在北加州禁食祷告山',
       link: '/media/galleries/prayer-mountain/index.html',
       badge: '最新资料'
-    },
-    {
-      title: '电子通讯 (2026年年02月17日)',
-      summary: '生命跑者｜正月奔跑，新年献主',
-      link: '/newsletter/2026-02CNY.pdf',
-      badge: '最新通讯'
     },
   ]
 };
