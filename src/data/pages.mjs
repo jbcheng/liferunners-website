@@ -228,7 +228,6 @@ export const pages = [
       eyebrow: 'Life Runners Fellowship',
       title: 'Exercise your body, Practice godliness, Live out love.',
       subtitle: 'We unite life runners, families, and disciple-makers across the United States and China to exercise our bodies, practice godliness, and live out love in every community.',
-      cta: { label: 'Make a donation', href: '/en/support/donation/' }
     },
     sections: [
       {
@@ -321,7 +320,6 @@ export const pages = [
       eyebrow: '生命跑者团契',
       title: '操练身体，操练敬虔，活出爱。',
       subtitle: '我们连结美国与中国的生命跑者、家庭与门训同工，一同操练身体、操练敬虔、活出爱。',
-      cta: { label: '支持奉献', href: '/zh/support/donation/' }
     },
     sections: [
       {
