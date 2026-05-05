@@ -1406,6 +1406,12 @@ export const pages = [
                 <td><a href="/media/audio/ot04/num.html">Scripture, PDF & video</a></td>
                 <td>2026-04</td>
               </tr>
+              <tr>
+                <td>Deuteronomy 34 chapters</td>
+                <td>Review Wilderness Journey, Commandments & Covenent Laws.</td>
+                <td><a href="/media/audio/ot05/deu.html">Scripture, PDF & video</a></td>
+                <td>2026-05</td>
+              </tr>
             </tbody>
           </table>
         `
@@ -1460,6 +1466,12 @@ export const pages = [
                 <td>数点百姓，旷野的旅程，新的一代。</td>
                 <td>链接：<a href="/media/audio/ot04/num.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-04</td>
+              </tr>
+              <tr>
+                <td>申命记 共34章</td>
+                <td>历史序言、盟约条例、同意立约、移交领导权。</td>
+                <td>链接：<a href="/media/audio/ot05/deu.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-05</td>
               </tr>
             </tbody>
           </table>
