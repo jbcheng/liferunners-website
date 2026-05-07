@@ -160,7 +160,7 @@ const latestHighlights = {
   en: [
     {
       title: 'New Classes (Started May 01, 2026)',
-      summary: 'Faith Journey - Discipleship',
+      summary: 'Essential Truths & Discipleship Life',
       link: '/media/audio/scj/scj.html',
       badge: 'New Resources'
     },
@@ -186,7 +186,7 @@ const latestHighlights = {
   zh: [
     {
       title: '新一季课程 (2026年年05月01日 起)',
-      summary: '信仰之路 - 门徒训练',
+      summary: '基要真理与门徒生活',
       link: '/media/audio/scj/scj.html',
       badge: '最新资源'
     },
