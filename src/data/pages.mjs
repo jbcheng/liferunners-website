@@ -33,6 +33,7 @@ export const siteMeta = {
             { href: '/en/resources/ot/', label: 'Old Testament Studies' },
             { href: '/en/resources/nt/', label: 'New Testament Studies' },
             { href: '/media/audio/sunday/', label: 'Sunday Services' },
+            { href: '/media/audio/testimony/', label: 'Testimony' },
             { href: '/media/audio/desert/', label: 'Springs in the Desert' },
             { href: '/en/resources/faq/', label: 'Faith Q&A' }
           ]
@@ -104,6 +105,7 @@ export const siteMeta = {
             { href: '/zh/resources/ot/', label: '旧约系列' },
             { href: '/zh/resources/nt/', label: '新约系列' },
             { href: '/media/audio/sunday/', label: '主日信息' },
+            { href: '/media/audio/testimony/', label: '见证分享' },
             { href: '/media/audio/desert/', label: '荒漠甘泉' },
             { href: '/zh/resources/faq/', label: '信仰问答' }
           ]
@@ -1801,19 +1803,21 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>Started on Apr 08, 2026, five times a week, Numbers ·
-		<a href="/media/audio/ot04/num.html" target="_blank">Past Recordings</a>
+              <h3>Started on May 05, 2026, five times a week, Deuternomy ·
+		<a href="/media/audio/ot05/deu.html" target="_blank">Past Recordings</a>
               </h3>
               <p>Time: Monday-Friday 06:30-07:30AM Pacific Daylight Saving Time </p>
               <p>Time: Monday-Friday 09:30-10:30PM Beijing Time</p>
               <p>Two-way online sessions for Bible study, devotion, sharing and discussion.</p>
             </div>
 
-            <div class="timeline-item" id="2026-marathon">
-              <h3>Apr 18, 2026, Marathon Practice ·
-		<a href="/media/galleries/marathon-2026/index.html" target="_blank">Photos</a>
+            <div class="timeline-item" id="weekly-class">
+              <h3>Started on May 1st, 2026，once a week for 10 weeks · Essential Truth and Discipleship ·
+		<a href="/media/audio/scj/scj.html" target="_blank">Past Recordings</a>
               </h3>
-              <p>Pastor Zhu plans for running a practicing marathon on Alameda Creek Trail in the Bay Area.</p>
+              <p>Time: Friday 06:30-07:30PM Pacific Daylight Saving Time </p>
+              <p>Time: Saturday 09:30-10:30AM Beijing Time</p>
+              <p>Two-way online sessions for Discipleship, sharing and discussion.</p>
             </div>
 
           </div>
@@ -1842,20 +1846,25 @@ export const pages = [
         title: '时间轴',
         content: `
           <div class="timeline">
+
             <div class="timeline-item" id="daily-devotion">
-              <h3>2026年 4月 8日 开始，每周五天，正在进行中 · 民数记 ·
-		<a href="/media/audio/ot04/num.html" target="_blank">录影存档</a>
+              <h3>2026年 5月 5日 开始，每周五天，正在进行中 · 申命记 ·
+		<a href="/media/audio/ot05/deu.html" target="_blank">录影存档</a>
               </h3>
               <p> 太平洋夏令时间 周一至周五 早晨6:30-7:30 </p>
               <p> 北京时间 周一至周五 晚上09:30-10:30 </p>
               <p> 双向交流的线上读经灵修，分享与讨论 </p>
             </div>
-            <div class="timeline-item" id="2026-marathon">
-              <h3>2026年 4月 18日, 马拉松练习·
-		<a href="/media/galleries/marathon-2026/index.html" target="_blank">照片库</a>
+
+            <div class="timeline-item" id="weekly-class">
+              <h3>2026年 5月 1日 开始，每周一次，正在进行中 · 基要真理與門徒生活 ·
+		<a href="/media/audio/scj/scj.html" target="_blank">录影存档</a>
               </h3>
-              <p>朱牧师计划一次马拉松练习跑, 在湾区 Alameda Creek Trail.</p>
+              <p> 太平洋夏令时间 周五 晚上6:30-7:30 </p>
+              <p> 北京时间 周六 早晨09:30-10:30 </p>
+              <p> 双向交流的线上门训课程，分享与讨论 </p>
             </div>
+
           </div>
         `
       }
