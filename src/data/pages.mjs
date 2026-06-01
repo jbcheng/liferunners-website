@@ -161,6 +161,12 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
+      title: 'Devotional Resource (Started June 01, 2026)',
+      summary: 'Daily Devotion | Old Testament - Joshua',
+      link: '/media/audio/ot06/josh.html',
+      badge: 'New Resources'
+    },
+    {
       title: 'New Classes (Started May 01, 2026)',
       summary: 'Essential Truths & Discipleship Life',
       link: '/media/audio/scj/scj.html',
@@ -173,12 +179,6 @@ const latestHighlights = {
       badge: 'Latest Newsletter'
     },
     {
-      title: 'Devotional Resource (Started Apr. 08, 2026)',
-      summary: 'Daily Devotion | Old Testament - Numbers',
-      link: '/media/audio/ot04/num.html',
-      badge: 'New Resources'
-    },
-    {
       title: 'Prayer Mountain Bible Reading & Devotion Day (March 09, 2026)',
       summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
@@ -186,6 +186,12 @@ const latestHighlights = {
     },
   ],
   zh: [
+    {
+      title: '灵修资源 (2026年6月01日 起)',
+      summary: '每日读经 ｜ 旧约约书亚记',
+      link: '/media/audio/ot06/josh.html',
+      badge: '最新资源'
+    },
     {
       title: '新一季课程 (2026年年05月01日 起)',
       summary: '基要真理与门徒生活',
@@ -197,12 +203,6 @@ const latestHighlights = {
       summary: '生命跑者 | 四月代祷信:为主奔跑。',
       link: '/newsletter/2026-04-run-for-mark.pdf',
       badge: '最新通讯'
-    },
-    {
-      title: '灵修资源 (2026年4月08日)',
-      summary: '每日读经 ｜ 旧约民数记',
-      link: '/media/audio/ot04/num.html',
-      badge: '最新资源'
     },
     {
       title: '祷告山读经灵修日 (2026年3月09日)',
@@ -1414,6 +1414,12 @@ export const pages = [
                 <td><a href="/media/audio/ot05/deu.html">Scripture, PDF & video</a></td>
                 <td>2026-05</td>
               </tr>
+              <tr>
+                <td>Joshua 24 chapters</td>
+                <td>Enter the Promised Land, Battles, Dividing the Land, Covenant.</td>
+                <td><a href="/media/audio/ot06/josh.html">Scripture, PDF & Video</a></td>
+                <td>2026-06</td>
+              </tr>
             </tbody>
           </table>
         `
@@ -1474,6 +1480,12 @@ export const pages = [
                 <td>历史序言、盟约条例、同意立约、移交领导权。</td>
                 <td>链接：<a href="/media/audio/ot05/deu.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-05</td>
+              </tr>
+              <tr>
+                <td>约书亚记 共24章</td>
+                <td>进入应许之地、战役、土地分配、重申圣约。</td>
+                <td>链接：<a href="/media/audio/ot06/josh.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-06</td>
               </tr>
             </tbody>
           </table>
