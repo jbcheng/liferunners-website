@@ -164,54 +164,130 @@ const latestHighlights = {
       title: 'Devotional Resource (Started June 01, 2026)',
       summary: 'Daily Devotion | Old Testament - Joshua',
       link: '/media/audio/ot06/josh.html',
-      badge: 'New Resources'
+      badge: 'New Resources',
+      image: {
+        src: '/media/audio/ot06/josh01-02cov.png',
+        alt: 'Crossing Jordan 跨越约旦河'
+      }
+    },
+    {
+      title: 'Live Out Love Service (May 24, 2026)',
+      summary: 'Life Runners serving together through practical care.',
+      link: '/media/galleries/live-out-love/index.html',
+      badge: 'Recent Event',
+      image: {
+        src: '/media/galleries/live-out-love/Image_20260524105728_44_352.jpg',
+        alt: 'Life Runners Live Out Love service gathering'
+      }
     },
     {
       title: 'New Classes (Started May 01, 2026)',
       summary: 'Essential Truths & Discipleship Life',
       link: '/media/audio/scj/scj.html',
-      badge: 'New Resources'
+      badge: 'New Resources',
+      image: {
+        src: '/media/audio/scj/scj03a-living-church.png',
+        alt: 'Living Church 心意更新的教會'
+      }
     },
     {
-      title: 'Newsletter (Apr. 17, 2026)',
-      summary: 'Life Runners | April Newsletter : Run for Mark。',
-      link: '/newsletter/2026-04-run-for-mark.pdf',
-      badge: 'Latest Newsletter'
+      title: 'Pastor Zhu in Marathon (Apr. 18, 2026)',
+      summary: 'Run for Life marathon photos, video, and report.',
+      link: '/media/galleries/marathon-2026/index.html',
+      badge: 'Recent Event',
+      image: {
+        src: '/media/galleries/marathon-2026/2026_0418Run4Mark.png',
+        alt: 'Run for Life marathon event'
+      }
+    },
+    {
+      title: 'Sunday Worship Archive (2026)',
+      summary: 'Weekly online Sunday worship recordings and PDFs.',
+      link: '/media/audio/sunday/index.html',
+      badge: 'New Resources',
+      image: {
+        src: '/media/audio/sunday/sunday2026-0517cov.jpg',
+        alt: 'Talking about US China Summit 從中美北京峰會講起'
+      }
     },
     {
       title: 'Prayer Mountain Bible Reading & Devotion Day (March 09, 2026)',
-      summary: 'Life Runners at Fastering Prayer Mountain in Scotts Valley, California',
+      summary: 'Life Runners at Fasting Prayer Mountain in Scotts Valley, California',
       link: '/media/galleries/prayer-mountain/index.html',
-      badge: 'Recent Event'
+      badge: 'Recent Event',
+      image: {
+        src: '/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg',
+        alt: 'Life Runners Prayer Mountain devotion day'
+      }
     },
   ],
   zh: [
     {
       title: '灵修资源 (2026年6月01日 起)',
-      summary: '每日读经 ｜ 旧约约书亚记',
+      summary: '每日读经 ｜ 约书亚记',
       link: '/media/audio/ot06/josh.html',
-      badge: '最新资源'
+      badge: '最新资源',
+      image: {
+        src: '/media/audio/ot06/josh01-02cov.png',
+        alt: 'Crossing Jordan 跨越约旦河'
+      }
     },
     {
-      title: '新一季课程 (2026年年05月01日 起)',
+      title: '活出爱服事 (2026年5月24日)',
+      summary: '生命跑者以实际关怀一同服事。',
+      link: '/media/galleries/live-out-love/index.html',
+      badge: '最新活动',
+      image: {
+        src: '/media/galleries/live-out-love/Image_20260524105728_44_352.jpg',
+        alt: '生命跑者活出爱服事聚会'
+      }
+    },
+    {
+      title: '新一季课程 (2026年05月01日 起)',
       summary: '基要真理与门徒生活',
       link: '/media/audio/scj/scj.html',
-      badge: '最新资源'
+      badge: '最新资源',
+      image: {
+        src: '/media/audio/scj/scj03a-living-church.png',
+        alt: 'Living Church 心意更新的教會'
+      }
     },
     {
-      title: '电子通讯 (2026年4月17日)',
-      summary: '生命跑者 | 四月代祷信:为主奔跑。',
-      link: '/newsletter/2026-04-run-for-mark.pdf',
-      badge: '最新通讯'
+      title: '牧师跑马拉松 (2026年4月18日)',
+      summary: 'Run for Life 马拉松自测照片、视频与报告。',
+      link: '/media/galleries/marathon-2026/index.html',
+      badge: '最新活动',
+      image: {
+        src: '/media/galleries/marathon-2026/2026_0418Run4Mark.png',
+        alt: 'Run for Life 马拉松活动'
+      }
+    },
+    {
+      title: '主日敬拜存档 (2026年)',
+      summary: '每周线上主日敬拜录音与 PDF 存档。',
+      link: '/media/audio/sunday/index.html',
+      badge: '最新资源',
+      image: {
+        src: '/media/audio/sunday/sunday2026-0517cov.jpg',
+        alt: 'Talking about US China Summit 從中美北京峰會講起'
+      }
     },
     {
       title: '祷告山读经灵修日 (2026年3月09日)',
       summary: '生命跑者在北加州禁食祷告山',
       link: '/media/galleries/prayer-mountain/index.html',
-      badge: '最新资料'
+      badge: '最新活动',
+      image: {
+        src: '/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg',
+        alt: '生命跑者祷告山读经灵修日'
+      }
     },
   ]
 };
+
+const renderHighlightImage = (item) => item.image
+  ? `<img src="${item.image.src}" alt="${item.image.alt}" loading="lazy" decoding="async" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:1rem;" />`
+  : '';
 
 const calendarEmbed = {
   en: `<iframe title="Life Runners Google Calendar" src="https://calendar.google.com/calendar/embed?src=lifrunners%40example.com&ctz=America%2FLos_Angeles" style="border:0" width="100%" height="450" loading="lazy"></iframe>`,
@@ -247,6 +323,7 @@ export const pages = [
               .map(
                 (item) => `
                   <article class="card">
+                    ${renderHighlightImage(item)}
                     <span class="badge">${item.badge}</span>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
@@ -339,6 +416,7 @@ export const pages = [
               .map(
                 (item) => `
                   <article class="card">
+                    ${renderHighlightImage(item)}
                     <span class="badge">${item.badge}</span>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
