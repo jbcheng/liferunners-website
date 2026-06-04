@@ -111,11 +111,19 @@
     background: #fff;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.1rem 1.25rem;
     margin-bottom: 0.75rem;
     transition: border-color 0.15s;
+    overflow: hidden;
   }
   .episode:hover { border-color: var(--gold); }
+  .episode-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.95fr);
+  }
+  .episode-copy {
+    padding: 1.1rem 1.25rem 1.15rem;
+    min-width: 0;
+  }
   .episode-header {
     display: flex;
     align-items: flex-start;
@@ -170,12 +178,39 @@
   .chip-audio  { background: var(--teal-light); color: var(--teal); border-color: #b3d9d2; }
   .chip-video  { background: var(--red-light);  color: var(--red);  border-color: #e5c0c0; }
   .chip-pdf    { background: var(--gold-light);  color: var(--gold); border-color: #d9c49e; }
+  .chip-muted  { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
   .chip::before {
     content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
   }
   .chip-audio::before { background: var(--teal); }
   .chip-video::before { background: var(--red); }
   .chip-pdf::before   { background: var(--gold); }
+  .chip-muted::before { background: var(--ink-faint); }
+  .episode-media {
+    margin: 0;
+    border-left: 1px solid var(--border);
+    background: linear-gradient(180deg, #fff 0%, #f9f6f0 100%);
+    min-height: 100%;
+    display: flex;
+  }
+  .episode-media a,
+  .episode-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .episode-media img {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+  .episode-media-empty {
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-faint);
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
   .episode-special {
     background: var(--surface);
     border-left: 3px solid var(--gold);
@@ -196,6 +231,19 @@
     margin-top: 2rem;
   }
   .page-footer a { color: var(--gold); text-decoration: none; }
+  @media (max-width: 760px) {
+    .episode-grid {
+      grid-template-columns: 1fr;
+    }
+    .episode-media {
+      border-left: 0;
+      border-top: 1px solid var(--border);
+      min-height: 0;
+    }
+    .episode-media img {
+      aspect-ratio: 16 / 9;
+    }
+  }
 </style>
 </head>
 <body>
@@ -229,176 +277,248 @@
 
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 一 講</span>
-      <div>
-        <div class="episode-title">我的門徒之路</div>
-        <div class="episode-speaker">朱牧师個人見證</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 一 講</span>
+          <div>
+            <div class="episode-title">我的門徒之路</div>
+            <div class="episode-speaker">朱牧师個人見證</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=aj37IiJiyIs">像天空的鸽子</a>
+          <a class="chip chip-video" href="https://www.youtube.com/live/tytAGYPOMA4">视频</a>
+          <a class="chip chip-audio" href="scj00-aud.mp3">音频</a>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href="https://www.youtube.com/watch?v=aj37IiJiyIs">像天空的鸽子</a>
-      <a class="chip chip-video" href="https://www.youtube.com/live/tytAGYPOMA4">视频</a>
-      <a class="chip chip-audio" href="scj00-aud.mp3">音频</a>
-      <a class="chip chip-pdf" href="scj00.png">Cover</a>
+      <figure class="episode-media">
+        <a href="scj00.png"><img src="scj00.png" alt="像天空的鸽子封面"></a>
+      </figure>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 二 講</span>
-      <div>
-        <div class="episode-title">神是怎樣的神? </div>
-        <div class="episode-speaker">認識三一真神</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 二 講</span>
+          <div>
+            <div class="episode-title">神是怎樣的神? </div>
+            <div class="episode-speaker">認識三一真神</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/live/cCYnexjE9yw">视频</a>
+          <a class="chip chip-audio" href="scj01-aud.mp3">音频</a>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href="https://www.youtube.com/live/cCYnexjE9yw">视频</a>
-      <a class="chip chip-audio" href="scj01-aud.mp3">音频</a>
-      <a class="chip chip-pdf" href="scj01.png">神的六大属性</a>
+      <figure class="episode-media">
+        <a href="scj01.png"><img src="scj01.png" alt="神是怎样的神封面"></a>
+      </figure>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">特別講座</span>
-      <div>
-        <div class="episode-title">在總統與主席之間 基督信仰如何塑造中美兩百年</div>
-        <div class="episode-speaker"> 清華・北大・協和・Burlingame——那些教科書沒有告訴你的故事</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">特別講座</span>
+          <div>
+            <div class="episode-title">在總統與主席之間</div>
+            <div class="episode-speaker"> 清華・北大・協和・Burlingame——那些教科書沒有告訴你的故事</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=gmO6ja3CLFc">视频</a>
+          <a class="chip chip-audio" href="scj02-aud.mp3">音频</a>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href="https://www.youtube.com/watch?v=gmO6ja3CLFc">视频</a>
-      <a class="chip chip-audio" href="scj02-aud.mp3">音频</a>
-      <a class="chip chip-pdf" href="scj02.png">PDFcover</a>
+      <figure class="episode-media">
+        <a href="scj02.png"><img src="scj02.png" alt="基督信仰如何塑造中美两百年封面"></a>
+      </figure>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 三 講</span>
-      <div>
-        <div class="episode-title">人论 我是誰?</div>
-        <div class="episode-speaker">身份、本性與新造的人</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 三 講</span>
+          <div>
+            <div class="episode-title">人论 我是誰?</div>
+            <div class="episode-speaker">身份、本性與新造的人</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=jaGlIyFQ56o">视频</a>
+          <a class="chip chip-audio" href="scj03-aud.mp3">音频</a>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href="https://www.youtube.com/watch?v=jaGlIyFQ56o">视频</a>
-      <a class="chip chip-audio" href="scj03-aud.mp3">音频</a>
-      <a class="chip chip-pdf" href="scj03.png">PDFcover</a>
+      <figure class="episode-media">
+        <a href="scj03.png"><img src="scj03.png" alt="猜猜我是谁封面"></a>
+      </figure>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">生命讀書会</span>
-      <div>
-        <div class="episode-title">心意更新的教會 -- 约翰。斯托得</div>
-        <div class="episode-speaker">Living Church -- John Stott</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">生命讀書会</span>
+          <div>
+            <div class="episode-title">心意更新的教會 -- 约翰。斯托得</div>
+            <div class="episode-speaker">Living Church -- John Stott</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=quPgzEco__c">视频</a>
+          <a class="chip chip-audio" href="scj03a-living-church-aud.mp3">音频</a>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href="https://www.youtube.com/watch?v=quPgzEco__c">视频</a>
-      <a class="chip chip-audio" href="scj03a-living-church-aud.mp3">音频</a>
-      <a class="chip chip-pdf" href="scj03a-living-church.png">cover</a>
+      <figure class="episode-media">
+        <a href="scj03a-living-church.png"><img src="scj03a-living-church.png" alt="Living Church cover"></a>
+      </figure>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 四 講</span>
-      <div>
-        <div class="episode-title">耶穌我做了什麼?</div>
-        <div class="episode-speaker">基督論初探</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 四 講</span>
+          <div>
+            <div class="episode-title">耶穌我做了什麼?</div>
+            <div class="episode-speaker">基督論初探</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 五 講</span>
-      <div>
-        <div class="episode-title">聖靈在我裡面</div>
-        <div class="episode-speaker">內住、果子與恩賜</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 五 講</span>
+          <div>
+            <div class="episode-title">聖靈在我裡面</div>
+            <div class="episode-speaker">內住、果子與恩賜</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 六 講</span>
-      <div>
-        <div class="episode-title">與神同行</div>
-        <div class="episode-speaker">讀經與禱告的門徒操練</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 六 講</span>
+          <div>
+            <div class="episode-title">與神同行</div>
+            <div class="episode-speaker">讀經與禱告的門徒操練</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 七 講</span>
-      <div>
-        <div class="episode-title">門徒不是獨行俠</div>
-        <div class="episode-speaker">教會與群體的神學</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 七 講</span>
+          <div>
+            <div class="episode-title">門徒不是獨行俠</div>
+            <div class="episode-speaker">教會與群體的神學</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 八 講</span>
-      <div>
-        <div class="episode-title">最近的人，最深的功課</div>
-        <div class="episode-speaker">婚姻、家庭與門徒生活</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 八 講</span>
+          <div>
+            <div class="episode-title">最近的人，最深的功課</div>
+            <div class="episode-speaker">婚姻、家庭與門徒生活</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 九 講</span>
-      <div>
-        <div class="episode-title">光與鹽</div>
-        <div class="episode-speaker">基督徒的世界觀</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 九 講</span>
+          <div>
+            <div class="episode-title">光與鹽</div>
+            <div class="episode-speaker">基督徒的世界觀</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
   <article class="episode">
-    <div class="episode-header">
-      <span class="episode-num">第 十 講</span>
-      <div>
-        <div class="episode-title">使命門徒</div>
-        <div class="episode-speaker">我們的生命故事與福音見證</div>
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 十 講</span>
+          <div>
+            <div class="episode-title">使命門徒</div>
+            <div class="episode-speaker">我們的生命故事與福音見證</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <span class="chip chip-muted">待更新</span>
+        </div>
       </div>
-    </div>
-    <div class="links-row">
-      <a class="chip chip-video" href=""></a>
-      <a class="chip chip-audio" href=""></a>
+      <div class="episode-media episode-media-empty" aria-label="PNG 待补">
+        <span>PNG 待补</span>
+      </div>
     </div>
   </article>
 
