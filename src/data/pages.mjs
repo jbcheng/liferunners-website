@@ -312,7 +312,6 @@ export const pages = [
         title: 'Our Focus',
         content: `
           <p>Life Runners Fellowship is a bilingual 501(c)(3) non-profit. We cultivate holistic discipleship through endurance sports, Bible-centered teaching, and compassionate service. Our gatherings take place in-person across the San Francisco Bay Area and online cohorts designed for friends in mainland China.</p>
-          <p class="badge">${motto.en}</p>
         `
       },
       {
@@ -336,34 +335,6 @@ export const pages = [
         `
       },
       {
-        title: 'Featured Ministries',
-
-        content: `
-          <div class="cards">
-            <article class="card">
-              <h3>Exercise Your Body - Promote Health</h3>
-              <p>Weekly running and conditioning sessions guided by certified coaches. Every workout closes with Scripture reflection and peer prayer.</p>
-              <a class="button" href="/en/ministries/body/">View details</a>
-            </article>
-            <article class="card">
-              <h3>Practice Godliness - Discipleship Training</h3>
-              <p>Ten-week cohorts that blend Bible study, accountability, and wellness rhythms. English and Mandarin groups available.</p>
-              <a class="button" href="/en/ministries/godliness/">Explore cohorts</a>
-            </article>
-            <article class="card">
-              <h3>Live Out Love - Caring in Action</h3>
-              <p>Community service projects, hospital visits, and fundraising races that demonstrate Christ-like love in action.</p>
-              <a class="button" href="/en/ministries/love/">See impact</a>
-            </article>
-            <article class="card">
-              <h3>Fundamental Truth - Faith & Science</h3>
-              <p>Dr. Zhang and Pastor Zhu share the origin of the universe and life, and its relationship with faith.</p>
-              <a class="button" href="/media/audio/sci/sci.html">See details</a>
-            </article>
-          </div>
-        `
-      },
-      {
         title: 'Media Channels',
         content: `
           <div class="media-grid">
@@ -375,13 +346,8 @@ export const pages = [
             </div>
             <div class="card">
               <h3>Audio Archive</h3>
-              <p>MP3 reflections or Spotify mirror with downloadable transcripts for listeners in restricted regions.</p>
+              <p>MP3 reflections with downloadable PDFs for listeners in restricted regions.</p>
               <a class="button" href="/media/audio/">Download audio & PDFs</a>
-            </div>
-            <div class="card">
-              <h3>Resource Library</h3>
-              <p>Printable study guides, prayer cards, and devotionals to equip churches and sports ministries.</p>
-              <a class="button" href="/en/resources/">Browse resources</a>
             </div>
           </div>
         `
@@ -393,7 +359,7 @@ export const pages = [
     path: 'zh/index.html',
     url: '/zh/',
     title: '生命跑者团契',
-    description: '双语门训社群，结合信仰、运动与差传，服事美国与中国的肢体。',
+    description: '门训社群，结合信仰、运动与差传，服事美国，中国，与世界各地的肢体。',
     altLang: '/en/',
     hero: {
       eyebrow: '生命跑者团契',
@@ -405,7 +371,6 @@ export const pages = [
         title: '异象使命',
         content: `
           <p>生命跑者团契是一家经美国注册的 501(c)(3) 非营利机构，以双语（英文/简体中文）服事。我们通过耐力运动、以圣经为中心的教导，以及充满怜悯的行动来培养全人的门徒。聚会涵盖湾区实体小组与面向中国的线上同行。</p>
-          <p class="badge">${motto.zh}</p>
         `
       },
       {
@@ -429,33 +394,6 @@ export const pages = [
         `
       },
       {
-        title: '核心事工',
-        content: `
-          <div class="cards">
-            <article class="card">
-              <h3>操练身体 - 促进健康</h3>
-              <p>教练带领的跑步与体能训练，每次训练都以经文分享与彼此代祷作为结束。</p>
-              <a class="button" href="/zh/ministries/body/">了解详情</a>
-            </article>
-            <article class="card">
-              <h3>操练敬虔 - 门徒训练</h3>
-              <p>门训课程，结合查经、属灵操练与健康节奏，提供英文/普通话小组。</p>
-              <a class="button" href="/zh/ministries/godliness/">参加门训</a>
-            </article>
-            <article class="card">
-              <h3>活出爱 - 关怀行动</h3>
-              <p>社区关怀、肢体探访与慈善路跑，用具体行动分享基督的爱。</p>
-              <a class="button" href="/zh/ministries/love/">见证故事</a>
-            </article>
-            <article class="card">
-              <h3>基要真理 - 信仰与科学</h3>
-              <p>张博士和朱牧师探讨宇宙和生命的起源，并科学与信仰之间的关系。 </p>
-              <a class="button" href="/media/audio/sci/sci.html">更多资料</a>
-            </article>
-          </div>
-        `
-      },
-      {
         title: '媒体渠道',
         content: `
           <div class="media-grid">
@@ -469,11 +407,6 @@ export const pages = [
               <h3>音频存档</h3>
               <p>MP3 灵修与 Spotify 镜像，并附带国内可下载的逐字音频与简报</p>
               <a class="button" href="/media/audio/">下载音频与文字</a>
-            </div>
-            <div class="card">
-              <h3>资源库</h3>
-              <p>查经讲义、祷告卡与灵修手册，帮助教会与运动事工装备门徒。</p>
-              <a class="button" href="/zh/resources/">浏览资源</a>
             </div>
           </div>
         `
