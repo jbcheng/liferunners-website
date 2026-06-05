@@ -1826,8 +1826,8 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>Started on May 05, 2026, five times a week, Deuternomy ·
-		<a href="/media/audio/ot05/deu.html" target="_blank">Past Recordings</a>
+              <h3>Started on June 1st, 2026, five times a week, Joshua ·
+		<a href="/media/audio/ot06/josh.html" target="_blank">Past Recordings</a>
               </h3>
               <p>Time: Monday-Friday 06:30-07:30AM Pacific Daylight Saving Time </p>
               <p>Time: Monday-Friday 09:30-10:30PM Beijing Time</p>
@@ -1871,8 +1871,8 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>2026年 5月 5日 开始，每周五天，正在进行中 · 申命记 ·
-		<a href="/media/audio/ot05/deu.html" target="_blank">录影存档</a>
+              <h3>2026年 6月 1日 开始，每周五天，正在进行中 · 申命记 ·
+		<a href="/media/audio/ot06/josh.html" target="_blank">录影存档</a>
               </h3>
               <p> 太平洋夏令时间 周一至周五 早晨6:30-7:30 </p>
               <p> 北京时间 周一至周五 晚上09:30-10:30 </p>
