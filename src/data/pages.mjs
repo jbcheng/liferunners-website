@@ -166,8 +166,8 @@ const latestHighlights = {
       link: '/media/audio/ot06/josh.html',
       badge: 'New Resources',
       image: {
-        src: '/media/audio/ot06/josh01-02cov.png',
-        alt: 'Crossing Jordan 跨越约旦河'
+        src: '/media/audio/thisday.png',
+        alt: 'This day 今日灵修'
       }
     },
     {
@@ -186,8 +186,8 @@ const latestHighlights = {
       link: '/media/audio/scj/scj.html',
       badge: 'New Resources',
       image: {
-        src: '/media/audio/scj/scj03a-living-church.png',
-        alt: 'Living Church 心意更新的教會'
+        src: '/media/audio/thisclass.png',
+        alt: 'This week 本周课程'
       }
     },
     {
@@ -206,8 +206,8 @@ const latestHighlights = {
       link: '/media/audio/sunday/index.html',
       badge: 'New Resources',
       image: {
-        src: '/media/audio/sunday/sunday2026-0517cov.jpg',
-        alt: 'Talking about US China Summit 從中美北京峰會講起'
+        src: '/media/audio/thissunday.png',
+        alt: 'This Sunday Service 线上主日'
       }
     },
     {
@@ -228,8 +228,8 @@ const latestHighlights = {
       link: '/media/audio/ot06/josh.html',
       badge: '最新资源',
       image: {
-        src: '/media/audio/ot06/josh01-02cov.png',
-        alt: 'Crossing Jordan 跨越约旦河'
+        src: '/media/audio/thisday.png',
+        alt: 'This day 今日灵修'
       }
     },
     {
@@ -248,8 +248,8 @@ const latestHighlights = {
       link: '/media/audio/scj/scj.html',
       badge: '最新资源',
       image: {
-        src: '/media/audio/scj/scj03a-living-church.png',
-        alt: 'Living Church 心意更新的教會'
+        src: '/media/audio/thisclass.png',
+        alt: 'This week 本周课程'
       }
     },
     {
@@ -268,8 +268,8 @@ const latestHighlights = {
       link: '/media/audio/sunday/index.html',
       badge: '最新资源',
       image: {
-        src: '/media/audio/sunday/sunday2026-0517cov.jpg',
-        alt: 'Talking about US China Summit 從中美北京峰會講起'
+        src: '/media/audio/thissunday.png',
+        alt: 'This Sunday Service 线上主日'
       }
     },
     {
