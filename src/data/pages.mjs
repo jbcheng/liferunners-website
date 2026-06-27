@@ -161,9 +161,9 @@ const sharedMediaNotice = {
 const latestHighlights = {
   en: [
     {
-      title: 'Devotional Resource (Started June 01, 2026)',
-      summary: 'Daily Devotion | Old Testament - Joshua',
-      link: '/media/audio/ot06/josh.html',
+      title: 'Devotional Resource',
+      summary: 'Daily Devotion | Old Testament - Judges',
+      link: '/media/audio/ot07/judg.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -223,9 +223,9 @@ const latestHighlights = {
   ],
   zh: [
     {
-      title: '灵修资源 (2026年6月01日 起)',
-      summary: '每日读经 ｜ 约书亚记',
-      link: '/media/audio/ot06/josh.html',
+      title: '灵修资源 (2026年)',
+      summary: '每日读经 ｜ 士师记',
+      link: '/media/audio/ot07/judg.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
