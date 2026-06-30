@@ -171,12 +171,12 @@ const latestHighlights = {
       }
     },
     {
-      title: 'Live Out Love Service (May 24, 2026)',
-      summary: 'Life Runners serving together through practical care.',
+      title: 'Live Out Love Service (June 28, 2026)',
+      summary: 'Life Runners serving through practical care.',
       link: '/media/galleries/live-out-love/index.html',
       badge: 'Recent Event',
       image: {
-        src: '/media/galleries/live-out-love/Image_20260524105728_44_352.jpg',
+        src: '/media/galleries/thislove.jpg',
         alt: 'Life Runners Live Out Love service gathering'
       }
     },
@@ -233,12 +233,12 @@ const latestHighlights = {
       }
     },
     {
-      title: '活出爱服事 (2026年5月24日)',
-      summary: '生命跑者以实际关怀一同服事。',
+      title: '活出爱服事 (2026年6月28日)',
+      summary: '生命跑者以实际行动关怀社区。',
       link: '/media/galleries/live-out-love/index.html',
       badge: '最新活动',
       image: {
-        src: '/media/galleries/live-out-love/Image_20260524105728_44_352.jpg',
+        src: '/media/galleries/thislove.jpg',
         alt: '生命跑者活出爱服事聚会'
       }
     },
