@@ -162,8 +162,8 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | Old Testament - Judges',
-      link: '/media/audio/ot07/judg.html',
+      summary: 'Daily Devotion | Old Testament - 1st Samuel',
+      link: '/media/audio/ot09/1sam.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -224,8 +224,8 @@ const latestHighlights = {
   zh: [
     {
       title: '灵修资源 (2026年)',
-      summary: '每日读经 ｜ 士师记',
-      link: '/media/audio/ot07/judg.html',
+      summary: '每日读经 ｜ 撒母耳记',
+      link: '/media/audio/ot09/1sam.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
@@ -1420,7 +1420,7 @@ export const pages = [
                 <td>2026-04</td>
               </tr>
               <tr>
-                <td>Deuteronomy 34 chapters</td>
+                <td>Deuteronomy 34 chap.</td>
                 <td>Review Wilderness Journey, Commandments & Covenent Laws.</td>
                 <td><a href="/media/audio/ot05/deu.html">Scripture, PDF & video</a></td>
                 <td>2026-05</td>
@@ -1430,6 +1430,24 @@ export const pages = [
                 <td>Enter the Promised Land, Battles, Dividing the Land, Covenant.</td>
                 <td><a href="/media/audio/ot06/josh.html">Scripture, PDF & Video</a></td>
                 <td>2026-06</td>
+              </tr>
+              <tr>
+                <td>Judges 21 chapters</td>
+                <td>Oppression and deliverance; religious and moral chaos.</td>
+                <td><a href="/media/audio/ot07/judg.html">Scripture, PDF & Video</a></td>
+                <td>2026-06</td>
+              </tr>
+              <tr>
+                <td>Ruth 4 chapters</td>
+                <td>Naomi, Ruth, Boaz, David.</td>
+                <td><a href="/media/audio/ot08/ruth.html">Scripture, PDF & Video</a></td>
+                <td>2026-07</td>
+              </tr>
+              <tr>
+                <td>1st Samuel 31 chapters</td>
+                <td>Israel monarchy; Samuel; the reigns of Saul and David.</td>
+                <td><a href="/media/audio/ot09/1sam.html">Scripture, PDF & Video</a></td>
+                <td>2026-07</td>
               </tr>
             </tbody>
           </table>
@@ -1497,6 +1515,24 @@ export const pages = [
                 <td>进入应许之地、战役、土地分配、重申圣约。</td>
                 <td>链接：<a href="/media/audio/ot06/josh.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-06</td>
+              </tr>
+              <tr>
+                <td>士师记 共21章</td>
+                <td>未能完全清除异族、受欺压与蒙拯救、宗教和道德混乱。</td>
+                <td>链接：<a href="/media/audio/ot07/judg.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-06</td>
+              </tr>
+              <tr>
+                <td>路得记 共4章</td>
+                <td>拿俄米、路得、波阿斯、大卫。</td>
+                <td>链接：<a href="/media/audio/ot08/ruth.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-07</td>
+              </tr>
+              <tr>
+                <td>撒母耳记上 共31章</td>
+                <td>以色列立王、撒母耳、扫罗作王、大卫作王。</td>
+                <td>链接：<a href="/media/audio/ot09/1sam.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-07</td>
               </tr>
             </tbody>
           </table>
