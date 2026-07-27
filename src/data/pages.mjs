@@ -191,12 +191,12 @@ const latestHighlights = {
       }
     },
     {
-      title: 'Pastor Zhu in Marathon (Apr. 18, 2026)',
+      title: 'Pastor Zhu in Marathon (Jul. 26, 2026)',
       summary: 'Run for Life marathon photos, video, and report.',
       link: '/media/galleries/marathon-2026/index.html',
       badge: 'Recent Event',
       image: {
-        src: '/media/galleries/marathon-2026/2026_0418Run4Mark.png',
+        src: '/media/audio/thismarathon.png',
         alt: 'Run for Life marathon event'
       }
     },
@@ -253,12 +253,12 @@ const latestHighlights = {
       }
     },
     {
-      title: '牧师跑马拉松 (2026年4月18日)',
-      summary: 'Run for Life 马拉松自测照片、视频与报告。',
+      title: '牧师跑马拉松 (2026年7月26日)',
+      summary: 'Run for Life 马拉松照片、视频与报告。',
       link: '/media/galleries/marathon-2026/index.html',
       badge: '最新活动',
       image: {
-        src: '/media/galleries/marathon-2026/2026_0418Run4Mark.png',
+        src: '/media/audio/thismarathon.png',
         alt: 'Run for Life 马拉松活动'
       }
     },
