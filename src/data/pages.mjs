@@ -162,12 +162,12 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | Old Testament - 1st Samuel',
+      summary: 'Daily Devotion | This Week - 1st Samuel',
       link: '/media/audio/ot09/1sam.html',
       badge: 'New Resources',
       image: {
-        src: '/media/audio/thisday.png',
-        alt: 'This day 今日灵修'
+        src: '/media/audio/thisweekschedule.png',
+        alt: 'This week 本周灵修'
       }
     },
     {
@@ -224,12 +224,12 @@ const latestHighlights = {
   zh: [
     {
       title: '灵修资源 (2026年)',
-      summary: '每日读经 ｜ 撒母耳记',
+      summary: '每日读经 ｜ 撒母耳记 本周课表',
       link: '/media/audio/ot09/1sam.html',
       badge: '最新资源',
       image: {
-        src: '/media/audio/thisday.png',
-        alt: 'This day 今日灵修'
+        src: '/media/audio/thisweekschedule.png',
+        alt: 'This week 本周灵修'
       }
     },
     {
