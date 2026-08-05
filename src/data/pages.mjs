@@ -162,11 +162,11 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | This Week - 1st Samuel',
-      link: '/media/audio/ot09/1sam.html',
+      summary: 'Daily Devotion | This Week - 2nd Samuel',
+      link: '/media/audio/ot10/2sam.html',
       badge: 'New Resources',
       image: {
-        src: '/media/audio/thisweekschedule.png',
+        src: '/media/audio/thisday.png',
         alt: 'This week 本周灵修'
       }
     },
@@ -181,7 +181,7 @@ const latestHighlights = {
       }
     },
     {
-      title: 'New Classes (Started May 01, 2026)',
+      title: 'New Classes (May-July, 2026)',
       summary: 'Essential Truths & Discipleship Life',
       link: '/media/audio/scj/scj.html',
       badge: 'New Resources',
@@ -243,10 +243,10 @@ const latestHighlights = {
       }
     },
     {
-      title: '新一季课程 (2026年05月01日 起)',
+      title: '新一季课程 (2026年5月-7月)',
       summary: '基要真理与门徒生活',
       link: '/media/audio/scj/scj.html',
-      badge: '最新资源',
+      badge: '新资源',
       image: {
         src: '/media/audio/thisclass.png',
         alt: 'This week 本周课程'
@@ -1449,6 +1449,12 @@ export const pages = [
                 <td><a href="/media/audio/ot09/1sam.html">Scripture, PDF & Video</a></td>
                 <td>2026-07</td>
               </tr>
+              <tr>
+                <td>2nd Samuel 24 chapters</td>
+                <td>King David's rise, achievements&glory, weaknesses&failures.</td>
+                <td><a href="/media/audio/ot10/2sam.html">Scripture, PDF & Video</a></td>
+                <td>2026-08</td>
+              </tr>
             </tbody>
           </table>
         `
@@ -1533,6 +1539,12 @@ export const pages = [
                 <td>以色列立王、撒母耳、扫罗作王、大卫作王。</td>
                 <td>链接：<a href="/media/audio/ot09/1sam.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-07</td>
+              </tr>
+              <tr>
+                <td>撒母耳记上 共24章</td>
+                <td>大卫兴起，登基，大卫王之成就及荣耀，软弱及失败</td>
+                <td>链接：<a href="/media/audio/ot10/2sam.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-08</td>
               </tr>
             </tbody>
           </table>
@@ -1706,17 +1718,12 @@ export const pages = [
         title: 'Latest Questions',
         content: `
           <div class="section">
+            <h3>Fundamental Truth classes</h3>
+            <p>Class material：<a href="/media/audio/scj/scj.html">《Fundamental Trugh and Discipleship》10 sessions</a></p>
+          </div>
+          <div class="section">
             <h3>Are there conflicts between Faith and Science？</h3>
-            <p>Refer to Fundamental Truth class material：<a href="/media/audio/sci/sci.html">《Faith and Science》10 sessions</a></p>
-          </div>
-          <div class="section">
-            <h3>What media platforms work best inside mainland China?</h3>
-            <p>We mirror essential audio files on this site and recommend using WeChat Channels or Bilibili for short-form video. All external links open in new tabs with downloads.</p>
-          </div>
-          <div class="section">
-            <h3>As athletes, how do we respond when competitions happen on Sundays?</h3>
-            <p>We encourage families to discern with church leadership, consider Saturday worship services, or host team communion gatherings on race weekends.</p>
-            <p><strong>Scripture:</strong> Hebrews 10:24-25, Romans 14:5-9.</p>
+            <p>Fundamental Truth class material：<a href="/media/audio/sci/sci.html">《Faith and Science》10 sessions</a></p>
           </div>
         `
       }
@@ -1743,17 +1750,12 @@ export const pages = [
         title: '最新提问',
         content: `
           <div class="section">
+            <h3>基要真理课程</h3>
+            <p>课程：<a href="/media/audio/scj/scj.html">《基要真理與門徒生活》十讲</a></p>
+          </div>
+          <div class="section">
             <h3>信仰与科学有冲突吗？</h3>
-            <p>参考基要真理课程：<a href="/media/audio/sci/sci.html">《信仰与科学》十讲</a></p>
-          </div>
-          <div class="section">
-            <h3>在中国大陆适合使用哪些媒体平台？</h3>
-            <p>关键音频已在本站镜像，并建议使用 视频号 或 嗶哩嗶哩 作为短影音管道。所有外部连结都会在新分页开启，并提供下载。</p>
-          </div>
-          <div class="section">
-            <h3>比赛若安排在主日运动员该如何处理？</h3>
-            <p>鼓励家庭与教会牧者一同辨明，可参加 周六礼拜 或在 赛事周末举行 团队圣餐聚会。</p>
-            <p><strong>经文：</strong> 希伯来书 10:24-25，罗马书 14:5-9。</p>
+            <p>课程：<a href="/media/audio/sci/sci.html">《信仰与科学》十讲</a></p>
           </div>
         `
       }
