@@ -1541,7 +1541,7 @@ export const pages = [
                 <td>2026-07</td>
               </tr>
               <tr>
-                <td>撒母耳记上 共24章</td>
+                <td>撒母耳记下 共24章</td>
                 <td>大卫兴起，登基，大卫王之成就及荣耀，软弱及失败</td>
                 <td>链接：<a href="/media/audio/ot10/2sam.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-08</td>
