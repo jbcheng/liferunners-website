@@ -181,7 +181,8 @@
 //   https://www.life-runners.org/media/audio/desert/荒漠甘泉{M}月{D}日.m4a
 // ─────────────────────────────────────────────────────────────────────────────
 
-const BASE = 'https://www.life-runners.org/media/audio/desert/';
+//const BASE = 'https://www.life-runners.org/media/audio/desert/';
+const BASE = 'https://drive.google.com/drive/folders/1K0OmgbFR_g-Y55wTBBfJ0Nx-nESBShW9/';
 
 const MONTHS = [
   { num: 1,  name: '01月', days: 31 },
@@ -213,7 +214,9 @@ MONTHS.forEach(({ num, name, days }) => {
   grid.className = 'day-grid';
 
   for (let d = 1; d <= days; d++) {
-    const url = `${BASE}荒漠甘泉${num}月${d}日.m4a`;
+    //const url = `${BASE}荒漠甘泉${num}月${d}日.m4a`;
+    //const url = `${BASE}%E8%8D%92%E6%BC%A0%E7%94%98%E6%B3%89${num}%E6%9C%88${d}%E6%97%A5.m4a`;
+    const url = `${BASE}`;
     const a = document.createElement('a');
     a.className = 'day-btn';
     a.href = url;
