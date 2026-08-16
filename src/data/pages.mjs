@@ -162,7 +162,7 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | This Week - 2nd Samuel',
+      summary: 'Daily Devotion | 1st and 2nd Samuel',
       link: '/media/audio/ot10/2sam.html',
       badge: 'New Resources',
       image: {
@@ -224,11 +224,11 @@ const latestHighlights = {
   zh: [
     {
       title: '灵修资源 (2026年)',
-      summary: '每日读经 ｜ 撒母耳记 本周课表',
+      summary: '每日读经 ｜ 撒母耳记上下 ',
       link: '/media/audio/ot09/1sam.html',
       badge: '最新资源',
       image: {
-        src: '/media/audio/thisweekschedule.png',
+        src: '/media/audio/thisday.png',
         alt: 'This week 本周灵修'
       }
     },
