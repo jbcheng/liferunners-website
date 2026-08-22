@@ -162,8 +162,8 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | 1st and 2nd Samuel',
-      link: '/media/audio/ot10/2sam.html',
+      summary: 'Daily Devotion | 1st and 2nd Kings',
+      link: '/media/audio/ot11/1kin.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -224,8 +224,8 @@ const latestHighlights = {
   zh: [
     {
       title: '灵修资源 (2026年)',
-      summary: '每日读经 ｜ 撒母耳记上下 ',
-      link: '/media/audio/ot09/1sam.html',
+      summary: '每日读经 ｜ 列王记上下 ',
+      link: '/media/audio/ot11/1kin.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
@@ -1455,6 +1455,48 @@ export const pages = [
                 <td><a href="/media/audio/ot10/2sam.html">Scripture, PDF & Video</a></td>
                 <td>2026-08</td>
               </tr>
+              <tr>
+                <td>1st Kings 22 chapters</td>
+                <td>Solomon's reign, the divided kingdom, Elijah and the kings of Israel and Judah.</td>
+                <td><a href="/media/audio/ot11/1kin.html">Scripture, PDF & Video</a></td>
+                <td>2026-08-19</td>
+              </tr>
+              <tr>
+                <td>2nd Kings 25 chapters</td>
+                <td>Elisha, the divided kingdom, exile of Israel and Judah's fall.</td>
+                <td><a href="/media/audio/ot12/2kin.html">Scripture, PDF & Video</a></td>
+                <td>2026-09-04 (est.)</td>
+              </tr>
+              <tr>
+                <td>1st Chronicles 29 chapters</td>
+                <td>Genealogies, David's reign, worship order, and temple preparations.</td>
+                <td><a href="/media/audio/ot13/1cro.html">Scripture, PDF & Video</a></td>
+                <td>2026-09-24 (est.)</td>
+              </tr>
+              <tr>
+                <td>2nd Chronicles 36 chapters</td>
+                <td>Solomon, the temple, Judah's kings, exile, and the return decree.</td>
+                <td><a href="/media/audio/ot14/2cro.html">Scripture, PDF & Video</a></td>
+                <td>2026-10-15 (est.)</td>
+              </tr>
+              <tr>
+                <td>Ezra 10 chapters</td>
+                <td>Return from exile, rebuilding the temple, and covenant renewal.</td>
+                <td><a href="/media/audio/ot15/ezra.html">Scripture, PDF & Video</a></td>
+                <td>2026-11-11 (est.)</td>
+              </tr>
+              <tr>
+                <td>Nehemiah 13 chapters</td>
+                <td>Rebuilding Jerusalem's wall, covenant reform, and restored worship.</td>
+                <td><a href="/media/audio/ot16/nehe.html">Scripture, PDF & Video</a></td>
+                <td>2026-11-19 (est.)</td>
+              </tr>
+              <tr>
+                <td>Esther 10 chapters</td>
+                <td>Providence, Esther and Mordecai, deliverance, and Purim.</td>
+                <td><a href="/media/audio/ot17/esth.html">Scripture, PDF & Video</a></td>
+                <td>2026-12-03 (est.)</td>
+              </tr>
             </tbody>
           </table>
         `
@@ -1545,6 +1587,48 @@ export const pages = [
                 <td>大卫兴起，登基，大卫王之成就及荣耀，软弱及失败</td>
                 <td>链接：<a href="/media/audio/ot10/2sam.html">经文朗读音频,PDF,视频</a></td>
                 <td>2026-08</td>
+              </tr>
+              <tr>
+                <td>列王纪上 共22章</td>
+                <td>所罗门作王、王国分裂、以利亚与以色列和犹大诸王。</td>
+                <td>链接：<a href="/media/audio/ot11/1kin.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-08-19</td>
+              </tr>
+              <tr>
+                <td>列王纪下 共25章</td>
+                <td>以利沙、南北国历史、以色列被掳与犹大灭亡。</td>
+                <td>链接：<a href="/media/audio/ot12/2kin.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-09-04（估）</td>
+              </tr>
+              <tr>
+                <td>历代志上 共29章</td>
+                <td>家谱、大卫作王、敬拜班次与建殿预备。</td>
+                <td>链接：<a href="/media/audio/ot13/1cro.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-09-24（估）</td>
+              </tr>
+              <tr>
+                <td>历代志下 共36章</td>
+                <td>所罗门、圣殿、犹大诸王、被掳与归回诏令。</td>
+                <td>链接：<a href="/media/audio/ot14/2cro.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-10-15（估）</td>
+              </tr>
+              <tr>
+                <td>以斯拉记 共10章</td>
+                <td>被掳归回、重建圣殿与更新圣约。</td>
+                <td>链接：<a href="/media/audio/ot15/ezra.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-11-11（估）</td>
+              </tr>
+              <tr>
+                <td>尼希米记 共13章</td>
+                <td>重建耶路撒冷城墙、圣约改革与敬拜恢复。</td>
+                <td>链接：<a href="/media/audio/ot16/nehe.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-11-19（估）</td>
+              </tr>
+              <tr>
+                <td>以斯帖记 共10章</td>
+                <td>神的护理、以斯帖与末底改、拯救与普珥节。</td>
+                <td>链接：<a href="/media/audio/ot17/esth.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-12-03（估）</td>
               </tr>
             </tbody>
           </table>
