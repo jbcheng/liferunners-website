@@ -1662,14 +1662,6 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>Mark 16 chapters</td>
-                <td>One chapter a day, studying the Gospel of Mark </td>
-                <td>
-                  <a href="/media/audio/nt02/mark.html" target="_blank">Scripture, Video/Audio</a>
-                </td>
-                <td>2026-02-12</td>
-              </tr>
-              <tr>
                 <td>Matthew 28 chapters</td>
                 <td>One chapter a day, studying the Gospel of Matthew </td>
                 <td>
@@ -1678,12 +1670,20 @@ export const pages = [
                 <td>2026-01-05</td>
               </tr>
               <tr>
-                <td>Revelation 22 chapters</td>
-                <td>One chapter a day, devotional study </td>
+                <td>Mark 16 chapters</td>
+                <td>One chapter a day, studying the Gospel of Mark </td>
                 <td>
-                  <a href="/media/audio/nt27/nt27.html" target="_blank">Scripture, PDF, Video</a> 
+                  <a href="/media/audio/nt02/mark.html" target="_blank">Scripture, Video/Audio</a>
                 </td>
-                <td>2025-12-02</td>
+                <td>2026-02-12</td>
+              </tr>
+              <tr>
+                <td>Hebrews, James </td>
+                <td>Devotion and discussion - Faith vs. Action</td>
+                <td>
+                  <a href="/media/audio/nt19/nt19.html" target="_blank">Scripture, Video</a> 
+                </td>
+                <td>2025-10-15</td>
               </tr>
               <tr>
                 <td>1&2 Peter, 1/2/3 John, Jude </td>
@@ -1694,12 +1694,12 @@ export const pages = [
                 <td>2025-11-10</td>
               </tr>
               <tr>
-                <td>Hebrews, James </td>
-                <td>Devotion and discussion - Faith vs. Action</td>
+                <td>Revelation 22 chapters</td>
+                <td>One chapter a day, devotional study </td>
                 <td>
-                  <a href="/media/audio/nt19/nt19.html" target="_blank">Scripture, Video</a> 
+                  <a href="/media/audio/nt27/nt27.html" target="_blank">Scripture, PDF, Video</a> 
                 </td>
-                <td>2025-10-15</td>
+                <td>2025-12-02</td>
               </tr>
             </tbody>
           </table>
@@ -1735,14 +1735,6 @@ export const pages = [
             </thead>
             <tbody>
               <tr>
-                <td>马可福音 共16章</td>
-                <td> 每天一章，一周五天，灵修与讨论</td>
-                <td>链接：
-                  <a href="/media/audio/nt02/mark.html" target="_blank">经文朗读,视频/音频</a>
-                </td>
-                <td>2026-02-12</td>
-              </tr>
-              <tr>
                 <td>马太福音 共28章</td>
                 <td> 每天一章，一周五天，灵修与讨论</td>
                 <td>链接：
@@ -1751,12 +1743,20 @@ export const pages = [
                 <td>2026-01-05</td>
               </tr>
               <tr>
-                <td>启示录 共22章</td>
-                <td>每天一章， 一周五天，灵修与讨论</td>
+                <td>马可福音 共16章</td>
+                <td> 每天一章，一周五天，灵修与讨论</td>
                 <td>链接：
-                  <a href="/media/audio/nt27/nt27.html" target="_blank">经文朗读,PDF,视频</a> 
+                  <a href="/media/audio/nt02/mark.html" target="_blank">经文朗读,视频/音频</a>
                 </td>
-                <td>2025-12-02</td>
+                <td>2026-02-12</td>
+              </tr>
+              <tr>
+                <td>希伯来书, 雅各书 </td>
+                <td>每周五天灵修与讨论 - 信心与行为</td>
+                <td>链接：
+                  <a href="/media/audio/nt19/nt19.html" target="_blank">经文朗读,视频</a> 
+                </td>
+                <td>2025-10-15</td>
               </tr>
               <tr>
                 <td>彼得前后书，约翰一二三书，犹大书</td>
@@ -1767,16 +1767,16 @@ export const pages = [
                 <td>2025-11-10</td>
               </tr>
               <tr>
-                <td>希伯来书, 雅各书 </td>
-                <td>每周五天灵修与讨论 - 信心与行为</td>
+                <td>启示录 共22章</td>
+                <td>每天一章， 一周五天，灵修与讨论</td>
                 <td>链接：
-                  <a href="/media/audio/nt19/nt19.html" target="_blank">经文朗读,视频</a> 
+                  <a href="/media/audio/nt27/nt27.html" target="_blank">经文朗读,PDF,视频</a> 
                 </td>
-                <td>2025-10-15</td>
+                <td>2025-12-02</td>
               </tr>
             </tbody>
           </table>
-          ${sharedMediaNotice.en}
+          ${sharedMediaNotice.zh}
         `
       }
     ]
