@@ -163,7 +163,7 @@ const latestHighlights = {
     {
       title: 'Devotional Resource',
       summary: 'Daily Devotion | 1st and 2nd Kings',
-      link: '/media/audio/ot11/1kin.html',
+      link: '/media/audio/ot12/2kin.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -225,7 +225,7 @@ const latestHighlights = {
     {
       title: '灵修资源 (2026年)',
       summary: '每日读经 ｜ 列王记上下 ',
-      link: '/media/audio/ot11/1kin.html',
+      link: '/media/audio/ot12/2kin.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
