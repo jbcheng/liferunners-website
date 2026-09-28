@@ -162,8 +162,8 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | 1st and 2nd Kings',
-      link: '/media/audio/ot12/2kin.html',
+      summary: 'Daily Devotion | 1st and 2nd Cronicles',
+      link: '/media/audio/ot13/1cro.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -223,9 +223,9 @@ const latestHighlights = {
   ],
   zh: [
     {
-      title: '灵修资源 (2026年)',
-      summary: '每日读经 ｜ 列王记上下 ',
-      link: '/media/audio/ot12/2kin.html',
+      title: '灵修资源 (2026年 9月-)',
+      summary: '每日读经 ｜ 历代志上下 ',
+      link: '/media/audio/ot12/1cro.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
