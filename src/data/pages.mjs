@@ -225,7 +225,7 @@ const latestHighlights = {
     {
       title: '灵修资源 (2026年 9月-)',
       summary: '每日读经 ｜ 历代志上下 ',
-      link: '/media/audio/ot12/1cro.html',
+      link: '/media/audio/ot13/1cro.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
