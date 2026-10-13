@@ -2360,7 +2360,7 @@ export const pages = [
           <table class="table">
             <thead><tr><th>Method</th><th>Details</th></tr></thead>
             <tbody>
-              <tr><td>ACH / Wire (USD)</td><td>Bank of America · Routing 1x1x00xxx · Account (Contact Us) · Memo: Life Runners Fellowship</td></tr>
+              <tr><td>ACH / Wire (USD)</td><td>Chase Bank · Routing · Account (Contact Us) · Memo: Life Runners Fellowship</td></tr>
               <tr><td>Check</td><td>Payable to Life Runners Fellowship · Mail to: 2026 19th Ave, San Francisco, CA 94116</td></tr>
               <tr><td>Zelle (USD)</td><td>Account: love@life-runners.org</td></tr>
             </tbody>
@@ -2405,7 +2405,7 @@ export const pages = [
           <table class="table">
             <thead><tr><th>方式</th><th>资讯</th></tr></thead>
             <tbody>
-              <tr><td>美国银行转账</td><td>Bank of America · Routing 1x1x00xxx · Account (联系我们) · 备注写 Life Runners Fellowship</td></tr>
+              <tr><td>银行转账</td><td>Chase Bank · Routing · Account (联系我们) · 备注写 Life Runners Fellowship</td></tr>
               <tr><td>支票</td><td>抬头：Life Runners Fellowship · 寄至: 2026 19th Ave, San Francisco, CA 94116 </td></tr>
               <tr><td>Zelle(美元)</td><td>帐号：love@life-runners.org</td></tr>
             </tbody>
