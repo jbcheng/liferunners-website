@@ -153,6 +153,27 @@
     flex-wrap: wrap;
     gap: 6px;
   }
+  .audio-list {
+    display: grid;
+    gap: 6px;
+    flex-basis: 100%;
+  }
+  .audio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .audio-label {
+    color: var(--teal);
+    font-size: 12px;
+    white-space: nowrap;
+    width: 48px;
+  }
+  .audio-item audio {
+    flex: 1;
+    min-width: 0;
+    height: 32px;
+  }
   .chip {
     display: inline-flex;
     align-items: center;
@@ -250,6 +271,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1di0SjEbQhxYVWDc0FoM_bM8oUo3LZfc5/view?usp=drive_link">和朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=EN-EL0kCXqk">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=1xQjd0Pkdb4">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 01 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb01a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 01 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb01b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -260,6 +299,16 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/12sT-kB7kGAArBU7ea-F4yiCEMhQ9vMdS/view?usp=drive_link">华朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=FS04qaSShKw">视频</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频</span>
+        <audio controls preload="none" aria-label="来 02 章 音频">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb02-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -270,6 +319,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1YZDq3aopNkx7i6hJpQJ_MpGgZ5u2Sui-/view?usp=drive_link">艳朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=X3ldshAA4W8">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=UeCUT7BMSzU">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 03 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb03a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 03 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb03b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -280,6 +347,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/13m7tP8dhEsa1xhVs2hrYMGHxJJ0_D8Sg/view?usp=drive_link">艳朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=53jckdKbLB8">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=e7OwULMPLdE">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 04 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb04a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 04 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb04b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -290,6 +375,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1nIhMe5Lut2ddL32yDXpgrm-vrggWaOGQ/view?usp=drive_link">蒋朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=48AtCADy-A8">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=d9k_9XSnV_g">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 05 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb05a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 05 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb05b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -310,6 +413,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1yvN1d_IZAU7PcT9dJb4bOuFe1ACTLm01/view?usp=drive_link">华朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=Uz0ur86VrZY">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=vW6G1coXVcw">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 07 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb07a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 07 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb07b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -320,6 +441,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/11mkwbI9-b8nWXcGxshWBgeMZK7eXQj9Z/view?usp=drive_link">单朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=XvEfE9CFs20">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=GleWJx1qx_U">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 08 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb08a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 08 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb08b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -340,6 +479,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1An4TUILjhz7lL4F2tF3zhZ_SOcpzj6Oi/view?usp=drive_link">云朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=oy3YgxQZDOU">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=GS24OpDMGPU">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 10 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb10a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 10 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb10b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -350,6 +507,16 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1DRZafcHgR2rUeESMwfwMo6DTvgH04HTP/view?usp=drive_link">雯朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=1ctJM710HaU">视频</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频</span>
+        <audio controls preload="none" aria-label="来 11 章 音频">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb11-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -361,6 +528,24 @@
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1pgXUOf4SM9kVxLED-OulKjOmZd9aTRkV/view?usp=drive_link">玫背诵</a>
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1hkLCfHaCcL8rxk7e_ueu5xzinvJuLTnS/view?usp=drive_link">玫朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=aPYTvXtOakc">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=-FQ-fVPxeeg">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="来 12 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb12a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="来 12 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt19-heb12b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -383,6 +568,32 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/16BpmbCepdxRaYa_8OcxxcnTOqhB8Ebex/view?usp=drive_link">玫朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=X9cpxPoIW60">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=-BPy-OQQNWo">视频 2</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=8ywBXAl9O7o">视频 3</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="雅 01 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam01a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="雅 01 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam01b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 c</span>
+        <audio controls preload="none" aria-label="雅 01 章 音频 c">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam01c-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -393,6 +604,16 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1XWqtZZ8jNP3LHNpcQyXiCBapxN54Bdql/view?usp=drive_link">蒋朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=pP1eEUOUHgA">视频</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频</span>
+        <audio controls preload="none" aria-label="雅 02 章 音频">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam02-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -403,6 +624,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1NDh7oJVDNPtWcwP5fLxN0Kx8cEkDhoSm/view?usp=drive_link">任朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=_bU8hfEbrOM">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=biEc1z62KBA">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="雅 03 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam03a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="雅 03 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam03b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
@@ -413,6 +652,24 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1j4JscDMknzUONznyo4zbwwKGKkj0NRIB/view?usp=drive_link">单朗读</a>
+      <a class="chip chip-video"  href="https://www.youtube.com/watch?v=Y1Zxk5jFWv4">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=ZzvtPIxJlE4">视频 2</a>
+    </div>
+    <div class="audio-list">
+      <div class="audio-item">
+        <span class="audio-label">音频 a</span>
+        <audio controls preload="none" aria-label="雅 04 章 音频 a">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam04a-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <span class="audio-label">音频 b</span>
+        <audio controls preload="none" aria-label="雅 04 章 音频 b">
+          <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt19/nt20-jam04b-aud.m4a" type="audio/mp4">
+          Your browser does not support audio playback.
+        </audio>
+      </div>
     </div>
   </article>
 
