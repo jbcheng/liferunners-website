@@ -153,6 +153,10 @@
     flex-wrap: wrap;
     gap: 6px;
   }
+  .audio-list { display: grid; gap: 6px; flex-basis: 100%; }
+  .audio-item { display: flex; align-items: center; gap: 8px; }
+  .audio-label { color: var(--teal); font-size: 12px; white-space: nowrap; width: 48px; }
+  .audio-item audio { flex: 1; min-width: 0; height: 32px; }
   .chip {
     display: inline-flex;
     align-items: center;
@@ -232,7 +236,9 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1chDMGOBtqlaVasrD62DRFCQiCYYsOtBo/view?usp=drive_link">艳朗读</a>
+      <a class="chip chip-video" href="https://youtu.be/gqwEZL5Zfus?list=PLxWMR19qCVHyhymK5VVZnjb0KrFJ7xZa2">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt21-1pe01-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -242,7 +248,9 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1QoJpX4jDS0IHh88HGhQAFPEoMjItJCVP/view?usp=drive_link">华朗读</a>
+      <a class="chip chip-video" href="https://youtu.be/dniZVGFJMkE?list=PLxWMR19qCVHyhymK5VVZnjb0KrFJ7xZa2">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt21-1pe02-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -252,7 +260,10 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1ALEHIX89kl1zrVwbA2YcPA_6UAT3BmyV/view?usp=drive_link">苏朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=T9rgCiXS7dc">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=Wo3J85uLToA">视频 2</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频 1</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt21-1pe03a-aud.m4a" type="audio/mp4"></audio></div><div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt21-1pe03b-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -284,6 +295,10 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1musbtrDelPNcw36ADHzyuQO8q7LQFBxz/view?usp=drive_link">苏朗读</a>
+      <a class="chip chip-video" href="https://youtu.be/CaSD2ey7Ur0?list=PLxWMR19qCVHyhymK5VVZnjb0KrFJ7xZa2">视频</a>
+    </div>
+    <div class="audio-list">
+	<div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt22-2pe01-aud.m4a" type="audio/mp4"></audio></div>
     </div>
   </article>
 
@@ -294,6 +309,12 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1R5SV3C3-qZ3BaWIrc6PTapqdgvEmLCeT/view?usp=drive_link">莎朗读</a>
+      <a class="chip chip-video" href="https://youtu.be/tqf4PS0chLM?list=PLxWMR19qCVHyhymK5VVZnjb0KrFJ7xZa2">视频 1</a>
+      <a class="chip chip-video" href="https://youtu.be/m4TixAQjbFg?list=PLxWMR19qCVHyhymK5VVZnjb0KrFJ7xZa2">视频 2</a>
+    </div>
+    <div class="audio-list">
+	<div class="audio-item"><span class="audio-label">音频 1</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt22-2pe02a-aud.m4a" type="audio/mp4"></audio></div>
+	<div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt22-2pe02b-aud.m4a" type="audio/mp4"></audio></div>
     </div>
   </article>
 
@@ -316,7 +337,10 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1OUfBx_jjKq8D7YeNX31KMb4lZUk2sddR/view?usp=drive_link">蒋朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=cvK1RGjh5D0">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=R9e0pBfjAGM">视频 2</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频 1</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn01a-aud.m4a" type="audio/mp4"></audio></div><div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn01b-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -326,7 +350,9 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1n37fioxSKVZun_MHXyf-8sWSdskNyauL/view?usp=drive_link">雯朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=l0suGJ2f-k8">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn02-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -336,7 +362,9 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1rLPVerHN86MfqooTGH3BBddBFjkBdqJ8/view?usp=drive_link">艳朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=sEkK0FJd09o">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn03-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -348,6 +376,7 @@
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1eHOVwb-S4S6BJ1D58Ha61STLjQJv7nGj/view?usp=drive_link">华朗读</a>
       <a class="chip chip-video"  href="https://www.youtube.com/watch?v=6FPScnOCbos">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn04-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <article class="episode">
@@ -357,7 +386,10 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1lFQeUJhfAMNODLt9QwiMpFb6Rr8PwWoz/view?usp=drive_link">蒋朗读</a>
+      <a class="chip chip-video" href="https://youtu.be/XlcUnDVoiSE">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=UYp_JDOzwRQ">视频 2</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频 1</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn05a-aud.m4a" type="audio/mp4"></audio></div><div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt23-1jn05b-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <h2 class="book-title">约翰二书（2025年11月27日）</h2>
@@ -369,8 +401,9 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1mgBPnyySiNu00JrEuz_qeosrbhDDJu86/view?usp=drive_link">Fay 朗读</a>
-      <a class="chip chip-video"  href="https://www.youtube.com/watch?v=XnFmEHs0zeU">述恩聚会视频</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=iqPtRjwwZBA">视频</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt24-2jn01-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
   <h2 class="book-title">约翰三书（2025年11月28日）</h2>
@@ -394,7 +427,10 @@
     </div>
     <div class="links-row">
       <a class="chip chip-reader" href="https://drive.google.com/file/d/1SIFK6M4dPrmaDVLcljT5Zd9mv7HFb-Qa/view?usp=drive_link">枚朗读</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=Wz0p_jMa_wY">视频 1</a>
+      <a class="chip chip-video" href="https://www.youtube.com/watch?v=pgIKSF-Yyco">视频 2</a>
     </div>
+    <div class="audio-list"><div class="audio-item"><span class="audio-label">音频 1</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt26-jud01a-aud.m4a" type="audio/mp4"></audio></div><div class="audio-item"><span class="audio-label">音频 2</span><audio controls preload="none"><source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/nt21/nt26-jud01b-aud.m4a" type="audio/mp4"></audio></div></div>
   </article>
 
 </main>
