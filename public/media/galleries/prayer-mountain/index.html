@@ -67,9 +67,10 @@ a{color:inherit;text-decoration:none}
 .section-doc-link{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:var(--orange);background:rgba(224,123,42,.08);border:1px solid rgba(224,123,42,.2);border-radius:20px;padding:3px 12px;transition:background .15s;margin-left:auto;flex-shrink:0}
 .section-doc-link:hover{background:rgba(224,123,42,.16)}
 
-/* masonry photo grid */
-.photo-grid{columns:3 240px;column-gap:12px}
-.photo-item{break-inside:avoid;margin-bottom:12px;border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;position:relative;background:var(--gray-100)}
+/* aspect-ratio-matched photo rows */
+.photo-grid{display:flex;flex-direction:column;gap:12px}
+.photo-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start}
+.photo-item{border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;position:relative;background:var(--gray-100)}
 .photo-item img{width:100%;display:block;transition:transform .35s ease,filter .35s}
 .photo-item:hover img{transform:scale(1.04);filter:brightness(.88)}
 .photo-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(17,24,39,.82) 0%,transparent 100%);color:#fff;padding:.6rem .9rem .7rem;font-size:12.5px;line-height:1.4;opacity:0;transition:opacity .25s}
@@ -104,7 +105,7 @@ a{color:inherit;text-decoration:none}
 .footer-links a{color:rgba(255,255,255,.45);transition:color .15s}
 .footer-links a:hover{color:rgba(255,255,255,.8)}
 .footer-copy{font-size:12px;width:100%;text-align:center;margin-top:.5rem}
-@media(max-width:640px){.nav-links{display:none}.lb-prev{left:-8px}.lb-next{right:-8px}.gallery-wrap{padding:1.5rem 1rem 4rem}}
+@media(max-width:640px){.nav-links{display:none}.lb-prev{left:-8px}.lb-next{right:-8px}.gallery-wrap{padding:1.5rem 1rem 4rem}.photo-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -156,15 +157,29 @@ a{color:inherit;text-decoration:none}
     <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_0309prayer_day.pdf" class="section-doc-link" target="_blank">📄 行程 PDF</a>
   </div>
   <div class="photo-grid">
-    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/544077f667401aad83ca90219fd3a633.jpeg" data-caption="Arriving｜抵达大十字架">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/544077f667401aad83ca90219fd3a633.jpeg" alt="Arriving｜抵达大十字架" loading="lazy">
+    <div class="photo-row">
+    <div class="photo-item" data-full="544077f667401aad83ca90219fd3a633.jpg" data-caption="Arriving｜抵达大十字架">
+      <img src="544077f667401aad83ca90219fd3a633.jpg" alt="Arriving｜抵达大十字架" loading="lazy">
       <div class="photo-caption">Arriving｜抵达大十字架</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213746_321_254.jpg" data-caption="Spring Flowers｜春暖花开">
+    </div><div class="photo-item" data-full="04f6e1b77cf5a6bc90ffa6870b0121cf.jpg" data-caption="Praying at Hidden Garden｜花园秘境祷告">
+      <img src="04f6e1b77cf5a6bc90ffa6870b0121cf.jpg" alt="Praying at Hidden Garden｜花园秘境祷告" loading="lazy">
+      <div class="photo-caption">Praying at Hidden Garden｜花园秘境祷告</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213655_319_254.jpg" data-caption="Prayer Day｜祷告日">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213655_319_254.jpg" alt="Prayer Day｜祷告日" loading="lazy">
+      <div class="photo-caption">Prayer Day｜祷告日</div>
+    </div>
+    </div>
+    <div class="photo-row">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213746_321_254.jpg" data-caption="Spring Flowers｜春暖花开">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213746_321_254.jpg" alt="Spring Flowers｜春暖花开" loading="lazy">
       <div class="photo-caption">Spring Flowers｜春暖花开</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/04f6e1b77cf5a6bc90ffa6870b0121cf.jpeg" data-caption="Praying at Hidden Garden｜花园秘境祷告">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/04f6e1b77cf5a6bc90ffa6870b0121cf.jpeg" alt="Praying at Hidden Garden｜花园秘境祷告" loading="lazy">
-      <div class="photo-caption">Praying at Hidden Garden｜花园秘境祷告</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg" data-caption="Prayer Day｜祷告日">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213543_312_254.jpg" alt="Prayer Day｜祷告日" loading="lazy">
+      <div class="photo-caption">Prayer Day｜祷告日</div>
+    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213556_315_254.jpg" data-caption="Prayer Day｜祷告日">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260309213556_315_254.jpg" alt="Prayer Day｜祷告日" loading="lazy">
+      <div class="photo-caption">Prayer Day｜祷告日</div>
+    </div>
     </div>
   </div>
   
@@ -178,15 +193,18 @@ a{color:inherit;text-decoration:none}
     <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_0131-0201retreat.jpg" class="section-doc-link" target="_blank">🖼 行程图</a>
   </div>
   <div class="photo-grid">
+    <div class="photo-row">
     <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260131222248_230_254.jpg" data-caption="Backpacking｜行山">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260131222248_230_254.jpg" alt="Backpacking｜行山" loading="lazy">
       <div class="photo-caption">Backpacking｜行山</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" data-caption="John 3:16｜约翰福音三章16节">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" alt="John 3:16｜约翰福音三章16节" loading="lazy">
-      <div class="photo-caption">John 3:16｜约翰福音三章16节</div>
     </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201081749_248_254.jpg" data-caption="Under the Cross｜在十字架前">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201081749_248_254.jpg" alt="Under the Cross｜在十字架前" loading="lazy">
       <div class="photo-caption">Under the Cross｜在十字架前</div>
+    </div>
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" data-caption="John 3:16｜约翰福音三章16节">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260201145035_260_254.jpg" alt="John 3:16｜约翰福音三章16节" loading="lazy">
+      <div class="photo-caption">John 3:16｜约翰福音三章16节</div>
+    </div>
     </div>
   </div>
   
@@ -200,6 +218,7 @@ a{color:inherit;text-decoration:none}
     <a href="https://www.life-runners.org/media/galleries/prayer-mountain/2026_01_10-11retreat.pdf" class="section-doc-link" target="_blank">📄 行程 PDF</a>
   </div>
   <div class="photo-grid">
+    <div class="photo-row">
     <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260110151223_96_254.jpg" data-caption="Day 1｜第一天">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260110151223_96_254.jpg" alt="Day 1｜第一天" loading="lazy">
       <div class="photo-caption">Day 1｜第一天</div>
@@ -209,6 +228,7 @@ a{color:inherit;text-decoration:none}
     </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112141359_117_254.jpg" data-caption="Day 2 After Sunday Worship｜第二天主日崇拜后">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20260112141359_117_254.jpg" alt="Day 2 After Sunday Worship｜第二天主日崇拜后" loading="lazy">
       <div class="photo-caption">Day 2 After Sunday Worship｜第二天主日崇拜后</div>
+    </div>
     </div>
   </div>
   
@@ -222,22 +242,15 @@ a{color:inherit;text-decoration:none}
     
   </div>
   <div class="photo-grid">
+    <div class="photo-row">
     <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215926_5486_13.jpg" data-caption="Arrived｜抵达目的地">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215926_5486_13.jpg" alt="Arrived｜抵达目的地" loading="lazy">
       <div class="photo-caption">Arrived｜抵达目的地</div>
     </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215928_5487_13.jpg" data-caption="Love One Another｜彼此相爱">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215928_5487_13.jpg" alt="Love One Another｜彼此相爱" loading="lazy">
       <div class="photo-caption">Love One Another｜彼此相爱</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" data-caption="Hiking｜走山">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" alt="Hiking｜走山" loading="lazy">
-      <div class="photo-caption">Hiking｜走山</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" data-caption="Solitude｜独处">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" alt="Solitude｜独处" loading="lazy">
-      <div class="photo-caption">Solitude｜独处</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" data-caption="Solitude｜独处">
-      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" alt="Solitude｜独处" loading="lazy">
-      <div class="photo-caption">Solitude｜独处</div>
-    </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191142_3_245.jpg" data-caption="Sisters Sharing｜姊妹分享">
+    </div>
+<div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191142_3_245.jpg" data-caption="Sisters Sharing｜姊妹分享">
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191142_3_245.jpg" alt="Sisters Sharing｜姊妹分享" loading="lazy">
       <div class="photo-caption">Sisters Sharing｜姊妹分享</div>
     </div><div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215444_17_245.jpg" data-caption="Brothers Sharing｜弟兄分享">
@@ -247,10 +260,25 @@ a{color:inherit;text-decoration:none}
       <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215758_5485_13.jpg" alt="Break the Fast｜禁食结束" loading="lazy">
       <div class="photo-caption">Break the Fast｜禁食结束</div>
     </div>
+    </div>
+    <div class="photo-row">
+    <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" data-caption="Hiking｜走山">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215191140_2_245.jpg" alt="Hiking｜走山" loading="lazy">
+      <div class="photo-caption">Hiking｜走山</div>
+    </div>
+<div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" data-caption="Solitude｜独处">
+      <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215446_18_245.jpg" alt="Solitude｜独处" loading="lazy">
+      <div class="photo-caption">Solitude｜独处</div>
+    </div>
+      <div class="photo-item" data-full="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" data-caption="Solitude｜独处">
+        <img src="https://www.life-runners.org/media/galleries/prayer-mountain/Image_20251215215448_19_245.jpg" alt="Solitude｜独处" loading="lazy">
+        <div class="photo-caption">Solitude｜独处</div>
+      </div>
+    </div>
   </div>
   <div class="video-card">
   <video controls preload="none" poster="">
-    <source src="https://www.life-runners.org/media/galleries/prayer-mountain/Load_sPrayerMountain2.mov" type="video/mp4">
+    <source src="Load_sPrayerMountain2.mp4" type="video/mp4">
     您的浏览器不支持视频播放。
   </video>
   <div class="video-card-cap">🎬 Lord's Prayer | 主祷文</div>
