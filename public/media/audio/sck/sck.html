@@ -163,6 +163,23 @@
     margin-top: 0.6rem;
   }
   .audio-player { flex-basis: 100%; width: 100%; height: 32px; }
+  .audio-column {
+    padding: 1.1rem 1.25rem 1.15rem;
+    min-width: 0;
+  }
+  .audio-column + .audio-column { border-left: 1px solid var(--border); }
+  .audio-column-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.65rem;
+  }
+  .audio-chapter {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-bottom: 0.35rem;
+  }
   .chip {
     display: inline-flex;
     align-items: center;
@@ -180,6 +197,7 @@
   .chip-audio  { background: var(--teal-light); color: var(--teal); border-color: #b3d9d2; }
   .chip-video  { background: var(--red-light);  color: var(--red);  border-color: #e5c0c0; }
   .chip-pdf    { background: var(--gold-light);  color: var(--gold); border-color: #d9c49e; }
+  .chip-reader { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
   .chip-muted  { background: var(--surface); color: var(--ink-muted); border-color: var(--border); }
   .chip::before {
     content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
@@ -187,6 +205,7 @@
   .chip-audio::before { background: var(--teal); }
   .chip-video::before { background: var(--red); }
   .chip-pdf::before   { background: var(--gold); }
+  .chip-reader::before { background: var(--ink-faint); }
   .chip-muted::before { background: var(--ink-faint); }
   .episode-media {
     margin: 0;
@@ -241,6 +260,10 @@
       border-left: 0;
       border-top: 1px solid var(--border);
     }
+    .audio-column + .audio-column {
+      border-left: 0;
+      border-top: 1px solid var(--border);
+    }
   }
 </style>
 </head>
@@ -278,13 +301,18 @@
     <div class="episode-grid">
       <div class="episode-copy">
         <div class="episode-header">
-          <span class="episode-num">第 一 講</span>
+          <span class="episode-num">加 一 講</span>
           <div>
-            <div class="episode-title">生命读书会</div>
-            <div class="episode-speaker">我究竟为何而活</div>
+            <div class="episode-title">生命读书会 华理克《标竿人生》与《直奔标竿》同工培训 生命塑造 </div>
+            <div class="episode-speaker">朱建忠牧师</div>
           </div>
         </div>
         <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=3QRj1FIuYoU">视频</a>
+          <audio class="audio-player" controls preload="none">
+            <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/sck00-aud.m4a" type="audio/mp4">
+            Your browser does not support audio playback.
+          </audio>
         </div>
       </div>
       <figure class="episode-media">
@@ -295,19 +323,26 @@
 
   <article class="episode">
     <div class="episode-grid">
-      <div class="episode-copy">
-        <div class="episode-header">
-          <span class="episode-num">第 二 講</span>
-          <div>
-            <div class="episode-title"></div>
-            <div class="episode-speaker"></div>
-          </div>
-        </div>
+      <div class="audio-column">
+        <div class="audio-column-title">标杆人生</div>
+        <div class="audio-chapter">第 1 章 梅枚</div>
         <div class="links-row">
+          <audio class="audio-player" controls preload="none">
+            <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/pdl01-meimei.m4a" type="audio/mp4">
+            Your browser does not support audio playback.
+          </audio>
         </div>
       </div>
-      <figure class="episode-media">
-      </figure>
+      <div class="audio-column">
+        <div class="audio-column-title">直奔标杆</div>
+        <div class="audio-chapter">第 1 章 其兰</div>
+        <div class="links-row">
+          <audio class="audio-player" controls preload="none">
+            <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/pdc01-qilan.m4a" type="audio/mp4">
+            Your browser does not support audio playback.
+          </audio>
+        </div>
+      </div>
     </div>
   </article>
 
