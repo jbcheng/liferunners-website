@@ -42,7 +42,7 @@ export const siteMeta = {
           href: '/en/events/',
           label: 'Events',
           children: [
-            { href: '/en/events/upcoming/', label: 'Upcoming' },
+            { href: '/en/events/upcoming/', label: 'Recent' },
             { href: '/en/events/past/', label: 'Past Highlights' }
           ]
         },
@@ -114,7 +114,7 @@ export const siteMeta = {
           href: '/zh/events/',
           label: '活动记录',
           children: [
-            { href: '/zh/events/upcoming/', label: '即将举行' },
+            { href: '/zh/events/upcoming/', label: '近期活动' },
             { href: '/zh/events/past/', label: '往期回顾' }
           ]
         },
@@ -883,7 +883,7 @@ export const pages = [
         title: 'Quick Links',
         content: `
           <ul>
-            <li><a href="/en/events/upcoming/">Upcoming event briefings</a></li>
+            <li><a href="/en/events/upcoming/">Recent event briefings</a></li>
             <li><a href="https://calendar.google.com/calendar/ical/lifrunners%40example.com/public/basic.ics" target="_blank" rel="noopener">Subscribe to iCal feed</a></li>
             <li><a href="/en/support/contact/#volunteer">Volunteer rotation sign-up</a></li>
           </ul>
@@ -1929,7 +1929,7 @@ export const pages = [
     lang: 'en',
     path: 'en/events/upcoming/index.html',
     url: '/en/events/upcoming/',
-    title: 'Upcoming Events',
+    title: 'Recent Events',
     description: 'Join upcoming prayer runs, trainings, and online cohorts.',
     altLang: '/zh/events/upcoming/',
     hero: {
@@ -1948,20 +1948,20 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>Started on June 1st, 2026, five times a week, Joshua ·
-		<a href="/media/audio/ot06/josh.html" target="_blank">Past Recordings</a>
+              <h3>Started on Jan 1st, 2026, five times a week·
+		<a href="/media/audio/ot14/2cro.html" target="_blank">Go_To_Recordings</a>
               </h3>
-              <p>Time: Monday-Friday 06:30-07:30AM Pacific Daylight Saving Time </p>
-              <p>Time: Monday-Friday 09:30-10:30PM Beijing Time</p>
+              <p>Time: Monday-Friday 06:00-07:00AM Pacific Standard Time </p>
+              <p>Time: Monday-Friday 10:00-11:00PM Beijing Time</p>
               <p>Two-way online sessions for Bible study, devotion, sharing and discussion.</p>
             </div>
 
             <div class="timeline-item" id="weekly-class">
-              <h3>Started on May 1st, 2026，once a week for 10 weeks · Essential Truth and Discipleship ·
-		<a href="/media/audio/scj/scj.html" target="_blank">Past Recordings</a>
+              <h3>Start on Nov 06, 2026，once a week for 8 sessions · Life Shaping·
+		<a href="/media/audio/sck/sck.html" target="_blank">Go_To_Recordings</a>
               </h3>
-              <p>Time: Friday 06:30-07:30PM Pacific Daylight Saving Time </p>
-              <p>Time: Saturday 09:30-10:30AM Beijing Time</p>
+              <p>Time: Friday 06:00-07:00AM Pacific Standard Time </p>
+              <p>Time: Friday 10:00-11:00PM Beijing Time</p>
               <p>Two-way online sessions for Discipleship, sharing and discussion.</p>
             </div>
 
@@ -1974,7 +1974,7 @@ export const pages = [
     lang: 'zh',
     path: 'zh/events/upcoming/index.html',
     url: '/zh/events/upcoming/',
-    title: '即将举行',
+    title: '近期活动',
     description: '未来几个月的活动预告。',
     altLang: '/en/events/upcoming/',
     hero: {
@@ -1993,20 +1993,20 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>2026年 6月 1日 开始，每周五天，正在进行中 · 申命记 ·
-		<a href="/media/audio/ot06/josh.html" target="_blank">录影存档</a>
+              <h3>2026年 1月 1日 开始，每周五天，正在进行中 · 旧约 ·
+		<a href="/media/audio/ot14/2cro.html" target="_blank">录影存档</a>
               </h3>
-              <p> 太平洋夏令时间 周一至周五 早晨6:30-7:30 </p>
-              <p> 北京时间 周一至周五 晚上09:30-10:30 </p>
+              <p> 太平洋标准时间 周一至周五 早晨6:00-7:00 </p>
+              <p> 北京时间 周一至周五 晚上10:00-11:00 </p>
               <p> 双向交流的线上读经灵修，分享与讨论 </p>
             </div>
 
             <div class="timeline-item" id="weekly-class">
-              <h3>2026年 5月 1日 开始，每周一次，正在进行中 · 基要真理與門徒生活 ·
-		<a href="/media/audio/scj/scj.html" target="_blank">录影存档</a>
+              <h3>2026年 11月 6日 开始，每周一次，正在进行中 · 門徒培训，生命塑造 ·
+		<a href="/media/audio/sck/sck.html" target="_blank">录影存档</a>
               </h3>
-              <p> 太平洋夏令时间 周五 晚上6:30-7:30 </p>
-              <p> 北京时间 周六 早晨09:30-10:30 </p>
+              <p> 太平洋标准时间 周一至周五 早晨6:00-7:00 </p>
+              <p> 北京时间 周一至周五 晚上10:00-11:00 </p>
               <p> 双向交流的线上门训课程，分享与讨论 </p>
             </div>
 
@@ -2042,7 +2042,7 @@ export const pages = [
               <p>2026.04.18 Alameda Creek Trail | 2025.12.07 CIM </p>
               <ul>
                 <li><a href="/media/galleries/marathon-2026/2026-0418-run-for-life.pdf" target="_blank">Run for Life, by OneMei</a></li>
-                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.04.18 Marathon Self Test - Photos</a></li>
+                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.07.28 SF Marathon | 2026.04.18 Self Test - Photos</a></li>
                 <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">2025.12.07 CIM 2025 - Photos </a></li>
               </ul>
             </article>
@@ -2121,7 +2121,7 @@ export const pages = [
               <p>2026.04.18 Alameda Creek Trail | 2025.12.07 CIM</p>
               <ul>
                 <li><a href="/media/galleries/marathon-2026/2026-0418-run-for-life.pdf" target="_blank">为生命奔跑 文：一枚</a></li>
-                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.04.18 自测马拉松 照片库</a></li>
+                <li><a href="/media/galleries/marathon-2026/index.html" target="_blank">2026.07.26 三藩市马拉松 | 2026.04.18 自测 照片库</a></li>
                 <li><a href="/media/galleries/cim-marathon/index.html" target="_blank">2025.12.07 加州国际马拉松 照片库</a></li>
               </ul>
             </article>
