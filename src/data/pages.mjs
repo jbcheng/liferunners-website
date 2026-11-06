@@ -167,7 +167,17 @@ const latestHighlights = {
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
-        alt: 'This week 本周灵修'
+        alt: 'This week - Bible Study'
+      }
+    },
+    {
+      title: 'New Classes (Nov-Dec, 2026)',
+      summary: 'Life Shaping & Discipleship Training',
+      link: '/media/audio/sck/sck.html',
+      badge: 'New Resources',
+      image: {
+        src: '/media/audio/thisclass.png',
+        alt: 'This season - classes'
       }
     },
     {
@@ -178,16 +188,6 @@ const latestHighlights = {
       image: {
         src: '/media/galleries/thislove.jpg',
         alt: 'Life Runners Live Out Love service gathering'
-      }
-    },
-    {
-      title: 'New Classes (May-July, 2026)',
-      summary: 'Essential Truths & Discipleship Life',
-      link: '/media/audio/scj/scj.html',
-      badge: 'New Resources',
-      image: {
-        src: '/media/audio/thisclass.png',
-        alt: 'This week 本周课程'
       }
     },
     {
@@ -233,6 +233,16 @@ const latestHighlights = {
       }
     },
     {
+      title: '新一季课程 (2026年11月-12月)',
+      summary: '生命塑造 门徒培训',
+      link: '/media/audio/sck/sck.html',
+      badge: '新资源',
+      image: {
+        src: '/media/audio/thisclass.png',
+        alt: 'This week 本季课程'
+      }
+    },
+    {
       title: '活出爱服事 (2026年6月28日)',
       summary: '生命跑者以实际行动关怀社区。',
       link: '/media/galleries/live-out-love/index.html',
@@ -240,16 +250,6 @@ const latestHighlights = {
       image: {
         src: '/media/galleries/thislove.jpg',
         alt: '生命跑者活出爱服事聚会'
-      }
-    },
-    {
-      title: '新一季课程 (2026年5月-7月)',
-      summary: '基要真理与门徒生活',
-      link: '/media/audio/scj/scj.html',
-      badge: '新资源',
-      image: {
-        src: '/media/audio/thisclass.png',
-        alt: 'This week 本周课程'
       }
     },
     {
@@ -1465,37 +1465,37 @@ export const pages = [
                 <td>2nd Kings 25 chapters</td>
                 <td>Elisha, the divided kingdom, exile of Israel and Judah's fall.</td>
                 <td><a href="/media/audio/ot12/2kin.html">Scripture, PDF & Video</a></td>
-                <td>2026-09-04 (est.)</td>
+                <td>2026-09-07</td>
               </tr>
               <tr>
                 <td>1st Chronicles 29 chapters</td>
                 <td>Genealogies, David's reign, worship order, and temple preparations.</td>
                 <td><a href="/media/audio/ot13/1cro.html">Scripture, PDF & Video</a></td>
-                <td>2026-09-24 (est.)</td>
+                <td>2026-09-25</td>
               </tr>
               <tr>
                 <td>2nd Chronicles 36 chapters</td>
                 <td>Solomon, the temple, Judah's kings, exile, and the return decree.</td>
                 <td><a href="/media/audio/ot14/2cro.html">Scripture, PDF & Video</a></td>
-                <td>2026-10-15 (est.)</td>
+                <td>2026-10-19</td>
               </tr>
               <tr>
                 <td>Ezra 10 chapters</td>
                 <td>Return from exile, rebuilding the temple, and covenant renewal.</td>
                 <td><a href="/media/audio/ot15/ezra.html">Scripture, PDF & Video</a></td>
-                <td>2026-11-11 (est.)</td>
+                <td>2026-11-16 (est.)</td>
               </tr>
               <tr>
                 <td>Nehemiah 13 chapters</td>
                 <td>Rebuilding Jerusalem's wall, covenant reform, and restored worship.</td>
                 <td><a href="/media/audio/ot16/nehe.html">Scripture, PDF & Video</a></td>
-                <td>2026-11-19 (est.)</td>
+                <td>2026-11-24 (est.)</td>
               </tr>
               <tr>
                 <td>Esther 10 chapters</td>
                 <td>Providence, Esther and Mordecai, deliverance, and Purim.</td>
                 <td><a href="/media/audio/ot17/esth.html">Scripture, PDF & Video</a></td>
-                <td>2026-12-03 (est.)</td>
+                <td>2026-12-07 (est.)</td>
               </tr>
             </tbody>
           </table>
@@ -1598,37 +1598,37 @@ export const pages = [
                 <td>列王纪下 共25章</td>
                 <td>以利沙、南北国历史、以色列被掳与犹大灭亡。</td>
                 <td>链接：<a href="/media/audio/ot12/2kin.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-09-04（估）</td>
+                <td>2026-09-07</td>
               </tr>
               <tr>
                 <td>历代志上 共29章</td>
                 <td>家谱、大卫作王、敬拜班次与建殿预备。</td>
                 <td>链接：<a href="/media/audio/ot13/1cro.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-09-24（估）</td>
+                <td>2026-09-25</td>
               </tr>
               <tr>
                 <td>历代志下 共36章</td>
                 <td>所罗门、圣殿、犹大诸王、被掳与归回诏令。</td>
                 <td>链接：<a href="/media/audio/ot14/2cro.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-10-15（估）</td>
+                <td>2026-10-19</td>
               </tr>
               <tr>
                 <td>以斯拉记 共10章</td>
                 <td>被掳归回、重建圣殿与更新圣约。</td>
                 <td>链接：<a href="/media/audio/ot15/ezra.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-11-11（估）</td>
+                <td>2026-11-16（估）</td>
               </tr>
               <tr>
                 <td>尼希米记 共13章</td>
                 <td>重建耶路撒冷城墙、圣约改革与敬拜恢复。</td>
                 <td>链接：<a href="/media/audio/ot16/nehe.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-11-19（估）</td>
+                <td>2026-11-24（估）</td>
               </tr>
               <tr>
                 <td>以斯帖记 共10章</td>
                 <td>神的护理、以斯帖与末底改、拯救与普珥节。</td>
                 <td>链接：<a href="/media/audio/ot17/esth.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-12-03（估）</td>
+                <td>2026-12-07（估）</td>
               </tr>
             </tbody>
           </table>
