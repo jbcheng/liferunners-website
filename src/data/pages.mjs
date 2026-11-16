@@ -162,8 +162,8 @@ const latestHighlights = {
   en: [
     {
       title: 'Devotional Resource',
-      summary: 'Daily Devotion | 1st and 2nd Cronicles',
-      link: '/media/audio/ot14/2cro.html',
+      summary: 'Daily Devotion | Ezra, Nehemiah, Esther',
+      link: '/media/audio/ot15/ezra.html',
       badge: 'New Resources',
       image: {
         src: '/media/audio/thisday.png',
@@ -224,8 +224,8 @@ const latestHighlights = {
   zh: [
     {
       title: '灵修资源 (2026年 9月-)',
-      summary: '每日读经 ｜ 历代志上下 ',
-      link: '/media/audio/ot14/2cro.html',
+      summary: '每日读经 ｜ 以斯拉记 尼希米记 以斯帖记',
+      link: '/media/audio/ot15/ezra.html',
       badge: '最新资源',
       image: {
         src: '/media/audio/thisday.png',
