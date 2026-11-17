@@ -1948,8 +1948,8 @@ export const pages = [
           <div class="timeline">
 
             <div class="timeline-item" id="daily-devotion">
-              <h3>Started on Jan 1st, 2026, five times a week·
-		<a href="/media/audio/ot14/2cro.html" target="_blank">Go_To_Recordings</a>
+              <h3>Started on Jan 1st, 2026, five times a week, Old Testament·
+		<a href="https://www.life-runners.org/zh/resources/ot/" target="_blank">Go_To_Recordings</a>
               </h3>
               <p>Time: Monday-Friday 06:00-07:00AM Pacific Standard Time </p>
               <p>Time: Monday-Friday 10:00-11:00PM Beijing Time</p>
@@ -1994,7 +1994,7 @@ export const pages = [
 
             <div class="timeline-item" id="daily-devotion">
               <h3>2026年 1月 1日 开始，每周五天，正在进行中 · 旧约 ·
-		<a href="/media/audio/ot14/2cro.html" target="_blank">录影存档</a>
+		<a href="https://www.life-runners.org/zh/resources/ot/" target="_blank">录影存档</a>
               </h3>
               <p> 太平洋标准时间 周一至周五 早晨6:00-7:00 </p>
               <p> 北京时间 周一至周五 晚上10:00-11:00 </p>
