@@ -118,18 +118,23 @@
   .episode:hover { border-color: var(--gold); }
   .episode-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     align-items: start;
   }
   .episode-copy {
     padding: 1.1rem 1.25rem 1.15rem;
     min-width: 0;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 6px;
+    align-items: center;
   }
   .episode-header {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 0.5rem;
+    grid-column: 1 / -1;
   }
   .episode-num {
     font-family: 'Noto Serif SC', serif;
@@ -158,14 +163,19 @@
   }
   .links-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 6px;
     margin-top: 0.6rem;
   }
-  .audio-player { flex-basis: 100%; width: 100%; height: 32px; }
+  .audio-player { flex: 1 1 auto; width: auto; min-width: 0; height: 32px; }
   .audio-column {
     padding: 1.1rem 1.25rem 1.15rem;
     min-width: 0;
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 6px;
+    align-items: center;
   }
   .audio-column + .audio-column { border-left: 1px solid var(--border); }
   .audio-column-full {
@@ -180,11 +190,22 @@
     font-weight: 600;
     color: var(--gold);
     margin-bottom: 0.65rem;
+    grid-column: 1 / -1;
   }
   .audio-chapter {
     font-size: 13px;
     color: var(--ink-muted);
-    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    margin-top: 0.6rem;
+    grid-column: 1;
+  }
+  .audio-chapter + .links-row {
+    grid-column: 2;
+  }
+  .episode-copy > .episode-header + .links-row {
+    grid-column: 1 / -1;
   }
   .chip {
     display: inline-flex;
@@ -228,7 +249,8 @@
     height: 100%;
   }
   .episode-media img {
-    object-fit: cover;
+    object-fit: contain;
+    object-position: top center;
   }
   .episode-media-empty {
     align-items: center;
@@ -407,7 +429,7 @@
             Your browser does not support audio playback.
           </audio>
         </div>
-        <div class="audio-chapter">第 5 章&nbsp;<a class="chip chip-reader" href="https://drive.google.com/file/d/1oOFCLAvfKg8C03XqXrd7l_G5QDlivVvc/view?usp=drive_link">Sophia朗读</a></div>
+        <div class="audio-chapter">第 5 章&nbsp;<a class="chip chip-reader" href="https://drive.google.com/file/d/1oOFCLAvfKg8C03XqXrd7l_G5QDlivVvc/view?usp=drive_link">其兰朗读</a></div>
         <div class="links-row">
           <audio class="audio-player" controls preload="none">
             <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/pdc05-sophia.m4a" type="audio/mp4">
@@ -424,7 +446,7 @@
         <div class="episode-header">
           <span class="episode-num">第 一 講</span>
           <div>
-            <div class="episode-title">异象与使命</div>
+            <div class="episode-title">异象与使命 同工培训 1</div>
           </div>
         </div>
         <div class="links-row">
@@ -450,6 +472,13 @@
             Your browser does not support audio playback.
           </audio>
         </div>
+        <div class="audio-chapter">第 10 章&nbsp;<a class="chip chip-reader" href="https://drive.google.com/file/d/1MOcCWbw6TFtzJ3Fw0D_lzsree5cMW8xd/view?usp=drive_link">梅枚朗读</a></div>
+        <div class="links-row">
+          <audio class="audio-player" controls preload="none">
+            <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/pdl10-meimei.m4a" type="audio/mp4">
+            Your browser does not support audio playback.
+          </audio>
+        </div>
       </div>
       <figure class="episode-media">
         <a href="sck01.png"><img src="sck01.png" alt="生命塑造第一講"></a>
@@ -471,6 +500,30 @@
           </audio>
         </div>
       </div>
+    </div>
+  </article>
+
+  <article class="episode">
+    <div class="episode-grid">
+      <div class="episode-copy">
+        <div class="episode-header">
+          <span class="episode-num">第 二 講</span>
+          <div>
+            <div class="episode-title">生命塑造 同工培训 2</div>
+          </div>
+        </div>
+        <div class="links-row">
+          <a class="chip chip-video" href="https://www.youtube.com/watch?v=9F87ApyHEgs">视频</a>
+          <a class="chip chip-audio" href="https://drive.google.com/file/d/1xtxMZJ6GzPKCgkUszFKxTYPGXr6LM4Ep/view?usp=drive_link">音频</a>
+          <audio class="audio-player" controls preload="none">
+            <source src="https://lrf-hk.oss-cn-hongkong.aliyuncs.com/audio/sck/sck02-aud.m4a" type="audio/mp4">
+            Your browser does not support audio playback.
+          </audio>
+        </div>
+      </div>
+      <figure class="episode-media">
+        <a href="sck02.png"><img src="sck02.png" alt="生命塑造第二講"></a>
+      </figure>
     </div>
   </article>
 
