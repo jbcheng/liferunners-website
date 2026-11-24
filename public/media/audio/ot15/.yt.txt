@@ -3,4 +3,4 @@ ezra01-02 : https://www.youtube.com/watch?v=QHIrX_lkxMw
 ezra03-04 : https://www.youtube.com/watch?v=3CPfSC1kigA
 ezra05-06 : https://www.youtube.com/watch?v=snC4U2MYB2k
 ezra07-08 : https://www.youtube.com/watch?v=ZIiOt-j1JFE
-ezra09-10 :
+ezra09-10 : https://www.youtube.com/watch?v=u8TpI2CjEes
