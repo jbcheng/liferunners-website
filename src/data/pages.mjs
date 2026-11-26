@@ -349,6 +349,11 @@ export const pages = [
               <p>MP3 reflections with downloadable PDFs for listeners in restricted regions.</p>
               <a class="button" href="/media/audio/">Download audio & PDFs</a>
             </div>
+            <div class="card">
+              <h3>Newsletters</h3>
+              <p>Read the latest newsletter</p>
+              <a class="button" href="/newsletter/2026-11-newsletter.pdf">November 2026(PDF)</a>
+            </div>
           </div>
         `
       }
@@ -407,6 +412,11 @@ export const pages = [
               <h3>音频存档</h3>
               <p>MP3 灵修与 Spotify 镜像，并附带国内可下载的逐字音频与简报</p>
               <a class="button" href="/media/audio/">下载音频与文字</a>
+            </div>
+            <div class="card">
+              <h3>电子通讯</h3>
+              <p>阅读 最新电子通讯</p>
+              <a class="button" href="/newsletter/2026-11-newsletter.pdf">2026年11月 通讯（PDF)</a>
             </div>
           </div>
         `
@@ -1483,19 +1493,19 @@ export const pages = [
                 <td>Ezra 10 chapters</td>
                 <td>Return from exile, rebuilding the temple, and covenant renewal.</td>
                 <td><a href="/media/audio/ot15/ezra.html">Scripture, PDF & Video</a></td>
-                <td>2026-11-16 (est.)</td>
+                <td>2026-11-16</td>
               </tr>
               <tr>
                 <td>Nehemiah 13 chapters</td>
                 <td>Rebuilding Jerusalem's wall, covenant reform, and restored worship.</td>
-                <td><a href="/media/audio/ot16/nehe.html">Scripture, PDF & Video</a></td>
-                <td>2026-11-24 (est.)</td>
+                <td><a href="/media/audio/ot15/ezra.html">Scripture, PDF & Video</a></td>
+                <td>2026-11-25</td>
               </tr>
               <tr>
                 <td>Esther 10 chapters</td>
                 <td>Providence, Esther and Mordecai, deliverance, and Purim.</td>
                 <td><a href="/media/audio/ot17/esth.html">Scripture, PDF & Video</a></td>
-                <td>2026-12-07 (est.)</td>
+                <td>2026-12-08</td>
               </tr>
             </tbody>
           </table>
@@ -1616,19 +1626,19 @@ export const pages = [
                 <td>以斯拉记 共10章</td>
                 <td>被掳归回、重建圣殿与更新圣约。</td>
                 <td>链接：<a href="/media/audio/ot15/ezra.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-11-16（估）</td>
+                <td>2026-11-16</td>
               </tr>
               <tr>
                 <td>尼希米记 共13章</td>
                 <td>重建耶路撒冷城墙、圣约改革与敬拜恢复。</td>
-                <td>链接：<a href="/media/audio/ot16/nehe.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-11-24（估）</td>
+                <td>链接：<a href="/media/audio/ot15/ezra.html">经文朗读音频,PDF,视频</a></td>
+                <td>2026-11-25</td>
               </tr>
               <tr>
                 <td>以斯帖记 共10章</td>
                 <td>神的护理、以斯帖与末底改、拯救与普珥节。</td>
                 <td>链接：<a href="/media/audio/ot17/esth.html">经文朗读音频,PDF,视频</a></td>
-                <td>2026-12-07（估）</td>
+                <td>2026-12-08</td>
               </tr>
             </tbody>
           </table>
